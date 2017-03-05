@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclectic Electric</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="pageTitle"><a href="index.html">Eclectic Electric</a></h1>
+    </div>
+    <div id="homePage">
+        <div id="homeNavigation">
+            <div class="wrapper">
+                <nav id="nav-container">
+                    <ul class="nav">
+                        <li class="dropdown" id="bathroom-dropdown-menu"><a href="#" id="bathroom">Bathroom</a>
+                            <ul class="dropdown-content" id="bathroom-dropdown">
+                                <li><a onclick="toggleSection('bathroom-hairDryer-container')"><span class="dropdown-text">Hair Dryer</span></a></li>
+                                <li><a onclick="toggleSection('bathroom-fans-container')"><span class="dropdown-text">Fans</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="kitchen-dropdown-menu"><a href="#" id="kitchen">Kitchen</a>
+                            <ul class="dropdown-content" id="kitchen-dropdown">
+                                <li><a onclick="toggleSection('kitchen-coffeeMaker-container')"><span class="dropdown-text">Coffee Maker</span></a></li>
+                                <li><a onclick="toggleSection('kitchen-toaster-container')"><span class="dropdown-text">Toaster</span></a></li>
+                                <li><a onclick="toggleSection('kitchen-fridge-container')"><span class="dropdown-text">Fridge</span></a></li>
+                                <li><a onclick="toggleSection('kitchen-stove-container')"><span class="dropdown-text">Stove</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="livingRoom-dropdown-menu"><a href="#" id="livingRoom">Living Room</a>
+                            <ul class="dropdown-content" id="livingRoom-dropdown">
+                                <li><a onclick="toggleSection('livingRoom-washingMachine-container')"><span class="dropdown-text">Washing Machine</span></a></li>
+                                <li><a onclick="toggleSection('livingRoom-dryer-container')"><span class="dropdown-text">Dryer</span></a></li>
+                                <li><a onclick="toggleSection('livingRoom-iron-container')"><span class="dropdown-text">Iron</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="red" id="aboutContainer">
+            <div class="wrapper">
+                <h2>About Us</h2>
+                <p>Home is many things a repository of memory, a centre for family life and social activity, the focus of personal accumulation of material culture, an intensely personal place of retreat and solace, and the wellspring of personal identity.
+                    This collection reflects the broad range of cultural, social and economic activities of the home in both urban and rural settings. It has been developed largely through donation and in partnership with communities and private collectors.
+                    The museums interpretation of the collections focuses on community through artifacts and will continue to be a primary approach to its development, growth and focus of exhibition.</p>
+                <p>The strength of the Home and Community Collection lies within the home environment from early 1800&rsquo;s to mid-20th-century &ndash; particularly the technologies and tools used in food preparation, cooking, storage, preservation and
+                    cleaning, and laundry. It focuses on European and American innovation and purpose through a number of collections. Design and style play a significant role in collecting items for the museum furthering the preservation and documentation
+                    of domestic life into the modern age.</p>
+            </div>
+        </div>
+        <div class="gray" id="locationContainer">
+            <div class="wrapper">
+                <h2>Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.213857168344!2d-77.45222568468881!3d37.550024979800995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b11147d53e5cd3%3A0xdd8914cc92c77f21!2s823+W+Broad+St%2C+Richmond%2C+VA+23220!5e0!3m2!1sen!2sus!4v1478982952019"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper" id="subCont">
+        <section id="bathroom-hairDryer-container" class="sub-containers">
+            <a onclick="toggleSection('bathroom-hairDryer-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/hair-dryers/150/1920.png" onclick="showTimelineSection('bathroom-hairDryer-default','bathroom-hairDryer-picture-1', 'bathroom-hairDryer-p1-timeline', 'bathroom-hairDryer-', 'bathroom-hairDryer-img1')" id="bathroom-hairDryer-img1"
+                                class="timelineImg"></div>
+                        <span id="bathroom-hairDryer-p1-timeline" class="TimelineNumbers">1920</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/hair-dryers/150/1950.png" onclick="showTimelineSection('bathroom-hairDryer-default','bathroom-hairDryer-picture-2', 'bathroom-hairDryer-p2-timeline', 'bathroom-hairDryer-', 'bathroom-hairDryer-img2')" id="bathroom-hairDryer-img2"
+                                class="timelineImg"></div>
+                        <span id="bathroom-hairDryer-p2-timeline" class="TimelineNumbers">1951</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/hair-dryers/150/1954.png" onclick="showTimelineSection('bathroom-hairDryer-default','bathroom-hairDryer-picture-3', 'bathroom-hairDryer-p3-timeline', 'bathroom-hairDryer-', 'bathroom-hairDryer-img3')" id="bathroom-hairDryer-img3"
+                                class="timelineImg"></div>
+                        <span id="bathroom-hairDryer-p3-timeline" class="TimelineNumbers">1954</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/hair-dryers/150/1960.png" onclick="showTimelineSection('bathroom-hairDryer-default','bathroom-hairDryer-picture-4', 'bathroom-hairDryer-p4-timeline', 'bathroom-hairDryer-', 'bathroom-hairDryer-img4')" id="bathroom-hairDryer-img4"
+                                class="timelineImg"></div>
+                        <span id="bathroom-hairDryer-p4-timeline" class="TimelineNumbers">1960</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/hair-dryers/150/1970.png" onclick="showTimelineSection('bathroom-hairDryer-default','bathroom-hairDryer-picture-5', 'bathroom-hairDryer-p5-timeline', 'bathroom-hairDryer-', 'bathroom-hairDryer-img5')" id="bathroom-hairDryer-img5"
+                                class="timelineImg"></div>
+                        <span id="bathroom-hairDryer-p5-timeline" class="TimelineNumbers">1970</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/hair-dryers/150/2000.png" onclick="showTimelineSection('bathroom-hairDryer-default','bathroom-hairDryer-picture-6', 'bathroom-hairDryer-p6-timeline', 'bathroom-hairDryer-', 'bathroom-hairDryer-img6')" id="bathroom-hairDryer-img6"
+                                class="timelineImg"></div>
+                        <span id="bathroom-hairDryer-p6-timeline" class="TimelineNumbers">2000</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+              <li>
+                  <h2>Bathroom</h2>
+                  <ul class="activeBathroomUl">
+                      <li class="activeBathroomLi"><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                      <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <h2>Kitchen</h2>
+                  <ul class="hiddenUl">
+                      <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                      <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                      <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                      <li><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <h2>Living Room</h2>
+                  <ul class="hiddenUl">
+                      <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                      <li><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                      <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <div class="clearfix">
+              <div id="bathroom-hairDryer-default" class="sub-content">
+                  <h2>Hair Dryers</h2>
+                  <p>Hair Dryers, are hot hair tools which are a key component of the hair care and hair styling industry. Hair Dryers are any type of tool which contains any type of blower which dries hair. Utilizing this idea, a fan, a hand dryer or a variety
+                      of other blowers could actually be considered a hair dryer.</p>
+                  <p>The vacuum cleaner was the initial inspiration for the creation of the hairdryer in use today. Before hair dryers were in existence, men and women commonly dried their hair using vacuum cleaner hoses.</p>
+                  <p>The original vacuum cleaner was invented in 1890 by Alexandre Goldefroy for use in his French hair salon. Goldefroy&rsquo;s hair dryer was an unsophisticated version of what&rsquo;s available in modern times.</p>
+                  <p>The Goldefroy hair dryer was rigged up so that a man or woman could sit underneath it. It was not portable in any way and it was not handheld.</p>
+                  <p><strong>Click on the images to view more about hair dryers from that time</strong></p>
+              </div>
+              <div id="bathroom-hairDryer-picture-1" class="bathroom-hairDryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/hair-dryers/300/1920.png">
+                  <h2>1920</h2>
+                  <p>In 1920 the US Racine Universal Motor Company as well as the Hamilton Beach Company created handheld hand dryers, eventually referred to as blow dryers, which were released to the professional and consumer hair market. Although a step
+                      in the right direction, the new portable hairdryers were heavy and challenging to use. In fact, the hair dryers could weigh up to 2 pounds. Obviously they could be exhausting to use when drying a lot of hair.</p>
+                  <p>The 1920s version of the portable hair dryers, now known as blow dryers, could potentially overheat or cause electrocution. The new hand held hair dryers were only capable of using 100 watts of heat instead of the 2000 watts currently
+                      available. With the limits on heat wattage, it took a lot longer to dry the hair.</p>
+              </div>
+              <div id="bathroom-hairDryer-picture-2" class="bathroom-hairDryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/hair-dryers/300/1950.png">
+                  <h2>1951</h2>
+                  <p>From those first hair dryers released in 1920 the hair dryer has gone through many evolutions. Although the basic function and mechanism of the hairdryer has not experienced any significant changes since its invention the features have
+                      evolved dramatically.</p>
+                  <p>Besides the hand held dryers other major types of blow dryers, which were developed included the soft bonnet hairdryer and a rigid-hood style hairdryer.</p>
+                  <p>A soft bonnet style hairdryer was introduced to hair consumers in 1951 which consisted of the traditional motor with hose attachments not unlike vacuum cleaners. The 50s also saw the introduction of the rigid-hood hair dryer which is the
+                      type most frequently seen in salons. The rigid-hood dryer had a hard plastic helmet that goes over the head. This rigid-hood dryer works similarly to the bonnet hairdryer, but at a much higher wattage.</p>
+              </div>
+              <div id="bathroom-hairDryer-picture-3" class="bathroom-hairDryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/hair-dryers/300/1954.png">
+                  <h2>1954</h2>
+                  <p>An important change to the hand held hair dryer occurred in 1954 when GEC changed the design of the dryer to move the motor inside the casing.</p>
+                  <p>This vintage antique hair dryer has something that many others do not. It has the original box and the original instructions along with a pamphlet showing authorized electrical service stations for the A. C. Gilbert company.</p>
+                  <p>This is not a high-powered hair dryer like today's modern hair dryers, so don't expect it to blow you away when you turn it on. It comes with all accessories in the picture such as the stand, instructions, and head wrap. I put the head wrap on and it puffs up like it should and I could feel the air on my head; if it has any leaks other than the design holes at the base near the elastic band then they are very very tiny.</p>
+                  <p>The dryer itself has very minor scratches or perhaps a tiny dent. It measures approximately 7" in both directions. It weighs approximately 1lb. 15 oz. The handle looks like it is wood.</p>
+                  <p>The box is in normal condition considering its age with scuffs, scratches, and areas of discoloration, and 1 hole in the top part of the lid, but in excellent shape for its age. Instructions have a tiny rip here and there, but I do not see any writing on any of the instructions. The cord is in great shape, and measures approximately 70" long. Again this is not real powerful; it is a light steady Breeze.</p>
+                  <p>The elastic on the head wrap is still good. This should not be expected to be perfect as it is quite old from the fifties. I determined the age from instruction on the service pamphlet which said February 1954 on the bottom.</p>
+              </div>
+              <div id="bathroom-hairDryer-picture-4" class="bathroom-hairDryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/hair-dryers/300/1960.png">
+                  <h2>1960</h2>
+                  <p>Another key change occurred in the 1960s with the weight of the blow dryer. Better electrical motors were introduced at that time along with the lighter plastics.</p>
+              </div>
+              <div id="bathroom-hairDryer-picture-5" class="bathroom-hairDryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/hair-dryers/300/1970.png">
+                  <h2>1970</h2>
+                  <p>In the 1970s the Consumer Product Safety Commission (CPSC) set up hairdryer safety guidelines which addressed past issues with electrocution or overheating.</p>
+              </div>
+              <div id="bathroom-hairDryer-picture-6" class="bathroom-hairDryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/hair-dryers/300/2000.png">
+                  <h2>2000</h2>
+                  <p>Since 1991 the CPSC has mandated by US law that all dryers must use a ground fault circuit interrupter so that it cannot electrocute a person if it gets wet. By 2000 deaths by blow dryers has dropped to less than four people a year. This
+                      is a drastic change from the hundreds of electrocution cases which occurred in the past.</p>
+                  <p>Not only has the appearance of the hairdryer changed dramatically since those early vacuum cleaner tube days, they now are equipped with a dizzying array of options and features ranging from noise reduction and wattage options to a variety
+                      of attachments (concentrators, diffusers, attached combs and brushes) to heat settings and dryer speeds.</p>
+                  <p>One way that manufacturers of hair dryers utilize to stand out for consumers is the type of features they offer on each of their different models.</p>
+              </div>
+          </div>
+        </section>
+        <section id="bathroom-fans-container" class="sub-containers">
+            <a onclick="toggleSection('bathroom-fans-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/fans/150/1800.png" onclick="showTimelineSection('bathroom-fans-default','bathroom-fans-picture-1', 'bathroom-fans-p1-timeline', 'bathroom-fans-', 'bathroom-fans-img1')" id="bathroom-fans-img1" class="timelineImg"></div>
+                        <span id="bathroom-fans-p1-timeline" class="TimelineNumbers">1800</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/fans/150/1888.png" onclick="showTimelineSection('bathroom-fans-default','bathroom-fans-picture-2', 'bathroom-fans-p2-timeline', 'bathroom-fans-', 'bathroom-fans-img2')" id="bathroom-fans-img2" class="timelineImg"></div>
+                        <span id="bathroom-fans-p2-timeline" class="TimelineNumbers">1886</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/fans/150/1920.png" onclick="showTimelineSection('bathroom-fans-default','bathroom-fans-picture-3', 'bathroom-fans-p3-timeline', 'bathroom-fans-', 'bathroom-fans-img3')" id="bathroom-fans-img3" class="timelineImg"></div>
+                        <span id="bathroom-fans-p3-timeline" class="TimelineNumbers">1920</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/fans/150/1950.png" onclick="showTimelineSection('bathroom-fans-default','bathroom-fans-picture-4', 'bathroom-fans-p4-timeline', 'bathroom-fans-', 'bathroom-fans-img4')" id="bathroom-fans-img4" class="timelineImg"></div>
+                        <span id="bathroom-fans-p4-timeline" class="TimelineNumbers">1950</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="activeBathroomUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                        <li class="activeBathroomLi"><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li><a onclick="subNavToggle('kitchen-stove-container'. 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="bathroom-fans-default" class="sub-content">
+                  <h2>Fans</h2>
+                  <p>Pictorial records showing some of the earliest fans date from around 3000 BC and there is evidence that the Greeks, Etruscans and Romans all used fans as cooling and ceremonial devices, while Chinese literary sources associate the fan
+                      with ancient mythical and historical characters.</p>
+                  <p>Early fans were all of the fixed type, and the folding fan does not appear either in the East or the West until relatively late in its history.</p>
+                  <p><strong>Click on the images to view more about fans from that time</strong></p>
+              </div>
+              <div id="bathroom-fans-picture-1" class="bathroom-fans-TimelineSections sub-content">
+                  <img class="subImg300" src="images/fans/300/1800.png">
+                  <h2>1800</h2>
+                  <p>The first European folding fans were inspired by and copied from prototypes brought in to Europe by merchant traders and the religious orders who had set up colonies along the coasts of China and even Japan. These early fans were reserved
+                      for Royalty and the nobility and, as expensive toys, they were regarded as a status symbol. While their montures (i.e. sticks and guards) were made from materials such as ivory, mother of pearl and tortoiseshell, often carved and pierced
+                      and ornamented with silver, gold and precious stones, the leaves were well painted by craftsmen who gradually amalgamated into guilds such as The Worshipful Company of Fan Makers.</p>
+                  <p>Along with the times, the development of the fan is also a very popular fashion commodity in the 16th century-18. but, there has been a shift in the function of the fan in the early 20th century. At that time, the fan is no longer as a
+                      fashion accessory, but be as a means of advertising. Meanwhile, in the country of Spain itself become a tool fan to cool the air, because in Spain has a climate that is hot enough.</p>
+              </div>
+              <div id="bathroom-fans-picture-2" class="bathroom-fans-TimelineSections sub-content">
+                  <img class="subImg300" src="images/fans/300/1888.png">
+                  <h2>1886</h2>
+                  <p>With the rapid advancement of technology, comes the electric fan. Electric fan was first discovered by Schuyler Skaats Wheeler, in 1882. Wheeler was first demonstrated electric fan with two propellers, without any protective and driven
+                      by an electric motor power. Continued development of the electric fan and was developed by Philip H. Diehl, who Patented in 1887. At the time, Diehl introduced the fan attached to the ceiling.</p>
+                  <p>The electric fan was one of the most important electric inventions of all time. The fan is a building block of other more advanced technologies. Fans are necessary in computers, lasers, large LED lights, petrol and electric automobiles,
+                      the space station and countless other things. The fan as used in HVAC systems allows humans to build giant or underground buildings. It would be hard to imagine a world without the electric fan!</p>
+                  <p>The electric fan has blades similar to a water or steam turbine. A DC or AC motor drives a rotating shaft. Sizes of fans have gotten much smaller and lighter over the years. As engineers improved the electric motor and blade design they
+                      figured out how to get more performance out of a design</p>
+                  <p>The first electric fan was made in 1886 by Schuyler Wheeler. Early fans were all DC powered. After the 1890s fans with AC motors were produced.</p>
+              </div>
+              <div id="bathroom-fans-picture-3" class="bathroom-fans-TimelineSections sub-content">
+                  <img class="subImg300" src="images/fans/300/1920.png">
+                  <h2>1920</h2>
+                  <p>In the late 1920s GE released a design which had overlapping blades, which made fans much more quiet. As the decades passed other materials like nylon and wood were used in the designs. There were more variations in color and style after
+                      the 20s as well, before this fans only came in black.</p>
+                      <p>General Electric Company, U.S.A., 12" Oscillating Antique Desk Fan. This model could be described as General Electric Company's "bread and butter" desk fan of the 1920s. This model can trace its lineage to the earlier cast iron ring handled versions introduced in the 19teens and continuously modified through the early 30s.</p>
+                      <p>General Electric reduced the weight of this model by the late 20s when they began manufacturing this model in stamped steel. Finishes, blades and guards changed during the 30s, but G.E. continued to use a similar form of this motor and oscillator until the early 60s.</p>
+              </div>
+              <div id="bathroom-fans-picture-4" class="bathroom-fans-TimelineSections sub-content">
+                  <img class="subImg300" src="images/fans/300/1950.png">
+                  <h2>1950</h2>
+                  <p>In the 1950s air conditioning gradually replaced table fans.</p>
+                  <p>Emerson Electric Company's Desk Fan of the 1950s is arguably the best overall designed desk fans ever manufactured. Emerson had reached its Zenith with this model in both engineering and aesthetics.</p>
+                  <p>The exclusive Emerson features such as the spiraled oil groove rotor, finger tip ratcheting oscillation control, and left hand thread screw on blade where all part of the package. Emerson combined these features with an overlapping blade for quiet running and maximum air movement.</p>
+                  <p>Perhaps one of the largest selling points of this model at the time was that the capacitor run motor allowed the fan to pull less than half an ampere on high speed.</p>
+              </div>
+            </div>
+        </section>
+        <section id="kitchen-coffeeMaker-container" class="sub-containers">
+            <a onclick="toggleSection('kitchen-coffeeMaker-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/1840.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-1', 'kitchen-coffeeMaker-p1-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img1')" id="kitchen-coffeeMaker-img1"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p1-timeline" class="TimelineNumbers">1840</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/1865.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-2', 'kitchen-coffeeMaker-p2-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img2')" id="kitchen-coffeeMaker-img2"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p2-timeline" class="TimelineNumbers">1865</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/1901.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-3', 'kitchen-coffeeMaker-p3-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img3')" id="kitchen-coffeeMaker-img3"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p3-timeline" class="TimelineNumbers">1905</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/1910.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-4', 'kitchen-coffeeMaker-p4-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img4')" id="kitchen-coffeeMaker-img4"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p4-timeline" class="TimelineNumbers">1908</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/1930.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-5', 'kitchen-coffeeMaker-p5-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img5')" id="kitchen-coffeeMaker-img5"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p5-timeline" class="TimelineNumbers">1929</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/1972.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-6', 'kitchen-coffeeMaker-p6-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img6')" id="kitchen-coffeeMaker-img6"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p6-timeline" class="TimelineNumbers">1972</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/1996.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-7', 'kitchen-coffeeMaker-p7-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img7')" id="kitchen-coffeeMaker-img7"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p7-timeline" class="TimelineNumbers">1996</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/coffee-maker/150/2004.png" onclick="showTimelineSection('kitchen-coffeeMaker-default','kitchen-coffeeMaker-picture-8', 'kitchen-coffeeMaker-p8-timeline', 'kitchen-coffeeMaker-', 'kitchen-coffeeMaker-img8')" id="kitchen-coffeeMaker-img8"
+                                class="timelineImg"></div>
+                        <span id="kitchen-coffeeMaker-p8-timeline" class="TimelineNumbers">2004</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                        <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="activeKitchenUl">
+                        <li class="activeKitchenLi"><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="kitchen-coffeeMaker-default" class="sub-content">
+                  <h2>Coffee Makers</h2>
+                  <p>The history of the coffee maker, like many inventions, began long ago. The Turks were known to brew coffee way back in 575 A.D. and the history of the coffee maker really begins there. Much of the history of the coffee maker has been lost
+                      to the ages, so no one really knows much about the history of the coffee maker from the time of the Turks to 1818, when the first coffee percolator was created.</p>
+                  <p>But then, the history of the coffee maker really became crowded with innovation and milestones. When you say "coffee", most Americans assume you mean drip coffee. Modern drip-brewed coffee can trace it's origins to the biggin coffee device
+                      from France. From there, another French inventor created the pumping percolator at the same time, which was to become highly popular with cowboys, pioneers and 1950s moms.</p>
+                  <p>But in the glorious history of the coffee maker, there's plenty of room for other ideas.</p>
+                  <p><strong>Click on the images to view more about coffee makers from that time</strong></p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-1" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/1840.png">
+                  <h2>1840</h2>
+                  <p>In 1840, the Napier Vacuum Machine came along. At the time, it was complex to use but made an amazingly clear pot of coffee, which was prized by coffee lovers. Vacuum coffee makers continue to be popular to this day, so no history of the
+                      coffee maker would be complete with its mention.</p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-2" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/1865.png">
+                  <h2>1865</h2>
+                  <p>The electric coffee percolator, now eclipsed by the automatic drip coffee maker, also deserves its rightful place in the history of the coffee maker. The first electric percolators were a big hit with consumers, as it made it easy to make
+                      pot after pot of coffee without dealing with the stove. Today's percolators, still part of the history of the coffee maker, don't look much different from the originals.</p>
+                  <p>It was in 1865 when James Nason who lived in Massachusetts patented a percolator design. Then Hanson Goorich, a farmer in Illinois was generally accredited with patenting modern percolators and it was on August 16, 1889 that his patent
+                      was granted. Goodrich&rsquo;s patent description differs little with the stovetop percolators of today. The percolator design works by heating water in a boiling pot with a detachable lid, heated water is pushed through in a metal
+                      tube and into the brew basket that contains the coffee. Extracted liquids drain from brew basket and drip back into the coffee pot. The procedure is continuously repeated in the brewing cycle up to the point when liquid flowing repeatedly
+                      through the coffee grounds has already sufficiently steeped. The user will judge when coffee has already reached the right color and strength by looking through the transparent knob on its lid. Then electrification came and simplified
+                      the percolator&rsquo;s operation by featuring a self-contained, heating element powered by electricity which eliminated the need for a stovetop burner. While earlier percolator design used glass construction, percolators that are made
+                      from 1930s and above were constructed of metal, mostly with aluminum &amp; copper</p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-3" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/1901.png">
+                  <h2>1905</h2>
+                  <p>The first espresso machine was patented and built by Angelo Moriondo from Turin, Italy. In 1884 when he demonstrated a sample of this machine at the General Exposition in Turin, then his patent was granted on May 16, 1884. A certificate
+                      was awarded to him for the invention titled &ldquo;New steam machine for economic &amp;amp; instantaneous confection of coffee beverage&rdquo;. Luifi Bezzera from Milan, a mechanic, patented many improvements to this machine in 1901.
+                      It was named &ldquo;The Innovations in machinery to prepare &amp;amp; immediately serve coffee beverage&rdquo;, granted on June 1902. Then in 1905 when the patent was bought by Pavoni Desiderio , founder of the company &ldquo;La Pavoni&rdquo;,
+                      started to produce the machines commercially in a workshop in Milan, one espresso machine per day. Today, there are many drive mechanisms used in different machine designs to create espresso: Steam, Piston, Pump and Air driven, but
+                      they share some common elements: grouphead and portafilter.</p>
+                  <p>Espresso machines may also feature a steaming wand that steams and froths milk for cappuccino or latte. An espresso machine works by forcing the pressurized water in near boiling to go through a puck of coffee grounds and a filter to produce
+                      a highly concentrated coffee known as espresso.</p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-4" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/1910.png">
+                  <h2>1908</h2>
+                  <p>The invention of coffee filters A coffee filter which is a brewing utensil is mostly made of disposable paper filters. It is used to trap coffee grounds and allow liquid coffee to run through. A German housewife, Melitta Bentz invented
+                      the first coffee paper filter on July 08, 1908. She really wanted to effectively eliminate the bitter taste caused by boiling loose coffee grounds or when using the common method of linen in brewing coffee. She experimented with different
+                      means, yet ended up by using blotting papers from her son&rsquo;s exercise book. When the coffee grounds free, less bitter coffee met with enthusiasm, she then decided to start a business. Melitta Bentz patented her invention and organized
+                      a company that sells coffee filters. She hired her husband and 2 sons who became its first employees.</p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-5" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/1930.png">
+                  <h2>1929</h2>
+                  <p>This type of coffeemaker requires that the coffee should be a coarser grind compared to drip brew coffee filter. Finer coffee grounds will only seep through the press, then into the brewed coffee. The brewing method of a French press works
+                      by placing coffee and water altogether, stirring it and leaving it to brew for few minutes, and then by pressing the plunger, trapping the grounds in the bottom of its beaker. Coffee purists praised the great qualities of a French
+                      press claiming that it makes the finest coffee flavor.</p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-6" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/1972.png">
+                  <h2>1972</h2>
+                  <p>The history of the coffee maker changed forever in 1972. Mr. Coffee, the first commercially successful automatic drip coffee maker came on the scene, revolutionizing the what we drink coffee and changing the history of the coffee maker
+                      forever.
+                  </p>
+                  <p>For the first half of the 20th Century the Coffee Percolator surely reigned supreme- this is how virtually everyone made their morning coffee. This machine hails from the latter half of the century- perhaps the 1970&rsquo;s? As you can see it is in New condition and has a lovely modern style. There are no signs of any use at all- and the enamel finish is spotless and clean. The pot is complete with its all its inner parts: coffee basket, lid, glass bubble. Very good quality manufacture- this machine was actually made in Australia.</p>
+                  <p>Percolators are super simple to use- you just fill the inner basket with coarse fresh ground coffee. You fill the pot with water and place on a moderate heat on the stove. As the water boils it is forced up to the top of the machine from where it drips down through the coffee grounds. As the brew develops you can see what is happening in the little glass bubble at the top.</p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-7" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/1996.png">
+                  <h2>1996</h2>
+                  <p>Drip Coffee Maker This type of coffee maker debuted in America in 1972 as the popular Mr. Coffee TM and was an instant success that popularized the automatic drip brew method. In 1996, around 73 percent of American households reported
+                      using an automatic drip coffeemaker. With automatic drip coffee machines, a measured volume of cold water is poured over into a separate chamber where a heating component heats water to near boiling. Hot water is distributed over the
+                      coffee grounds in a metal or paper filter, through a device such as the shower head. Then water seeps through the grounds, absorbing its essences and oils, and passes through to the bottom of the coffee filter. Coffee grounds are kept
+                      in the coffee filter while the coffee liquid drips into a coffee pot. You can choose a drip coffee maker in a 4-12 cups capacity and in different styles, colors, models and prices.</p>
+              </div>
+              <div id="kitchen-coffeeMaker-picture-8" class="kitchen-coffeeMaker-TimelineSections sub-content">
+                  <img class="subImg300" src="images/coffee-maker/300/2004.png">
+                  <h2>2004</h2>
+                  <p>This type of coffee maker has gained its popularity in recent years. It is a coffee brewing method that prepares only exact or enough coffee for a single portion. Its brewing system lets a measured amount of heated water to go through
+                      the coffee pack or pod, producing a standardized cup of brewed coffee into a container positioned under the outlet. Coffee pods are pre-packed ground coffee in their own filter. You can choose a wide range of beverages available for
+                      brewing using single-serve coffee makers such as hot chocolate, tea and other milk based specialty beverages.</p>
+                  <p>Single-serve coffeemakers are great for clean and quick serving of specialty coffees.</p>
+              </div>
+            </div>
+        </section>
+        <section id="kitchen-toaster-container" class="sub-containers">
+            <a onclick="toggleSection('kitchen-toaster-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/toasters/150/1909.png" onclick="showTimelineSection('kitchen-toaster-default','kitchen-toaster-picture-1', 'kitchen-toaster-p1-timeline', 'kitchen-toaster-', 'kitchen-toaster-img1')" id="kitchen-toaster-img1" class="timelineImg"></div>
+                        <span id="kitchen-toaster-p1-timeline" class="TimelineNumbers">1909</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/toasters/150/1915.png" onclick="showTimelineSection('kitchen-toaster-default','kitchen-toaster-picture-2', 'kitchen-toaster-p2-timeline', 'kitchen-toaster-', 'kitchen-toaster-img2')" id="kitchen-toaster-img2" class="timelineImg"></div>
+                        <span id="kitchen-toaster-p2-timeline" class="TimelineNumbers">1914</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/toasters/150/1920.png" onclick="showTimelineSection('kitchen-toaster-default','kitchen-toaster-picture-3', 'kitchen-toaster-p3-timeline', 'kitchen-toaster-', 'kitchen-toaster-img3')" id="kitchen-toaster-img3" class="timelineImg"></div>
+                        <span id="kitchen-toaster-p3-timeline" class="TimelineNumbers">1919</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/toasters/150/1921.png" onclick="showTimelineSection('kitchen-toaster-default','kitchen-toaster-picture-4', 'kitchen-toaster-p4-timeline', 'kitchen-toaster-', 'kitchen-toaster-img4')" id="kitchen-toaster-img4" class="timelineImg"></div>
+                        <span id="kitchen-toaster-p4-timeline" class="TimelineNumbers">1921</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/toasters/150/1926.png" onclick="showTimelineSection('kitchen-toaster-default','kitchen-toaster-picture-5', 'kitchen-toaster-p5-timeline', 'kitchen-toaster-', 'kitchen-toaster-img5')" id="kitchen-toaster-img5" class="timelineImg"></div>
+                        <span id="kitchen-toaster-p5-timeline" class="TimelineNumbers">1926</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/toasters/150/1933.png" onclick="showTimelineSection('kitchen-toaster-default','kitchen-toaster-picture-6', 'kitchen-toaster-p6-timeline', 'kitchen-toaster-', 'kitchen-toaster-img6')" id="kitchen-toaster-img6" class="timelineImg"></div>
+                        <span id="kitchen-toaster-p6-timeline" class="TimelineNumbers">1928</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/toasters/150/1960.png" onclick="showTimelineSection('kitchen-toaster-default','kitchen-toaster-picture-7', 'kitchen-toaster-p7-timeline', 'kitchen-toaster-', 'kitchen-toaster-img7')" id="kitchen-toaster-img7" class="timelineImg"></div>
+                        <span id="kitchen-toaster-p7-timeline" class="TimelineNumbers">1933</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                        <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="activeKitchenUl">
+                        <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li class="activeKitchenLi"><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-dryer-container, 'LivingRoom'')">Dryer</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="kitchen-toaster-default" class="sub-content">
+                  <h2>Toasters</h2>
+                  <p>Electric toasters have been in existence for less than 100 years. Yet, people have been consuming bread for the past 6,000 years, and people have been toasting bread since the time of the Romans. Toasting bread makes it crunchier and preserves
+                      it, an especially important characteristic for early civilizations. Before the advent of the electric toaster, bread was toasted over an open fire with the help of a variety of simple tools. Toasting bread does more than just preserve
+                      it, of course, it changes its nature; bread becomes sweeter, crunchier and the perfect surface on which to spread all sorts of things.</p>
+                  <p>The toaster represents the crest of one wave of technological innovation, it began with a huge effort to electrify the nation. Once homes were wired this created a demand for household appliances, one of which was the toaster.</p>
+                  <p>Even after electricity was introduced to homes across America, the electric toaster was still not a feasible invention. Because the surface of toast needs to be heated to temperatures above 310 degrees Fahrenheit, electric toasters must
+                      contain wires with the ability to reach very high temperatures without becoming damaged or starting a fire. Such a wire would have many uses, aside from application to an electric toaster. Therefore, many companies strove to discover
+                      it. By March of 1905, an engineer named Albert Marsh discovered that an alloy of nickel and chromium, known as Nichrome, had the properties of the sought after wire.</p>
+                  <p>Shortly after Marsh's discovery, an employee of the American Electric Heater Company named George Schneider applied for a patent for his version of the electric toaster. In the next several years, there were already several people and
+                      companies working to develop their own versions of the toaster.</p>
+                  <p><strong>Click on the images to view more about toasters from that time</strong></p>
+              </div>
+              <div id="kitchen-toaster-picture-1" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1909.png">
+                  <h2>1909</h2>
+                  <p>There must have been a number of prototype electric toasters made by companies and garage inventors alike in these early years, but it wasn't until 1909 that the first successful electric toaster was produced. In July, 1909, Frank Shailor
+                      of General Electric submitted his patent application for the D-12, considered the first commercially successful electric toaster.</p>
+              </div>
+              <div id="kitchen-toaster-picture-2" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1915.png">
+                  <h2>1914</h2>
+                  <p>Lloyd Copeman and his wife, Hazel, were window-shopping one day in 1913 and they were looking at an electric toaster displayed in a store window. The normal way a toaster worked at the time was to place the bread on a rack facing the heated
+                      electric coils. When the bread was toasted on one side, it was flipped by hand for the toasting of the other side. The story goes that Hazel, turned to her husband and said, &ldquo;Lloyd, couldn&rsquo;t you invent a toaster that would
+                      automatically turn the toast?&rdquo; There must be some truth to this as the toaster patent was issued to Hazel B. Copeman in 1914. This was the first toaster that allowed the toast to be &ldquo;turned&rdquo; without touching the bread.
+                      It was called the &ldquo;Automatic &rdquo; toaster. The Copeman's, both Hazel and Lloyd were issued five toaster related patents during 1914.</p>
+              </div>
+              <div id="kitchen-toaster-picture-3" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1920.png">
+                  <h2>1919</h2>
+                  <p>Many companies who wished to produce electric toasters were forced to pay royalties to Copeman or find a different way to &ldquo;turn the toast&rdquo;. Some swung the toast around in little baskets. Another toaster carried the bread past
+                      the heating elements on a little conveyer belt, toasting it as it traveled along.</p>
+                  <p>As with the electric stove, the first Westinghouse toasters were identical in every way to the Copeman toaster other than carrying the Westinghouse name and the words &ldquo;Copeman Patents&rdquo; on the nameplate. In the decade following
+                      the invention of the toaster, toasters sparked a great deal of public interest, and a variety of toaster models were produced. During World War I, a master mechanic in a plant in Stillwater, Minnesota decided to do something about
+                      the burnt toast served in the company cafeteria. To circumvent the need for continual human attention, Charles Strite incorporated springs and a variable timer, and filed the patent for his pop-up toaster on May 29, 1919. He intended
+                      the device would be sold to the restaurant trade.</p>
+              </div>
+              <div id="kitchen-toaster-picture-4" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1921.png">
+                  <h2>1921</h2>
+                  <p>Charles P. Strite, born in Minneapolis, MN, received patent on October 18, 1921 for the bread-toaster. That same year Strite formed the Waters Genter Company to manufacture his toaster and market it to restaurants. Receiving financial
+                      backing from friends, Strite oversaw production of the first one hundred hand-assembled toasters, which were shipped to the Childs restaurant chain.</p>
+              </div>
+              <div id="kitchen-toaster-picture-5" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1926.png">
+                  <h2>1926</h2>
+                  <p>In 1926, using a redesigned version of Strite's toaster, the first automatic pop-up toaster was introduced by the Waters-Genter Company, which was eventually acquired into the Edison electric empire The amazing device was called the "Toastmaster,"
+                      and bearing a triple-loop logo inspired by its heating elements, it heralded the modern age of kitchen appliances. The name and the logo endure in the 21st century, having survived many corporate transitions to itself become the name
+                      of the corporation. By the end of 1926 Charles Strite's Toastmaster was available to the public and was a huge success.</p>
+              </div>
+              <div id="kitchen-toaster-picture-6" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1933.png">
+                  <h2>1928</h2>
+                  <p>The next major breakthrough for the toaster came in 1928. Prior to then, the local bakery sold bread in loaves. But Otto Frederick Rohwedder, an inventor changed the history by creating the presliced-loaf and sealed-bag process. The Continental
+                      Baking Company altered the course of bread forever in 1930 when it introduced sliced Wonder Bread. Sales were slow at first as suspicious consumers were slow to accept a pre-sliced bread, but convenience overruled apprehension and
+                      soon everyone wanted sliced Wonder Bread on their dinner table.</p>
+              </div>
+              <div id="kitchen-toaster-picture-7" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1933.png">
+                  <h2>1933</h2>
+                  <p>By 1933, only five years after the bread slicer's introduction, American bakeries were turning out more sliced than unsliced bread. This gave a boost to another new invention: Charles Strite's spring-loaded, automatic, pop-up toaster which
+                      had been languishing on the shelves since 1926. With Rohwedder's standardized slices on the market, Strife's invention suddenly made sense. The automatic (pop-up) toaster becomes a standard in American households</p>
+              </div>
+              <div id="kitchen-toaster-picture-8" class="kitchen-toaster-TimelineSections sub-content">
+                  <img class="subImg300" src="images/toasters/300/1960.png">
+                  <h2>1960</h2>
+                  <p>The Charles Strite home toasters produced in 1926 are not very different from the toasters that can be found in many homes today. By the 1960's, the toaster was common enough and cheap enough that they were available to virtually every
+                      middle class family in America. By the 1980's the slots of toasters grew, enabling bagels and wider bread to be toasted. Additionally, heat-resistant plastic and microchip controls were used in the making of the toaster, making it
+                      even more economical and efficient than ever before.</p>
+              </div>
+            </div>
+        </section>
+        <section id="kitchen-fridge-container" class="sub-containers">
+            <a onclick="toggleSection('kitchen-fridge-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/refrigerators/150/1851.png" onclick="showTimelineSection('kitchen-fridge-default','kitchen-fridge-picture-1', 'kitchen-fridge-p1-timeline', 'kitchen-fridge-', 'kitchen-fridge-img1')" id="kitchen-fridge-img1" class="timelineImg"></div>
+                        <span id="kitchen-fridge-p1-timeline" class="TimelineNumbers">1851</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/refrigerators/150/1867.png" onclick="showTimelineSection('kitchen-fridge-default','kitchen-fridge-picture-2', 'kitchen-fridge-p2-timeline', 'kitchen-fridge-', 'kitchen-fridge-img2')" id="kitchen-fridge-img2" class="timelineImg"></div>
+                        <span id="kitchen-fridge-p2-timeline" class="TimelineNumbers">1867</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/refrigerators/150/1913.png" onclick="showTimelineSection('kitchen-fridge-default','kitchen-fridge-picture-3', 'kitchen-fridge-p3-timeline', 'kitchen-fridge-', 'kitchen-fridge-img3')" id="kitchen-fridge-img3" class="timelineImg"></div>
+                        <span id="kitchen-fridge-p3-timeline" class="TimelineNumbers">1913</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/refrigerators/150/1918.png" onclick="showTimelineSection('kitchen-fridge-default','kitchen-fridge-picture-4', 'kitchen-fridge-p4-timeline', 'kitchen-fridge-', 'kitchen-fridge-img4')" id="kitchen-fridge-img4" class="timelineImg"></div>
+                        <span id="kitchen-fridge-p4-timeline" class="TimelineNumbers">1918</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/refrigerators/150/1926.png" onclick="showTimelineSection('kitchen-fridge-default','kitchen-fridge-picture-5', 'kitchen-fridge-p5-timeline', 'kitchen-fridge-', 'kitchen-fridge-img5')" id="kitchen-fridge-img5" class="timelineImg"></div>
+                        <span id="kitchen-fridge-p5-timeline" class="TimelineNumbers">1926</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/refrigerators/150/1935.png" onclick="showTimelineSection('kitchen-fridge-default','kitchen-fridge-picture-6', 'kitchen-fridge-p6-timeline', 'kitchen-fridge-', 'kitchen-fridge-img6')" id="kitchen-fridge-img6" class="timelineImg"></div>
+                        <span id="kitchen-fridge-p6-timeline" class="TimelineNumbers">1935</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                        <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="activeKitchenUl">
+                        <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li class="activeKitchenLi"><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="kitchen-fridge-default" class="sub-content">
+                  <h2>Refrigerator</h2>
+                  <p>In 1920, a domestic refrigerator in America cost on average $600. At the height of the depression, 1929, refrigerators cost on average $292, and by 1940 were as little as $154. The fall in prices reflected an increase in production levels:
+                      10,000 units in 1920; 840,000 in 1929; and 2,720,000 in 1940. (ASRE 1943, p. 341) This level of production met export as well as domestic markets; in 1936-37 the USA exported around 200,000 domestic refrigerators. The growth in refrigerator
+                      manufacturing and consumer demand was the result of aggressive marketing campaigns. In 1923 the industry spent $45,000 on advertising; in 1931 it spent $20 million. The advertising message was one that assumed purchase; it did not
+                      dwell on the superiority of refrigerators over iceboxes, rather it explained how families could afford refrigerators, which model suited their needs best, and how to use it once purchased. Thus household ownership of refrigerators
+                      in the United States went from 10% in 1930 to 56% in 1940. By 1960 the percentage was up to 80 in the USA; in Australia it was up to 90%. (Strasser 1982: 265-267; Cowan 1983: 196)</p>
+                  <p>Early mechanical refrigerators used ammonia, methyl chloride or sulphur dioxide as refrigerants, all highly toxic gases. A series of fatal accidents in both the home and work place in the 1920s - from leaking refrigerants - encouraged
+                      researchers at General Motors and Du Pont to explore alternative refrigerants. Thomas Midgely, an engineer at General Motor's Frigidaire division, developed the gas Chlorofluorocarbon (CFC) in the late 1920s. CFCs were extremely stable,
+                      chemically inert, non-toxic, and non-flammable. Produced by DuPont under the brand name Freon, they were the miracle chemical of their time and were used by all refrigerator manufacturers until the early 1980s when the devastating
+                      effect they had upon the Ozone layer was brought to public attention. A suitable non toxic, environmentally friendly, replacement to CFCs is still being researched. In the interim, hydrofluorocarbons are used as refrigerants.</p>
+                  <p>By the 1930s, refrigerator design focused upon aesthetic and functionality. Users by now assumed that the refrigerator would operate satisfactorily. Issues that became important to the consumer were 'increased food storage volume, reduced
+                      energy consumption, greater cooling capacity, lower cost, lower noise level and improved appearance.' (ASRE 1943, p. 341) Early refrigerators resembled iceboxes, with wooden bodies and simple interiors. By the 1930s refrigerators were
+                      constructed of enamelled metal and reflected contemporary stylistic trends. Interiors were designed with convenience and use in mind. In 1933 Crosley patented the first door shelves; by the early 1940s most refrigerators had freezer
+                      compartments with mechanical release ice trays, butter compartments which maintained a slightly higher temperature to keep butter spreadable, rustproof shelving, left or right hand opening doors, utility shelves for bottles, meat trays
+                      and vegetable drawers. (Ierely 1999, p. 246)</p>
+                  <p>The development of affordable, mass produced whitegoods was to impact upon the design of household kitchens. In the post World War II period, 'the major components of the kitchen - the range, the refrigerator and the sink &hellip; - were
+                      designed to be placed one next to the other.' (Ierley 1999, p. 247) In 1945, this concept was developed further as manufacturers set standard dimensions for kitchen units and appliances. The development of new materials (eg. Laminex
+                      and Formica) and paint colours were also employed in kitchen design, so that by the mid 19th century refrigerators came in a variety of fashionable colours; the Frigidaire range by General Motors lead this trend.</p>
+                  <p>Web content composed with the online wysiwyg editor. Please subscribe for a membership to remove promotional messages like the above.</p>
+                  <p><strong>Click on the images to view more about refrigerators from that time</strong></p>
+              </div>
+              <div id="kitchen-fridge-picture-1" class="kitchen-fridge-TimelineSections sub-content">
+                  <img class="subImg300" src="images/refrigerators/300/1851.png">
+                  <h2>1851</h2>
+                  <p>Domestic refrigeration was a by-product of the desire to create ice commercially and a growing interest in shipping fresh produce overseas. 'Climate and distance forced Australians to be innovative in refrigeration.' (AATSE 1988, p. 95)
+                      Though other countries had successfully lowered temperatures mechanically by the mid 19th century, it was Australians who developed the mechanical means to manufacture ice, the precursor to modern refrigeration. In Geelong in 1851,
+                      James Harrison, using an ether compression machine, succeeded in his quest to manufacture ice on a commercial scale. He patented his process and apparatus in 1856; however the venture was not a commercial success.</p>
+              </div>
+              <div id="kitchen-fridge-picture-2" class="kitchen-fridge-TimelineSections sub-content">
+                  <img class="subImg300" src="images/refrigerators/300/1867.png">
+                  <h2>1867</h2>
+                  <p>Eugene Dominique Nicolle was another inventor based in Australia who experimented with mechanical refrigeration. In 1861 and 1863 he took out patents for an ice making machine that relied on the ammonia absorption process. In 1867 Nicolle
+                      'advertised a domestic refrigerator which was an icebox of improved design and in the seventies &hellip; he marketed a small household refrigerator based on the principle of the heat of solution of solutes.' (Farrer 1980, p. 197)</p>
+              </div>
+              <div id="kitchen-fridge-picture-3" class="kitchen-fridge-TimelineSections sub-content">
+                  <img class="subImg300" src="images/refrigerators/300/1913.png">
+                  <h2>1913</h2>
+                  <p>A shortage of natural ice in 1890 provided an impetus to experiment with mechanical means of making ice which ultimately resulted in the creation of domestic refrigerators. The first domestic refrigerator sold in America was a manually
+                      operated machine produced by Mr J.M. Larsen in 1913.</p>
+              </div>
+              <div id="kitchen-fridge-picture-4" class="kitchen-fridge-TimelineSections sub-content">
+                  <img class="subImg300" src="images/refrigerators/300/1918.png">
+                  <h2>1918</h2>
+                  <p>In 1918 the first automatic, mechanical refrigerators were sold; sixty seven of these refrigerators, made by Kelvinator and engineered by E.J. Copeland, were sold in this year.</p>
+              </div>
+              <div id="kitchen-fridge-picture-5" class="kitchen-fridge-TimelineSections sub-content">
+                  <img class="subImg300" src="images/refrigerators/300/1926.png">
+                  <h2>1926</h2>
+                  <p>In 1926, the General Electric Monitor Top came onto the market 'after eleven years of experimenting'. </p>
+              </div>
+              <div id="kitchen-fridge-picture-6" class="kitchen-fridge-TimelineSections sub-content">
+                  <img class="subImg300" src="images/refrigerators/300/1935.png">
+                  <h2>1935</h2>
+                  <p>In the 1920s they used kerosene as their power source, but in 1935 Hallstrom introduced the 'Silent Night' which ran on electricity or gas. The Silent Night was cheap to buy but incredibly expensive to run. As recorded in one oral history,
+                      'operating costs were so astronomical that Sir Edward came to an arrangement with the Electricity supply people. He subsidised the electricity accounts of people buying and operating his refrigerator.' </p>
+              </div>
+            </div>
+        </section>
+        <section id="kitchen-stove-container" class="sub-containers">
+            <a onclick="toggleSection('kitchen-stove-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/stoves/150/1890.png" onclick="showTimelineSection('kitchen-stove-default','kitchen-stove-picture-1', 'kitchen-stove-p1-timeline', 'kitchen-stove-', 'kitchen-stove-img1')" id="kitchen-stove-img1" class="timelineImg"></div>
+                        <span id="kitchen-stove-p1-timeline" class="TimelineNumbers">1890</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/stoves/150/1900.png" onclick="showTimelineSection('kitchen-stove-default','kitchen-stove-picture-2', 'kitchen-stove-p2-timeline', 'kitchen-stove-', 'kitchen-stove-img2')" id="kitchen-stove-img2" class="timelineImg"></div>
+                        <span id="kitchen-stove-p2-timeline" class="TimelineNumbers">1900</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/stoves/150/1910.png" onclick="showTimelineSection('kitchen-stove-default','kitchen-stove-picture-3', 'kitchen-stove-p3-timeline', 'kitchen-stove-', 'kitchen-stove-img3')" id="kitchen-stove-img3" class="timelineImg"></div>
+                        <span id="kitchen-stove-p3-timeline" class="TimelineNumbers">1910</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/stoves/150/1930.png" onclick="showTimelineSection('kitchen-stove-default','kitchen-stove-picture-4', 'kitchen-stove-p4-timeline', 'kitchen-stove-', 'kitchen-stove-img4')" id="kitchen-stove-img4" class="timelineImg"></div>
+                        <span id="kitchen-stove-p4-timeline" class="TimelineNumbers">1930</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/stoves/150/1940.png" onclick="showTimelineSection('kitchen-stove-default','kitchen-stove-picture-5', 'kitchen-stove-p5-timeline', 'kitchen-stove-', 'kitchen-stove-img5')" id="kitchen-stove-img5" class="timelineImg"></div>
+                        <span id="kitchen-stove-p5-timeline" class="TimelineNumbers">1940</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                        <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="activeKitchenUl">
+                        <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li class="activeKitchenLi"><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="kitchen-stove-default" class="sub-content">
+                  <h2>Stove</h2>
+                  <p>From a cooking perspective, the ingredients of the modern kitchen came together only about 200 years ago with the first appearance of a true range&mdash;that is, a flat-topped heat source combined with an oven. Credit goes to Benjamin
+                      Thompson, better known as Count Rumford, who designed the earliest such cooking devices to scientifically control heat as early as the 1790s. Rumford was an engineering pioneer who made the first scientific studies of heat transfer
+                      while perfecting methods for boring cannons. Better known today as the inventor of the Thermos Bottle and the fireplace that bears his name, Rumford&rsquo;s particular genius in the kitchen was to take the cooking fire out of the open
+                      hearth and put it in a box. </p>
+                  <p>A kitchen equipped according to Rumford&rsquo;s ideas was dominated by a large range built of brick masonry. Though sometimes connected to the chimney mass, such ranges might also be given their own space. The breakthrough idea was a flat
+                      top perforated by round ports of different sizes that opened to the fire below, into which the cook would lower Rumford-designed pots and pans, similar to the operation of some institutional ranges of today. Cast iron seems to have
+                      appeared in later versions for tops and firebox doors, and the same kitchen might also include another Rumford innovation: an iron drum with a door that was built into the hearth masonry and called the Rumford Roaster.</p>
+                  <p>The growth of American coal and iron mining in the 1820s made cast iron the wonder material of the 19th century and led to a prolific industry in making stoves for cooking as well as heating. Cast iron could take the repeated temperature
+                      swings of hot and cold, and it was an ideal medium for casting into complex, prefabricated parts, as well as for decorative surface ornament. Early metal stoves imported in large numbers from Holland and England came in a variety of
+                      boxy designs, but by the 1840s a number of basic stove types&mdash;used for laundry, heating, and cooking&mdash;had been worked out and were being manufactured widely in America.</p>
+                  <p>Whatever their use, early stoves were designed to burn wood, but after the Civil War, coal-burning designs came on the scene. While stoves made for cooking as well as heating might be retrofitted to exhaust out an existing hearth and flue,
+                      in the best situations they were connected by an umbilical metal stove pipe to a new kind of chimney that was smaller in flue diameter to enhance the draw for the stove. In pre-1830s houses, where there might be only a large central
+                      chimney and open cooking hearth, whole new kitchen ells were often built just to accommodate the radically different range.</p>
+                  <p><strong>Click on the images to view more about stoves from that time</strong></p>
+              </div>
+              <div id="kitchen-stove-picture-1" class="kitchen-stove-TimelineSections sub-content">
+                  <img class="subImg300" src="images/stoves/300/1890.png">
+                  <h2>1890</h2>
+                  <p>The vapor stove, common by the 1890s, capitalized on the new availability of petroleum products in areas where piped-in gas was not available. Also made of iron and sheet steel, these stoves were light and portable with a styling not unlike
+                      the treadle sewing machines of the day.</p>
+              </div>
+              <div id="kitchen-stove-picture-2" class="kitchen-stove-TimelineSections sub-content">
+                  <img class="subImg300" src="images/stoves/300/1900.png">
+                  <h2>1900</h2>
+                  <p>After 1900, though, gas companies were seeing electric power companies nibble away at their bread-and-butter business &mdash;lighting&mdash;so they turned to the kitchen as the source of a new market. Since gas ranges had no need for the
+                      heavy, cast iron box of a wood- or coal-burning range, they could be built in much lighter and more compact forms. Plus gas ranges gave off much less excess heat and had no need for a chimney, making them ideal for the new, smaller
+                      kitchens of houses like bungalows. What&rsquo;s more, they were light enough to stand on tall, slender legs to become, along with sinks, one of several pieces of freestanding furniture in the early modern kitchen.</p>
+              </div>
+              <div id="kitchen-stove-picture-3" class="kitchen-stove-TimelineSections sub-content">
+                  <img class="subImg300" src="images/stoves/300/1910.png">
+                  <h2>1910</h2>
+                  <p>By the 1910s the design of a gas cook stove had arrived at the iconic look of the cabinet range&mdash;a burner top at left or right of a baking oven with a broiler below. Ranges were usually constructed of sheet metal and cast iron with
+                      a baked enamel finish. Gas fed the burners through an exposed manifold running across the front that was controlled by wheel handle valves or utilitarian cocks. By the Roaring Twenties, the cabinet range hit its stride as a five-burner,
+                      two-oven appliance. A popular sales hook was porcelain enameling of all surfaces in black, white, or grey, but the big breakthrough was the invention of reliable heat regulators for controlled oven temperatures.</p>
+              </div>
+              <div id="kitchen-stove-picture-4" class="kitchen-stove-TimelineSections sub-content">
+                  <img class="subImg300" src="images/stoves/300/1930.png">
+                  <h2>1930</h2>
+                  <p>In the early 1930s, gas range manufacturers found a way to hide the gas manifold behind the sheet metal body, and cookers on spindly cabriole legs quickly assumed a new marketing persona as the chest of drawers range. Covers that pulled
+                      down over the burner left the appliance hardly recognizable as a stove, according to ads. In the tight times of the Depression, some manufacturers suggested their ranges might even double as tables. Drawer-type handles and decorative
+                      legs continued the notion that ranges were furniture&mdash;even down to paint finishes that aped materials like marble or wood.</p>
+              </div>
+              <div id="kitchen-stove-picture-5" class="kitchen-stove-TimelineSections sub-content">
+                  <img class="subImg300" src="images/stoves/300/1940.png">
+                  <h2>1940</h2>
+                  <p>By the end of the decade, the built-in look had arrived, and gas and electric ranges alike suddenly stopped trying to masquerade as freestanding cabinets. The winds of streamline design were blowing through the kitchen, so ranges grew
+                      dashboard-like backs that hugged the wall and square-cut corners that fit flush with countertops at either side. Legs became greatly reduced or disappeared altogether. Inspired by the new aerodynamic contours of planes, cars, and trains,
+                      designers were adding airfoil curves and chrome speed lines to the most stationary of kitchen appliances. The trend continued through the 1940s and into the post-war years, when ranges became blessed with as many timers, automatic
+                      controls, and gadgets as the new automobile-driven economy could connive&mdash;a fitting domestic food preparation station for the atomic-era lifestyle to come.</p>
+              </div>
+            </div>
+        </section>
+        <section id="livingRoom-washingMachine-container" class="sub-containers">
+            <a onclick="toggleSection('livingRoom-washingMachine-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/washing-machines/150/1846.png" onclick="showTimelineSection('livingRoom-washingMachine-default','livingRoom-washingMachine-picture-1', 'livingRoom-washingMachine-p1-timeline', 'livingRoom-washingMachine-', 'livingRoom-washingMachine-img1')"
+                                id="livingRoom-washingMachine-img1" class="timelineImg"></div>
+                        <span id="livingRoom-washingMachine-p1-timeline" class="TimelineNumbers">1846</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/washing-machines/150/1900.png" onclick="showTimelineSection('livingRoom-washingMachine-default','livingRoom-washingMachine-picture-2', 'livingRoom-washingMachine-p2-timeline', 'livingRoom-washingMachine-', 'livingRoom-washingMachine-img2')"
+                                id="livingRoom-washingMachine-img2" class="timelineImg"></div>
+                        <span id="livingRoom-washingMachine-p2-timeline" class="TimelineNumbers">1900</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/washing-machines/150/1911.png" onclick="showTimelineSection('livingRoom-washingMachine-default','livingRoom-washingMachine-picture-3', 'livingRoom-washingMachine-p3-timeline', 'livingRoom-washingMachine-', 'livingRoom-washingMachine-img3')"
+                                id="livingRoom-washingMachine-img3" class="timelineImg"></div>
+                        <span id="livingRoom-washingMachine-p3-timeline" class="TimelineNumbers">1911</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/washing-machines/150/1920.png" onclick="showTimelineSection('livingRoom-washingMachine-default','livingRoom-washingMachine-picture-4', 'livingRoom-washingMachine-p4-timeline', 'livingRoom-washingMachine-', 'livingRoom-washingMachine-img4')"
+                                id="livingRoom-washingMachine-img4" class="timelineImg"></div>
+                        <span id="livingRoom-washingMachine-p4-timeline" class="TimelineNumbers">1920</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/washing-machines/150/1930.png" onclick="showTimelineSection('livingRoom-washingMachine-default','livingRoom-washingMachine-picture-5', 'livingRoom-washingMachine-p5-timeline', 'livingRoom-washingMachine-', 'livingRoom-washingMachine-img5')"
+                                id="livingRoom-washingMachine-img5" class="timelineImg"></div>
+                        <span id="livingRoom-washingMachine-p5-timeline" class="TimelineNumbers">1930</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/washing-machines/150/1940.png" onclick="showTimelineSection('livingRoom-washingMachine-default','livingRoom-washingMachine-picture-6', 'livingRoom-washingMachine-p6-timeline', 'livingRoom-washingMachine-', 'livingRoom-washingMachine-img6')"
+                                id="livingRoom-washingMachine-img6" class="timelineImg"></div>
+                        <span id="livingRoom-washingMachine-p6-timeline" class="TimelineNumbers">1940</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/washing-machines/150/1950.png" onclick="showTimelineSection('livingRoom-washingMachine-default','livingRoom-washingMachine-picture-7', 'livingRoom-washingMachine-p7-timeline', 'livingRoom-washingMachine-', 'livingRoom-washingMachine-img7')"
+                                id="livingRoom-washingMachine-img7" class="timelineImg"></div>
+                        <span id="livingRoom-washingMachine-p7-timeline" class="TimelineNumbers">1950</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container',, 'Bathroom')">Hair Dryer</a></li>
+                        <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="activeLivingRoomUl">
+                        <li class="activeLivingRoomLi"><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="livingRoom-washingMachine-default" class="sub-content">
+                  <h2>Washing Machine</h2>
+                  <p>For centuries, people on sea voyages washed their clothes by placing the dirty laundry in a strong cloth bag, and tossing it overboard, letting the ship drag the bag for hours. The principle was sound: forcing water through clothes to
+                      remove dirt. Catharine Beecher, an early advocate of bringing order and dignity to housework, called laundry "the American housekeeper&rsquo;s hardest problem". Women from all classes tried to find ways to get relief from doing laundry.
+                      Some hired washerwomen and others used commercial laundries. Eventually mechanical aids lightened the load.</p>
+                  <p>"In the early days, without running water, gas, or electricity even the most simplified hand-laundry used staggering amounts of time and labor. One wash, one boiling and one rinse used about fifty gallons of water&mdash;or four hundred
+                      pounds&mdash;which had to be moved from pump or well or faucet to stove and tub, in buckets and wash boilers that might weigh as much as forty or fifty pounds. Rubbing, wringing, and lifting water-laden clothes and linens, including
+                      large articles like sheets, tablecloths, and men&rsquo;s heavy work clothes, wearied women&rsquo;s arms and wrists and exposed them to caustic substances.</p>
+                  <p>They lugged weighty tubs and baskets full of wet laundry outside, picked up an article, hung it on the line, and returned to take it all down; they ironed by heating several irons on the stove and alternating them as they cooled, never
+                      straying far from the hot stove."</p>
+                  <p>From a technological perspective, washing machine manufacturers faced a number of challenges. These included discovering a method of transferring power from the motor to the mechanism, finding a suitable motor with sufficient initial starting
+                      torque, and ensuring that the operator did not get an electrical shock during operation.</p>
+                  <p>In the transference of power, some washing machines were chain driven, some belt driven and others used shafts and gears.</p>
+                  <p>To overcome the initial resistance in starting a washing machine, a fractional horsepower motor which would not burn out or overheat during the start-up period was used. This was usually a 1/8 or &frac14; horsepower motor, manufactured
+                      out-of-house by Westinghouse or Robbins and Myers.</p>
+                  <p>To prevent electric shocks, the stator and rotor of the machine were enclosed in a housing equipped with a fan to prevent overheating.</p>
+                  <p>Improvements</p>
+                  <p>From the customer satisfaction perspective, a machine that would wash without shredding the clothes needed to be developed. This meant that if the original scrubbing machines were used, the machine had to be operated at different speeds
+                      for different textiles. To overcome the problem, washing machines that sloshed water through the clothing by agitation were developed. Either the tub moved or a baffle placed inside the tub moved.</p>
+                  <p>Early washing machines had a heavy, dirty, cast-iron mechanism mounted on the inside of the tub lid. The introduction of a metal tub and reduction gears to replace this bulky apparatus was a great improvement.</p>
+                  <p><strong>Click on the images to view more about washing machines from that time</strong></p>
+              </div>
+              <div id="livingRoom-washingMachine-picture-1" class="livingRoom-washingMachine-TimelineSections sub-content">
+                  <img class="subImg300" src="images/washing-machines/300/1846.png">
+                  <h2>1846</h2>
+                  <p>The earliest manual washing machines imitated the motion of the human hand on the washboard, by using a lever to move one curved surface over another and rubbing clothes between two ribbed surfaces. This type of washer was first patented
+                      in the United States in 1846 and survived as late as 1927 in the Montgomery Ward catalogue.</p>
+              </div>
+              <div id="livingRoom-washingMachine-picture-2" class="livingRoom-washingMachine-TimelineSections sub-content">
+                  <img class="subImg300" src="images/washing-machines/300/1900.png">
+                  <h2>1900</h2>
+                  <p>The first electric clothes washers, in which a motor rotated the tub, were introduced into America about 1900. The motor was not protected beneath the machine and water often dripped into it causing short-circuits and jolting shocks.</p>
+              </div>
+              <div id="livingRoom-washingMachine-picture-3" class="livingRoom-washingMachine-TimelineSections sub-content">
+                  <img class="subImg300" src="images/washing-machines/300/1911.png">
+                  <h2>1911</h2>
+                  <p>By 1911, it was possible to buy oscillating, cylinder, domestic washing machines with sheet metal tubs mounted on angle-iron frames with perforated metal or wooden slat cylinders inside.</p>
+              </div>
+              <div id="livingRoom-washingMachine-picture-4" class="livingRoom-washingMachine-TimelineSections sub-content">
+                  <img class="subImg300" src="images/washing-machines/300/1920.png">
+                  <h2>1920</h2>
+                  <p>By 1920, the coopered wooden tub was no longer being manufactured.</p>
+                  <p>Beatty Brothers of Fergus, Ontario was the first company to produce an agitator washing machine. The early Beatty machines had ribbed copper tubs which were nickel or nickel-chromium plated. In the US, the first firm to adopt agitator
+                      technology was Maytag. The vertical orientation of these machines became the industry standard replacing the horizontal rotating axis of earlier machines.</p>
+                  <p>Starting in the 1920s, white enamelled sheet metal replaced the copper tub and angle-iron legs. A number of Canadian machines were offered with built-in gas or electric water heaters</p>
+              </div>
+              <div id="livingRoom-washingMachine-picture-5" class="livingRoom-washingMachine-TimelineSections sub-content">
+                  <img class="subImg300" src="images/washing-machines/300/1930.png">
+                  <h2>1930</h2>
+                  <p>By the 1930s, domestic water heaters were in many homes and the washing machine heater was of little use. The addition of a motor-driven drain pump at this time moved the machine one step closer to complete automaticity.</p>
+                  <p>The next development of the washing machine was the fitting of a clock timing device which allowed the machine to be set to operate for a pre-determined length of wash cycle. Now, the operator no longer needed to constantly monitor its
+                      action.</p>
+              </div>
+              <div id="livingRoom-washingMachine-picture-6" class="livingRoom-washingMachine-TimelineSections sub-content">
+                  <img class="subImg300" src="images/washing-machines/300/1940.png">
+                  <h2>1940</h2>
+                  <p>By the early 1940s, enamelled steel was used and sold as being more sanitary, easier to clean and longer lasting than the other finishes. The sheet-metal skirt was also designed to extend below the level of the motor mount.</p>
+              </div>
+              <div id="livingRoom-washingMachine-picture-7" class="livingRoom-washingMachine-TimelineSections sub-content">
+                  <img class="subImg300" src="images/washing-machines/300/1950.png">
+                  <h2>1950</h2>
+                  <p>By the early 1950s, many American manufacturers were supplying machines with a spin-dry feature to replace the wringer which removed buttons, and caused accidents involving hair and hands. In 1957, GE introduced a washing machine equipped
+                      with 5 push buttons to control wash temperature, rinse temperature, agitation speed and spin speed.</p>
+              </div>
+            </div>
+        </section>
+        <section id="livingRoom-dryer-container" class="sub-containers">
+            <a onclick="toggleSection('livingRoom-dryer-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1887.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-1', 'livingRoom-dryer-p1-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img1')" id="livingRoom-dryer-img1"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p1-timeline" class="TimelineNumbers">1892</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1911.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-2', 'livingRoom-dryer-p2-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img2')" id="livingRoom-dryer-img2"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p2-timeline" class="TimelineNumbers">1915</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1938.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-3', 'livingRoom-dryer-p3-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img3')" id="livingRoom-dryer-img3"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p3-timeline" class="TimelineNumbers">1938</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1950.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-4', 'livingRoom-dryer-p4-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img4')" id="livingRoom-dryer-img4"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p4-timeline" class="TimelineNumbers">1946</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1960.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-5', 'livingRoom-dryer-p5-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img5')" id="livingRoom-dryer-img5"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p5-timeline" class="TimelineNumbers">1958</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1965.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-6', 'livingRoom-dryer-p6-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img6')" id="livingRoom-dryer-img6"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p6-timeline" class="TimelineNumbers">1965</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1974.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-7', 'livingRoom-dryer-p7-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img7')" id="livingRoom-dryer-img7"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p7-timeline" class="TimelineNumbers">1974</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1983.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-8', 'livingRoom-dryer-p8-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img8')" id="livingRoom-dryer-img8"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p8-timeline" class="TimelineNumbers">1983</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/dryers/150/1997.png" onclick="showTimelineSection('livingRoom-dryer-default','livingRoom-dryer-picture-9', 'livingRoom-dryer-p9-timeline', 'livingRoom-dryer-', 'livingRoom-dryer-img9')" id="livingRoom-dryer-img9"
+                                class="timelineImg"></div>
+                        <span id="livingRoom-dryer-p9-timeline" class="TimelineNumbers">2000</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                        <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="activeLivingRoomUl">
+                        <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li class="activeLivingRoomLi"><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="livingRoom-dryer-default" class="sub-content">
+                  <h2>Dryer</h2>
+                  <p>If you ask about some of the most essential home appliances, you know that dryers would be part of that list. The convenience of having your clothes dried just after washing them is something that one can really get used to. Because of
+                      the availability and accessibility of these appliances, clotheslines and clothes pins have become a thing of the past for most of us. Why wait for the sun to dry your clothes when you have a dryer handy at home?</p>
+                  <p>Dryers also go way back, as long as washers have been. The interesting thing is that the basic concept of clothes-drying has been the same until now. You have a drum with ventilation holes for the clothes to be dried with from a heat source.
+                      Though made more effective and efficient today due to advances in technology, the foundational design of the dryer has not undergone much changes throughout the years.</p>
+                  <p>As far as records go, the first dryer was created during this period. Credit goes to M. Pochon from France. The first models of the dryers were also called "ventilators." The first dryers featured a metal drum with vents on them, and were
+                      placed over a fire to have the clothes dried. The machine has a crank that one has to turn manually, pretty much like a rotisserie.</p>
+                  <p>The idea seemed right and simple. The only problem was, as you can gather, the clothes would end up smelling like smoke. And that was the least of your concern. Other concerns were that the clothes would get sooty, which would make washing
+                      the clothes in the first place pretty much pointless; and that there were times that the clothes would catch fire and eventually burn. It was a nice idea, but the execution of the idea would need some more work.</p>
+                  <p><strong>Click on the images to view more about dryers from that time</strong></p>
+              </div>
+              <div id="livingRoom-dryer-picture-1" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1887.png">
+                  <h2>1892</h2>
+                  <p>In this year, the first patent for a dryer was given to George T. Simpson. There were several improvements that can be seen on Simpson's model. It featured a rack for the clothes, and the heat source was from a stove, rather than from
+                      an open fire. That took care of some of the difficulties presented by the previous model of the dryer. The patent for his invention was dated June 7, 1982.</p>
+              </div>
+              <div id="livingRoom-dryer-picture-2" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1911.png">
+                  <h2>1915</h2>
+                  <p>Electric dryers were available to the market at this time. The only problem was that the prices of such appliances at the time were prohibitive. You need to pay a lot of money to enjoy the advantage of having an electric dryer.</p>
+              </div>
+              <div id="livingRoom-dryer-picture-3" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1938.png">
+                  <h2>1938</h2>
+                  <p>The Hamilton Manufacturing Company started selling automatic clothes dryers from the invention of J. Ross Moore. Moore developed a dryer model that has the drum shape that we're all familiar with today. Moore also made gas and electricity-powered
+                      models. On its debut, the model was marketed under the name "June Day."</p>
+              </div>
+              <div id="livingRoom-dryer-picture-4" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1950.png">
+                  <h2>1946</h2>
+                  <p>This year saw some very good additions to the clothes dryer. Dryers during this time came out with controls moved to the front, the inclusion of a timer, the addition of an exhaust for moisture from the drying process, a cool-down cycle,
+                      and temperature controls. One can say that as early as this year, you could find the beginnings of the features of the dryers that we see today.</p>
+              </div>
+              <div id="livingRoom-dryer-picture-5" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1960.png">
+                  <h2>1958</h2>
+                  <p>This is the year that the negative pressure dryer debuted. Aside from that, the dimension of most models was 30-inch wide, so it can handle a pretty big load of laundry. The following year saw the introduction of the dryness sensor. What
+                      this sensor does is turn off the dryer once the clothes in the tub are determined to be dry. This feature saved people a lot of time and money in terms of energy bills.</p>
+              </div>
+              <div id="livingRoom-dryer-picture-6" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1965.png">
+                  <h2>1965</h2>
+                  <p>On this year, dryer models with permanent press cycles were made available to the buying public.</p>
+              </div>
+              <div id="livingRoom-dryer-picture-7" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1974.png">
+                  <h2>1974</h2>
+                  <p>From this point forward, electric starters could be found on gas-powered dryers. Pretty much, people were using the dryer as some kind of oven. The feature added to dryers during this period were microelectronic controllers. These were
+                      meant to time and control drying cycles. Aside from the convenience, it also made for savings on energy bills.</p>
+              </div>
+              <div id="livingRoom-dryer-picture-8" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1983.png">
+                  <h2>1983</h2>
+                  <p>Delayed starters for dryers first came out during this period. Delayed start timers are useful features for people who live in areas where the electricity and energy rates are cheaper during the nighttime or off-peak hours. This feature
+                      also allowed people to save on their energy bills.</p>
+              </div>
+              <div id="livingRoom-dryer-picture-9" class="livingRoom-dryer-TimelineSections sub-content">
+                  <img class="subImg300" src="images/dryers/300/1997.png">
+                  <h2>2000s</h2>
+                  <p>During present times, the main drive for dryers is to be energy-efficient appliances. If it can do the job with less energy consumption, the better. There have been several manufacturers aiming for this ideal, not just because of government
+                      standards, but also because the market is heading toward buying "greener" machines. Aside from the environmental virtues, it also means more savings for the consumer, that's why people are opting to buy more green washers and dryers.</p>
+                  <p>For present models, one can also find digital displays and LCD touchscreens for the controls. Added to those are the attention to detail when it comes to dryer settings. Since machine drying can damage and shrink fabric, you can now find
+                      several settings that are meant to diminish fabric damage during the drying process. With just a push of a button, the dryer will automatically set the drying time, temperature, and speed to take care of the fabric.</p>
+                  <p>Another useful feature that you can find in modern models are the noise and vibration reduction features. As the names suggest, these added features allow for quieter dryer operation. You can also find that some dryers have self-adjusting
+                      suspension systems to prevent excessive shaking and maintain dryer stability. These features are attractive for people who live in apartments and condos.</p>
+              </div>
+            </div>
+        </section>
+        <section id="livingRoom-iron-container" class="sub-containers">
+            <a onclick="toggleSection('livingRoom-iron-container')" class="chevron"></a>
+            <div class="image_slider_wrapper">
+                <ul class="image_slider">
+                    <li>
+                        <div class="imgTint"><img src="images/irons/150/1852.png" onclick="showTimelineSection('livingRoom-iron-default','livingRoom-iron-picture-1', 'livingRoom-iron-p1-timeline', 'livingRoom-iron-', 'livingRoom-iron-img1')" id="livingRoom-iron-img1" class="timelineImg"></div>
+                        <span id="livingRoom-iron-p1-timeline" class="TimelineNumbers">1852</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/irons/150/1885.png" onclick="showTimelineSection('livingRoom-iron-default','livingRoom-iron-picture-2', 'livingRoom-iron-p2-timeline', 'livingRoom-iron-', 'livingRoom-iron-img2')" id="livingRoom-iron-img2" class="timelineImg"></div>
+                        <span id="livingRoom-iron-p2-timeline" class="TimelineNumbers">1885</span>
+                    </li>
+                    <li>
+                        <div class="imgTint"><img src="images/irons/150/1900.png" onclick="showTimelineSection('livingRoom-iron-default','livingRoom-iron-picture-3', 'livingRoom-iron-p3-timeline', 'livingRoom-iron-', 'livingRoom-iron-img3')" id="livingRoom-iron-img3" class="timelineImg"></div>
+                        <span id="livingRoom-iron-p3-timeline" class="TimelineNumbers">1905</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub-nav">
+                <li>
+                    <h2>Bathroom</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('bathroom-hairDryer-container', 'Bathroom')">Hair Dryer</a></li>
+                        <li><a onclick="subNavToggle('bathroom-fans-container', 'Bathroom')">Fans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Kitchen</h2>
+                    <ul class="hiddenUl">
+                        <li><a onclick="subNavToggle('kitchen-coffeeMaker-container', 'Kitchen')">Coffee Maker</a></li>
+                        <li><a onclick="subNavToggle('kitchen-toaster-container', 'Kitchen')">Toaster</a></li>
+                        <li><a onclick="subNavToggle('kitchen-fridge-container', 'Kitchen')">Fridge</a></li>
+                        <li><a onclick="subNavToggle('kitchen-stove-container', 'Kitchen')">Stove</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Living Room</h2>
+                    <ul class="activeLivingRoomUl">
+                        <li><a onclick="subNavToggle('livingRoom-washingMachine-container', 'LivingRoom')">Washing Machine</a></li>
+                        <li><a onclick="subNavToggle('livingRoom-dryer-container', 'LivingRoom')">Dryer</a></li>
+                        <li class="activeLivingRoomLi"><a onclick="subNavToggle('livingRoom-iron-container', 'LivingRoom')">Iron</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix">
+              <div id="livingRoom-iron-default" class="sub-content">
+                  <h2>Dryer</h2>
+                  <p>Blacksmiths started forging simple flat irons in the late Middle Ages. Plain metal irons were heated by a fire or on a stove. Some were made of stone, like these soapstone irons from Italy. Earthenware and terracotta were also used, from
+                      the Middle East to France and the Netherlands.</p>
+                  <p>Flat irons were also called sad irons or smoothing irons. Metal handles had to be gripped in a pad or thick rag. Some irons had cool wooden handles and in 1870 a detachable handle was patented in the US. This stayed cool while the metal
+                      bases were heated and the idea was widely imitated. (See these irons from Central Europe.) Cool handles stayed even cooler in "asbestos sad irons". The sad in sad iron (or sadiron) is an old word for solid, and in some contexts this
+                      name suggests something bigger and heavier than a flat iron. Goose or tailor's goose was another iron name, and this came from the goose-neck curve in some handles. In Scotland people spoke of gusing (goosing) irons.</p>
+                  <p>You'd need at least two irons on the go together for an effective system: one in use, and one re-heating. Large households with servants had a special ironing-stove for this purpose. Some were fitted with slots for several irons, and a
+                      water-jug on top.</p>
+                  <p>At home, ironing traditional fabrics without the benefit of electricity was a hot, arduous job. Irons had to be kept immaculately clean, sand-papered and polished. They must be kept away from burning fuel, and be regularly but lightly
+                      greased to avoid rusting. Beeswax prevented irons sticking to starched cloth. Constant care was needed over temperature. Experience would help decide when the iron was hot enough, but not so hot that it would scorch the cloth. A well-known
+                      test was spitting on the hot metal, but Charles Dickens describes someone with a more genteel technique in The Old Curiosity Shop. She held "the iron at an alarmingly short distance from her cheek, to test its temperature..."</p>
+                  <p>The same straightforward "press with hot metal" technique can be seen in Egypt where a few traditional "ironing men" (makwagi) still use long, heavy pieces of iron, pressed across the cloth with their feet. Berber people in Algeria traditionally
+                      use heated metal ovals on long handles, called fers kabyles (Kabyle irons) in France, where they were adopted for intricate ironing tasks.</p>
+                  <p>If you make the base of your iron into a container you can put glowing coals inside it and keep it hot a bit longer. This is a charcoal iron, and the photograph (right) shows one being used in India, where it's not unusual to have your
+                      ironing done by a "press wallah" at a stall with a brazier nearby. Notice the hinged lid and the air holes to allow the charcoal to keep smoldering. These are sometimes called ironing boxes, or charcoal box irons, and may come with
+                      their own stand.</p>
+                  <p>For centuries charcoal irons have been used in many different countries. When they have a funnel to keep smoky smells away from the cloth, they may be called chimney irons. Antique charcoal irons are attractive to many collectors, while
+                      modern charcoal irons are manufactured in Asia and also used in much of Africa. Some of these are sold to Westerners as reproductions or replica "antiques".</p>
+                  <p>Some irons were shallower boxes and had fitted "slugs" or "heaters" - slabs of metal - which were heated in the fire and inserted into the base instead of charcoal. It was easier to keep the ironing surface spotlessly clean, away from
+                      the fuel, than with flatirons or charcoal irons. Brick inserts could be used for a longer-lasting, less intense heat. These are box or slug irons, once known as ironing boxes too. In some countries they are called ox-tongue irons after
+                      a particular shape of insert.</p>
+                  <p>Late 19th century iron designs experimented with heat-retaining fillings. Designs of this period became more and more ingenious and complicated, with reversible bases, gas jets and other innovations. See some inventive US models here.
+                      By 1900 there were electric irons in use on both sides of the Atlantic.</p>
+                  <p>The search for a foolproof "self-heating flat iron" was under way by the mid-19th century.</p>
+                  <p><strong>Click on the images to view more about flat irons from that time</strong></p>
+              </div>
+              <div id="livingRoom-iron-picture-1" class="livingRoom-iron-TimelineSections sub-content">
+                  <img class="subImg300" src="images/irons/300/1852.png">
+                  <h2>1852</h2>
+                  <p>In 1852 a patent was issued in the US for a new, improved charcoal-burning iron which would make "practicable the permanent heating of smoothing irons". By 1860 there were gas irons available in several countries, with rubber tubing to
+                      connect them to gas light fittings or to canisters, and then there were numerous designs for irons with internal burners and little piggyback tanks of liquid fuel.</p>
+                  <p>Any inventor who had ever been near the room where ironing was done knew it was a hot, tiring job. Whatever the weather, the housewife/laundress would work beside a hot stove or hearth, with at least two irons, probably three, moving them
+                      from stove to ironing table and back again in a cycle of heating, pressing and re-heating. Meanwhile she must keep the irons spotlessly clean with no trace of ash to soil the clean linen.</p>
+                  <p>As we now know, the electric iron solved these problems better than any other self-heating apparatus, while charcoal-filled irons remain popular today in many less-electrified parts of the world.</p>
+              </div>
+              <div id="livingRoom-iron-picture-2" class="livingRoom-iron-TimelineSections sub-content">
+                  <img class="subImg300" src="images/irons/300/1885.png">
+                  <h2>1883</h2>
+                  <p>By the early 1880s more than one person had considered powering ironing with electricity, but Henry W. Seely of New York was the first inventor to make this idea workable and patent it too. Seely developed a design in 1881, got a patent
+                      in 1882, and then worked with his partner, Dyer, to patent a different "electric flat iron" in 1883.</p>
+                  <p>Seely and Dyer had doubts about having the iron continuously plugged in, as "connecting [it] permanently with the circuit [...] may be inconvenient in some cases". They invented a sort of "cordless" iron, on a stand heated by electricity.
+                      (Lower picture left) This echoed developments in using gas for ironing, where gas-fed iron-heaters or ironing-stoves were serious rivals to irons on lengths of rubber tubing.</p>
+                  <p>Uncertain claims that there was an even earlier electric iron in France seem to be connected with two different dates given to an early French iron in London's Science Museum. However, this French museum expert is skeptical about such
+                      claims.
+                  </p>
+              </div>
+              <div id="livingRoom-iron-picture-3" class="livingRoom-iron-TimelineSections sub-content">
+                  <img class="subImg300" src="images/irons/300/1900.png">
+                  <h2>1905</h2>
+                  <p>By the early 20th century enthusiasm was building for the new electric smoothing irons: clean, powerful, adjustable, and labour-saving.</p>
+                  <p>They didn't make you roasting hot, and they didn't carry soot or ash. As the advertisement says, they were better than three flat irons. And yet, there were still plenty of traditionalists who stuck with flat irons (aka sad irons) well
+                      into the middle of the 20th century, even when they lived in a home with a good electricity supply.</p>
+                  <p>The Hotpoint iron, designed by Earl H. Richardson of Ontario, California, was launched in 1905, and was the first electric iron to have any commercial success. By the 1920s enough people had homes wired for electricity for electric clothes
+                      irons to spread fast across the US. They were also selling well in some parts of Europe.</p>
+              </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="wrapper">
+          <p>&copy; Beth Mitchell</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
