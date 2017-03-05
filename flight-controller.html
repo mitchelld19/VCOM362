@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Flight Controller | DRONEZONE</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="styles/reset.css" type="text/css" rel="stylesheet">
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>		
+		<header>
+			<section class="navigation">
+			  <div class="nav-container">
+			    <div class="brand">
+			        <a href="index.html" title="Home" id="logo"><span>DRONE</span>ZONE</a>
+			    </div>
+			    <nav>
+			    	<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+			    	<ul class="nav-list">
+			        	<li><a title="How to Build">How to Build</a>
+			          		<ul class="nav-dropdown">
+			          			<li><a href="frame.html" title="Frame">Frame</a></li>
+								<li><a href="flight-controller.html" title="Flight Controller">Flight Controller</a></li>
+								<li><a href="assembly.html" title="Assembly">Assembly</a></li>
+			          		</ul>
+			        	</li>
+			            <li><a title="Resources">Beginner Resources</a>
+				        	<ul class="nav-dropdown">
+				        		<li><a href="howToFly.html" title="How to Fly">How to Fly</a></li>
+								<li><a href="beforeYouBuy.html" title="Before you Buy">Before you Buy</a></li>
+								<li><a href="types.html" title="Types">Types</a>
+				        	</ul>
+				        </li>
+				        <li><a title="Regulations">Regulations</a>
+				        	<ul class="nav-dropdown">
+				        		<li><a href="recreational.html" title="Recreational">Recreational</a></li>
+								<li><a href="registration.html" title="Registration">Registration</a></li>
+				        	</ul>
+				        </li>
+				        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+					</ul>
+			    </nav>
+			  </div>
+			</section>
+			<div class="howToBanner"><h1 id="flight-controller-title">Flight Controller</h1></div>
+		</header>
+		<div id="wrapper">	
+			<section class="flight-controller-step">
+				<h2>Main Processor</h2>
+				<div class="flight-controller-step-info">
+					<p>8051 vs AVR vs PIC vs ARM: These microcontroller families form the basis of most current flight controllers. Arduino is AVR based (ATmel) and the community seems to focus on MultiWii as being the preferred code. Microchip is the primary manufacturer of PIC chips. It is difficult to argue that one is better than the other, and it really comes down to what the software can do. ARM (STM32 for example) uses 16/32-bit architecture, whereas AVR and PIC tens to use 8 / 16-bit (described below). As single board computers become less and less expensive, expect to see a new generation of flight controllers which can run full operating systems such as Linux or Android.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>CPU</h3>
+					<p>Normally these are in multiples of 8 (8-bit, 16-bit, 32-bit, 64-bit) and is a reference to the size of the primary registers in a CPU. Microprocessors can only process a set (maximum) number of bits in memory at a time. The more bits a microcontroller can handle, the more accurate (and faster) the processing will be. For example processing a 16-bit variable on an 8-bit processor is a bit of a chose, whereas on a 32-bit processor it is very fast. Note that the code also needs to work with the right number of bits, and at the time of this article, very few programs use code optimized for 32 bits.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Operating frequency</h3> 
+					<p>The frequency at which the main processor operates. Frequency is measured in &ldquo;Hertz&rdquo; (cycles per second). This is also commonly referred to as the &ldquo;clock rate&rdquo;. The higher the operating frequency, the faster it can process data.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Program Memory / Flash:</h3> 
+					<p>The flash memory is essentially where the main code is stored. If the program is complex it may take up quite a bit of space. Obviously the greater the memory, the more information it can store. Memory is also useful when storing in-flight data such as GPS coordinates, flight plans, automated camera movement etc. The code loaded to the flash memory remains on the chip even if it power is cut.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>SRAM</h3> 
+					<p>SRAM stands for &ldquo;Static Random-Access Memory&rdquo;, and is the space on the chip which is used when making calculations. The data stored in RAM is lost when power is cut. The higher the RAM, the more information will be &ldquo;readily available&rdquo; for calculations at any given time.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>EEPROM</h3> 
+					<p>Electrically Erasable Programmable Read-Only Memory (EEPROM) is normally used to store information which does not change in flight, such as settings, unlike data stored in SRAM which can relate to sensor data etc.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Additional I/O Pins:</h3> 
+					<p>Most microcontrollers have a lot of digital and analog input and output pins, and on a flight controller, some are used by the sensors, others for communication and some may remain for general input and output.. These additional pins can be connected to RC servos, gimbal systems, buzzers and more.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>A/D converter</h3> 
+					<p>Should the sensors used onboard output analog voltage (normally 0-3.3V or 0-5V), the analog to digital converter needs to translate these readings into digital data. Just like the CPU, the number of bits which can be processed by the A/D determines the maximum accuracy. Related to this is the frequency at which the microprocessor can read the data (number of times per second) to try to ensure no information is lost. It is nevertheless hard not to lose some data during this conversion, so the higher the A/D conversion, the more accurate the readings will be, but it is important that the processor can handle the rate at which the information is being sent.</p>
+				</div>
+			</section>	
+			<section class="flight-controller-step">
+				<h2>Power</h2>
+				<div class="flight-controller-step-info flight-flex">
+					<div id="powerImg"></div>
+					<p class="powerDesc">There are often two voltage ranges described in the spec sheet of a flight controller, the first being the voltage input range of the flight controller itself (most operate at 5V nominal), and the second being the voltage input range of the main microprocessor&rsquo;s logic (ex 3.3V or 5V). Since the flight controller is a fairly integrated unit, you really only need to pay attention to the input range for the flight controller itself. Most multi-rotor aircraft flight controllers operate at 5V since that is the voltage provided by a BEC (see lesson 3 for more information). To reiterate, you should ideally not power the flight controller separately from the main battery. The one exception is if you want a battery backup in the event that the main battery draws enough power that the BEC cannot provide enough current / voltage, causing a brownout / reset. Rather than a battery backup however, capacitors are often used.</p>
+				</div>
+			</section>
+			<section class="flight-controller-step">
+				<h2>Sensors</h2>
+				<div class="flight-controller-step-info"><p>In terms of hardware, a flight controller is essentially a normal programmable microcontroller, but has specific sensors onboard. At a bare minimum, a flight controller will include a three axis gyroscope, but as such will not be able to auto-level. Not all flight controllers will include all of the sensors below and may include a combination thereof.</p></div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Accelerometer</h3>
+					<p>As the name implies, accelerometers measure linear acceleration in up to three axes (let&rsquo;s call them X, Y and Z). The units are normally in &ldquo;gravity&rdquo; (g) which is 9.81 meters per second per second, or 32 feet per second per second. The output of an accelerometer can be integrated twice to give a position, though because of losses in the output, it is subject to &ldquo;drift&rdquo;. A very important characteristic of three axis accelerometers is that they detect gravity, and as such, can know which direction is &ldquo;down&rdquo;. This plays a major role in allowing multirotor aircraft to stay stable. The accelerometer should be mounted to the flight controller so that the linear axes line up with the main axes of the UAV.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Gyroscope</h3>
+					<p>A gyroscope measures the rate of angular change in up to three angular axes (let&rsquo;s call them alpha, beta and gamma).&nbsp; The units are often degrees per second. Note that a gyroscope does not measure absolute angles directly, but you can iterate to get the angle which, just like an accelerometer, is subject to drift. The output of the actual gyroscope tends to be analog or I2C, but in most cases you do not need to worry about it since this is handled by the flight controller&lsquo;s code. The gyroscope should be mounted so that its rotational axes line up with the axes of the UAV.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Inertia Measurement Unit (IMU)</h3>
+					<p>An IMU is essentially a small board which contains both an accelerometer and gyroscope (normally these are multi-axis). Most contain a three axis accelerometer and a three-axis gyroscpe, and others may contain additional sensors such as a three axis magnetometer, providing a total of 9 axes of measurement.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Compass</h3>
+					<p>An electronic magnetic compass is able to measure the earth&rsquo;s magnetic field and used it to determine the drone&lsquo;s compass direction (with respect to magnetic north). This sensor is almost always present if the system has GPS input and is available in one to three axes.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Barometer</h3>
+					<p>This measures atmospheric pressure and tells the drone how high it is. Remember, as you go higher up into the air, pressure increases. It&rsquo;s in this way that a barometer is able to detect changes in height.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>GPS</h3>
+					<p>Global Positioning Systems (GPS) use the signals sent by a number of satellites in orbit around the earth in order to determine their specific geographic location. A flight controller can either have onboard GPS or one which is connected to it via a cable. The GPS antenna should not be confused with the GPS chip itself, and can look like a small black box or a normal &ldquo;duck&rdquo; antenna. In order to get an accurate GPS lock, the GPS chip should receive data from multiple satellites, and the more the better.</p>
+				</div>
+				<div class="flight-controller-step-info-flex">
+					<h3>Distance</h3>
+					<p>Distance sensors are being used more and more on drones since GPS coordinates and pressure sensors alone cannot tell you how far away from the ground you are (think hill, mountain or building) or if you will hit an object. A downward-facing distance sensor might be based on ultrasonic, laser or lidar technology (infrared has issues in sunlight). Very few flight controllers include distance sensors as part of the standard package.</p>
+				</div>
+			</section>
+			<section class="flight-controller-step">
+				<h2>PID Control Loop &amp; Tuning</h2>
+				<div class="flight-controller-step-info">
+					<p>Proportional Integral Derivate (PID) control allows you to change the drone&lsquo;s flight characteristics, including how it reacts to user input, how well and how quickly it stabilizes and more. The PID settings and how the software uses the various sensor inputs are incredibly important, but without seeing and understanding the code which dictates this is not too useful when comparing flight controllers. Manufacturer which produce &ldquo;ready to fly&rdquo; kits are able to fine tune the PID settings and equations for their specific platform, which is why most RTF muti-rotors fly quite well out of the box. Builders of custom drones however need to use flight controllers which are designed to be suitable for almost any type of multi-rotor aircraft, and as such it is up to the end-user to adjust the values until they are satisfied with the flight characteristics.</p>
+				</div>
+			</section>
+			<section class="flight-controller-step">
+				<h2>GUI</h2>
+				<div class="flight-controller-step-info">
+					<div id="guiImg"></div>
+					<p>A GUI (Graphical User Interface) is what is used to visually edit the code (via a computer) which will be uploaded to the flight controller. The software provided with flight controllers continues to get better and better; the first flight controllers on the market used largely text-based interfaces which required that you understand almost all of the code and change specific sections to suit your project. More recently flight controller GUIs use interactive graphical interfaces to help you configure the necessary parameters.</p>
+				</div>
+			</section>
+			<section class="flight-controller-step">
+				<h2>Communication</h2>
+				<div class="flight-controller-step-info">
+					<h3>Radio Control</h3>
+					<p>Radio Control (RC) communication normally involves a hand-held (hobby) RC transmitter and RC receiver. For UAVs, you need a minimum four channels, and more are suggested, even if they are not used. Normally these channels are associated with:</p>
+					<ul class="step-bullets">
+						<li>Pitch (which translates to forward / backward motion)</li>
+						<li>Elevation (closer to or farther away from the ground)</li>
+						<li>Yaw (rotating clockwise or counter-clockwise)</li>
+						<li>Roll (to strafe left and right)</li>
+					</ul>
+					<p>Additional channels can be used for any of the following:</p>
+					<ul class="step-bullets">
+						<li>Arming / disarming the motors</li>
+						<li>Gimbal controls (pan up/down, rotate clockwise / counter-clockwise, zoom)</li>
+						<li>Change flight modes (acrobatic mode, stable mode etc)</li>
+						<li>Activate / deploy a payload, parachute, buzzer or other device</li>
+						<li>Any number of other uses</li>
+					</ul>
+					<p>Most drone pilots prefer handheld control, meaning RC systems are still the number one choice for controlling a UAV. On its own, the receiver simply relays the values input into the controller, and as such, cannot control a UAV. The receiver must be connected to the flight controller, which needs to be programmed to receive RC signals. There are very few flight controllers on the market which do not directly accept RC input from a receiver, and most even provide power to the receiver from one of the pins.</p>
+					<p>Additional considerations when choosing a remote control include:</p>
+					<ul class="step-bullets">
+						<li>Not all RC transmitters can provide the full RC signal range of 500ms to 2500ms; some artificially limit this since most RC applications are for RC cars, airplanes and helicopters</li>
+						<li>The range / max wireless range (feet or meters) of an RC system is almost never provided from the manufacturers because it involves many factors such as obstructions, temperature, humidity, battery power and more.</li>
+						<li>Some RC systems have a receiver which also has a built-in transmitter for transmitting sensor data (GPS coordinates for example) which are shown on the RC transmitter&rsquo;s LCD display.</li>
+					</ul>
+				</div>
+				<div class="flight-controller-step-info">
+					<h3>Bluetooth</h3>
+					<p>Bluetooth, and more recent BLE (Bluetooth Low Energy) products were originally intended to be used to transfer data between devices without the complexity of pairing or matching frequencies. Certain flight controllers on the market can send and receive data wirelessly via Bluetooth connection, making it easier to troubleshoot issues in the field.</p>
+				</div>
+				<div class="flight-controller-step-info">
+					<h3>WiFi</h3>
+					<p>WiFi control is normally achieved using a WiFI router, computer (including latop, desktop, tablet) or smartphone. WiFi is able to handle both data transmission as well as image transmission, but is much more difficult to set up / implement. As with all WiFi devices, the range is limited by that of the WiFi transmitter.</p>
+				</div>
+				<div class="flight-controller-step-info">
+					<h3>Radio Frequency</h3>
+					<p>Radio Frequency (RF) control in this context refers to sending data from a computer or microcontroller wirelessly to the aircraft using an RF transmitter / receiver (or two-way transceiver). Using a normal RF unit connected to a computer allows for long range two-way communication with a high &ldquo;density&rdquo; of data (normally in serial format).</p>
+				</div>
+				<div class="flight-controller-step-info">
+					<h3>Smart Phone</h3>
+					<p>Although this is not a type of communication, the question of how to control a drone using a smart phone has come up enough to warrant a separate section. Modern smart phones are essentially powerful computers which coincidentally can also make phone calls. Almost all smart phones include integrated Bluetooth as well as WiFi either of which are used to control the drone and/or receive data and/or video.</p>
+				</div>
+				<div class="flight-controller-step-info">
+					<h3>Infrared</h3>
+					<p>Infrared communication (like what you find in a television remote control) is rarely used to control drones as there is so much IR interference present even in a normal rooms (let alone outdoors) that it is not very reliable. Although it can be done, it is not suggested as a primary option.</p>
+				</div>
+			</section>
+		</div>
+		<footer>
+			  <p>&copy; Beth Mitchell 2016<p>
+		</footer> 
+
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1157 @@
+/* --------- fonts ---------*/
+@font-face {
+    font-family: 'aero_maticsregular';
+    src: url('../fonts/aero_matics_regular-webfont.woff2') format('woff2'),
+         url('../fonts/aero_matics_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aero_maticsbold';
+    src: url('../fonts/aero_matics_bold-webfont.woff2') format('woff2'),
+         url('../fonts/aero_matics_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aero_matics_displayregular';
+    src: url('../fonts/aero_matics_display_regular-webfont.woff2') format('woff2'),
+         url('../fonts/aero_matics_display_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metrophobicregular';
+    src: url('../fonts/metrophobic-webfont.woff2') format('woff2'),
+         url('../fonts/metrophobic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: aero_maticsregular, Helvetica, Tahoma, serif;
+}
+
+p, ul, ol{
+	font-family: metrophobicregular, Helvetica, Tahoma, serif;
+	line-height: 1.15em;
+}
+
+p{
+	margin: 1% 0;
+}
+
+h2{
+	font-size: 1.875em;
+	margin-bottom: 1%;
+}
+
+h3{
+	font-size: 1.125em;
+}
+
+strong{
+	font-weight: bold;
+}
+/* -------- wrapper ------------*/
+#wrapper{
+	width: 96%;	
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+
+/*---HomePage-----*/
+body#background {
+  background: url('../images/Desktop/Headers/home.jpg') no-repeat 50% 50% fixed; 
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.home-wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+body#background #logo {
+    font-size: 5.5em;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+
+/*------- Navigation -----------*/
+.message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 27%;
+    height: 50%;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    background-color: none;
+    color: #000;
+    padding: 0.5em;
+    margin-left: 7%;
+}
+
+#logo{
+	font-size: 2.5em;
+	text-decoration: none;
+	color: #000;
+	font-family: aero_maticsregular, Helvetica, Tahoma, serif;
+}
+
+#logo span{
+	font-family: aero_maticsbold, Helvetica, Tahoma, serif;
+	color: #ff5500;
+}
+
+#home div.nav-container {
+    display: block;
+}
+
+#home.navigation {
+    background: rgba(255,255,255,0);
+}
+
+#home .nav-mobile {
+    top: 10px;
+    right: 10px;
+}
+
+.navigation {
+  height: 70px;
+  background: #fff;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-container {
+    max-width: 1750px;
+    margin: 0 auto;
+    /*display: flex;
+    justify-content: space-between;*/
+    display: block;
+}
+
+.nav-list{
+  font-family: aero_maticsregular, Helvetica, Tahoma, serif;
+  font-size: 1.125em;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #ff5500;
+  color: #ffffff;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff5500;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 925px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 926px){
+	#home nav ul li a, nav ul li a:visited {
+	    padding: 0 10px;
+	}
+
+	#home .nav-list {
+	    font-size: 1em;
+	}
+}
+
+
+@media screen and (min-width: 926px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+
+/* ------------- Content ------------*/
+#title, #flight-controller-title, #gallery-title, #how-to-title, #assembly-title, #before-you-buy-title, #frame-title, #type-title,
+#recreational-title, #registration-title{
+	font: 5em aero_matics_displayregular, Helvetica, Tahoma, serif;
+	color: #fff;
+	position: relative;
+	top: 426px;
+	left: 60%;
+	height: 30px;
+}
+
+footer{
+	background-color: #ff5500;
+	height: 25px;
+	width: 100%;
+	padding: 1% 2%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+#frame-img{
+	width: 100%;
+	height: auto;
+}
+
+.frame-type{
+	display: flex;
+	margin: 5% 1%;
+}
+
+.frame-title{
+	width: 15%;
+	margin-right: 5%;
+	text-align: right;
+}
+
+.frame-description{
+	width: 79%;
+}
+
+.pro-con-container{
+	display: flex;
+	margin-top: 3%;
+}
+
+.pro-cons{
+	width: 40%;
+	margin: 0 5%;
+}
+
+#frame-materials-title{
+	font-size: 2.5em;
+}
+
+.frame-materials-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 1% 5% 1%;
+}
+
+.frame-materials{
+	width: 30%;
+	margin-top: 30px;
+}
+
+.frame-materials img{
+	width: 100%;
+	height: auto;
+}
+
+.assembly-step, .flight-controller-step, .drone-types, .howToFly, .beforeYouBuy, .registration-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1% 0;
+}
+
+.assembly-step h2, .flight-controller-step h2, .drone-types h2, .howToFly h2, .beforeYouBuy h2, .registration-flex h2{
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+.registration{
+	width: 80%;
+	margin-top: 5px;
+}
+
+.step-directions{
+	width: 80%;
+	margin: 10px 0 20px 0;
+} 
+
+.beforeYouBuy-section{
+	width: 90%;
+	margin: 15px 0 40px 0;
+}
+.one-drone-type{
+	width: 80%;
+	margin: 10px 0 20px 0;
+}
+
+.howToFly-sections{
+	width: 80%;
+	margin: 10px 0 20px 0;
+}
+
+.howToFly p:first-of-type{
+	width: 90%;
+	margin-top: 5px;
+}
+
+.step-bullets{
+	margin-left: 5%;
+}
+
+.flight-controller-step{
+	margin: 2% 0 5% 0;
+}
+
+.flight-controller-step-info{
+	width: 90%;
+	margin: 10px;
+}
+
+.flight-controller-step-info-flex{
+	width: 90%;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.flight-controller-step-info-flex h3{
+	width: 20%;
+	text-align: right;
+	margin-right: 4%;
+}
+.flight-controller-step-info-flex p{
+	width: 75%;
+}
+
+.flight-desc{
+	width: 80%;
+}
+
+#antennaDes{
+	width: 59%;
+	margin-right: 1%;
+}
+
+.assembly-flex, .flight-flex, .registration-inner-flex, .howTo-flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+.howTo-flex div{
+	width: 45%;
+	margin-top: 15px;
+}
+
+.powerDesc{
+	width: 60%;
+	margin-left: 2%;
+}
+
+.recreational-use-container{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+#recreational-use{
+	width: 42%;
+}
+
+#recreational-desc{
+	width: 53%;
+}
+
+.safety-guidelines-section{
+	display: flex;
+	margin: 8% 0;
+	justify-content: space-between;
+}
+
+#safety-guidelines{
+	width: 53%;
+}
+
+#safety-guidelines ul{
+	margin-top: 3%;
+}
+
+#safety-guidelines ul li{
+	margin: 1% 0;
+}
+
+#noDroneSite{
+	margin: 2% 0;
+}
+
+#NoFlyBullets{
+	margin: 1% 0 0 5%;
+}
+
+.registration-content{
+	width: 60%;
+}
+
+/*----------------Gallery-----------*/
+/*-------Photos-----*/
+.thumb {
+  max-height: 237px;
+  border: solid 5px rgba(5, 5, 5, 0.8);
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 999;
+  height: 0;
+  width: 0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+  opacity: 0;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+  width: 100%;
+  height: 100%;
+  opacity: 1 !important;
+}
+
+.lightbox:target img {
+  border: solid 17px rgba(77, 77, 77, 0.8);
+  opacity: 1;
+  webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.light-btn {
+  color: #fafafa;
+  background-color: #333;
+  border: solid 3px #777;
+  padding: 5px 15px;
+  border-radius: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+  position: absolute;
+  top: 35%;
+  z-index: 99;
+}
+
+.light-btn:hover { background-color: #111; }
+
+.btn-prev { left: 10%; }
+
+.btn-next { right: 10%; }
+
+.btn-close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  color: #fafafa;
+  background-color: #92001d;
+  border: solid 5px #ef4036;
+  padding: 10px 15px;
+  border-radius: 1px;
+  text-decoration: none;
+}
+
+.btn-close:hover { background-color: #740404; }
+
+/*-----Videos------*/
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	margin: 1% 0;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
+/*-------------Images-----------------------*/
+.beginnerResourcesBanner, .galleryBanner, .howToBanner, .regulationsBanner{
+	width: 100%;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top: solid #000 2px;
+	margin-bottom: 2%;
+}
+
+.beginnerResourcesBanner{
+	background-image: url('../images/Desktop/Headers/parrot.jpg');
+	background-position: center;
+}
+
+.galleryBanner{
+	background-image: url('../images/Desktop/Headers/gallery.jpg');
+	background-position: right center;
+}
+
+.howToBanner{
+	background-image: url('../images/Desktop/Headers/howToBuild.jpg');
+	background-position: bottom center;
+}
+
+.regulationsBanner{
+	background-image: url('../images/Desktop/Headers/regulations.jpg');
+	background-position: left center;
+}
+
+
+#batteryToPowerImg, #escToFlightControllerImg, #mountedBatteryImg, #antennaImg, #powerImg, #guiImg, #frameImg, #cameraDroneImg,
+#miniDroneImg, #goProDroneImg, #longRangeDroneImg, #noFlyPosterImg, #noDroneSiteImg, #badgeImg, #controllerImg{
+	height: auto;	
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#batteryToPowerImg{	
+	width: 100%;
+	padding-bottom: 43.3%;
+	background-image: url('../images/Desktop/Assembly/pdb-battery.jpg');
+}
+
+#escToFlightControllerImg{
+	width: 88%;
+	padding-bottom: 100%;
+	background-image: url('../images/Desktop/Assembly/esc-flight-controller.jpg');
+}
+
+#mountedBatteryImg{
+	width: 100%;
+	padding-bottom: 56.14%;
+	margin-bottom: 2%;
+	margin-top: -2%;
+	background-image: url('../images/Desktop/Assembly/mounted-battery.jpg');
+}
+
+#antennaImg{
+	width: 40%;
+	padding-bottom: 100%;
+	background-image: url('../images/Desktop/Assembly/antenna.jpg');
+}
+
+#powerImg{
+	width: 38%;
+	padding-bottom: 75%;
+	background-image: url('../images/Desktop/FlightController/power.jpg');
+}
+
+#guiImg{
+	width: 100%;
+	padding-bottom: 70.5%;
+	margin-bottom: 2%;
+	background-image: url('../images/Desktop/FlightController/gui.jpg');
+}
+
+#frameImg{
+	width: 100%;
+	padding-bottom: 76.87%;
+	background-image: url('../images/Desktop/Frame/frameTypes.jpg');
+}
+
+#cameraDroneImg{
+	width: 100%;
+	padding-bottom: 42.16%;
+	background-image: url('../images/Desktop/Types/camera.jpg');
+}
+
+#miniDroneImg{
+	width: 100%;
+	padding-bottom: 49.35%;
+	background-image: url('../images/Desktop/Types/mini.jpg');
+}
+#goProDroneImg{
+	width: 100%;
+	padding-bottom: 60.57%;
+	background-image: url('../images/Desktop/Types/goPro.jpg');
+}
+#longRangeDroneImg{
+	width: 100%;
+	padding-bottom: 57.03%;
+	background-image: url('../images/Desktop/Types/long.jpg');
+}
+#noFlyPosterImg{
+	width: 43%;
+	padding-bottom: 135%;
+	background-image: url('../images/Desktop/Recreational/poster.jpg');
+}
+#noDroneSiteImg{
+	width: 100%;
+	padding-bottom: 52.26%;
+	margin-top: 2%;
+	background-image: url('../images/Desktop/Recreational/nodronessite.jpg');
+}
+
+#badgeImg{
+	width: 40%;
+	padding-bottom: 95.6%;
+	background-image: url('../images/Desktop/Registration/badge.jpg');
+}
+
+#controllerImg{
+	width: 100%;
+	padding-bottom: 49.65%;
+	margin-bottom: 3%;
+	background-image: url('../images/Desktop/HowToFly/controller.jpg');
+}
+
+@media (max-width: 925px) and (min-width: 781px){
+	 #title, #flight-controller-title, #gallery-title, #how-to-title, #assembly-title, #before-you-buy-title, #frame-title, #type-title, #recreational-title, #registration-title {
+	    top: 413px;
+	}
+}
+
+@media (max-width: 780px) and (min-width: 461px){
+	.message {
+	    width: 50%;
+	    height: 35%;
+	}
+
+	.beginnerResourcesBanner{
+		background-image: url('../images/Tablet/Headers/parrot.jpg');
+		height: 400px;
+	}
+
+	.galleryBanner{
+		background-image: url('../images/Tablet/Headers/gallery.jpg');
+		height: 400px;
+	}
+
+	.howToBanner{
+		background-image: url('../images/Tablet/Headers/howToBuild.jpg');
+		height: 400px;
+	} 
+
+	.regulationsBanner{
+		background-image: url('../images/Tablet/Headers/regulations.jpg');
+		height: 400px;
+	}
+
+	#batteryToPowerImg{
+		background-image: url('../images/Tablet/Assembly/pdb-battery.jpg');
+	}
+
+	#escToFlightControllerImg{
+		background-image: url('../images/Tablet/Assembly/esc-flight-controller.jpg');
+		width: 75%;
+		margin-top: 55px;
+	}
+
+	#mountedBatteryImg{
+		background-image: url('../images/Tablet/Assembly/mounted-battery.jpg');
+	}
+
+	#antennaImg{
+		background-image: url('../images/Tablet/Assembly/antenna.jpg');
+	}
+
+	#powerImg{
+		background-image: url('../images/Tablet/FlightController/power.jpg');
+		width: 100%;
+	}
+
+	#guiImg{
+		background-image: url('../images/Tablet/FlightController/gui.jpg');
+	}
+
+	#frameImg{
+		background-image: url('../images/Tablet/Frame/frameTypes.jpg');
+	}
+
+	#cameraDroneImg{
+		background-image: url('../images/Tablet/Types/camera.jpg');
+	}
+
+	#miniDroneImg{
+		background-image: url('../images/Tablet/Types/mini.jpg');
+	}
+
+	#goProDroneImg{
+		background-image: url('../images/Tablet/Types/goPro.jpg');
+	}
+
+	#longRangeDroneImg{
+		background-image: url('../images/Tablet/Types/long.jpg');
+	}
+
+	#noFlyPosterImg{
+		background-image: url('../images/Tablet/Recreational/poster.jpg');
+	}
+
+	#noDroneSiteImg{
+		background-image: url('../images/Tablet/Recreational/nodronessite.jpg');
+	}
+
+	#controllerImg{
+		background-image: url('../images/Tablet/HowToFly/controller.jpg');
+	}
+
+	#badgeImg{
+		background-image: none;
+		width: 0;
+	}
+
+	.thumb {
+	    max-height: 233px;
+	}
+
+	.flight-flex{
+		display: block;
+	}
+
+	.powerDesc{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.frame-title {
+    	width: 17%;
+	}
+
+	.registration-content{
+		width: 100%;
+	}
+
+	body#background #logo {
+    	font-size: 5em;
+	}
+
+	#home nav ul {
+	    margin-top: 21px;
+	}
+
+	#flight-controller-title{
+		left: 25%;
+		top: 313px;
+	}
+
+	#title{
+		top: 313px;
+	}
+
+	#gallery-title{
+		top: 313px;
+	}
+
+	#how-to-title{
+		left: 50%;
+		top: 313px;
+	}
+
+	#assembly-title{
+		top: 313px;
+	}
+
+	#before-you-buy-title{
+		top: 313px;
+		left: 35%;
+	}
+
+	#frame-title{
+		top: 313px;
+		left: 65%;
+	}
+
+	#type-title{
+		top: 313px;
+		left: 65%;
+	}
+	#recreational-title{
+		top: 313px;
+		left: 45%;
+	}
+
+	#registration-title{
+		top: 313px;
+		left: 45%;
+	}
+}
+
+
+@media (max-width: 460px){
+	.beginnerResourcesBanner{
+		background-image: url('../images/Mobile/Headers/parrot.jpg');
+		height: 300px;
+	}
+
+	.galleryBanner{
+		background-image: url('../images/Mobile/Headers/gallery.jpg');
+		height: 300px;
+	}
+
+	.howToBanner{
+		background-image: url('../images/Mobile/Headers/howToBuild.jpg');
+		height: 300px;
+	} 
+
+	.regulationsBanner{
+		background-image: url('../images/Mobile/Headers/regulations.jpg');
+		height: 300px;
+	}
+
+	#batteryToPowerImg{
+		background-image: url('../images/Mobile/Assembly/pdb-battery.jpg');
+	}
+
+	#escToFlightControllerImg{
+		background-image: url('../images/Mobile/Assembly/esc-flight-controller.jpg');
+		width: 100%;
+	}
+
+	#mountedBatteryImg{
+		background-image: url('../images/Mobile/Assembly/mounted-battery.jpg');
+	}
+
+	#antennaImg{
+		background-image: url('../images/Mobile/Assembly/antenna.jpg');
+		width: 100%;
+	}
+
+	#guiImg{
+		background-image: url('../images/Mobile/FlightController/gui.jpg');
+	}
+
+	#powerImg{
+		background-image: url('../images/Mobile/FlightController/power.jpg');
+		width: 100%;
+	}
+
+	#frameImg{
+		background-image: url('../images/Mobile/Frame/frameTypes.jpg');
+	}
+
+	#cameraDroneImg{
+		background-image: url('../images/Mobile/Types/camera.jpg');
+	}
+
+	#miniDroneImg{
+		background-image: url('../images/Mobile/Types/mini.jpg');
+	}
+
+	#goProDroneImg{
+		background-image: url('../images/Mobile/Types/goPro.jpg');
+	}
+
+	#longRangeDroneImg{
+		background-image: url('../images/Mobile/Types/long.jpg');
+	}
+
+	#noFlyPosterImg{
+		background-image: url('../images/Mobile/Recreational/poster.jpg');
+		width: 100%;
+	}
+
+	#noDroneSiteImg{
+		background-image: url('../images/Tablet/Recreational/nodronessite.jpg');
+	}
+
+	#controllerImg{
+		background-image: url('../images/Mobile/HowToFly/controller.jpg');
+	}
+
+	#badgeImg{
+		width: 0;
+		background-image: none;
+	}
+
+	.flight-flex{
+		display: block;
+	}
+
+	.powerDesc{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.thumb{
+		max-height: 134px;
+	}
+
+	.lightbox img{
+		margin-top: 18%;
+	}
+
+	.light-btn{
+		top: 25%;
+	}
+
+	.btn-next{ 
+		right: 5%;
+	}
+	.btn-prev{
+		left: 5%;
+	}
+
+	.assembly-flex{
+		display: block;
+	}
+
+	.flight-desc{
+		width: 100%;
+		margin-top: 2%;
+	}
+
+	#antennaDes{
+		width: 100%;
+		margin-bottom: 2%;
+	}
+
+	.howTo-flex{
+		display: block;
+	}
+
+	.howTo-flex div{
+		width: 100%;
+	}
+
+	.frame-title {
+    	width: 40%;
+	}
+
+	.pro-con-container{
+		display: block;
+	}
+
+	.pro-cons {
+		width: 100%;
+		margin-top: 7%;
+	}
+
+	#safety-guidelines {
+    	width: 100%;
+    	margin-top: 2%;
+	}
+
+	.safety-guidelines-section {
+		display: block;
+	}
+
+	.registration-content{
+		width: 100%;
+	}
+
+	body#background #logo {
+    	font-size: 4em;
+	}
+
+	.message {
+	    width: 100%;
+	    height: 40%;
+	    background-color: rgba(255,255,255,.5);
+	    padding: 2em;
+	    margin-left:0;
+	}
+
+	#home .nav-mobile {
+	    height: 55px;
+	    width: 55px;
+	}
+
+	#home #nav-toggle {
+	    left: 11px;
+	    top: 15px;
+	}
+
+	#home nav ul {
+	    margin-top: 21px;
+	}
+
+	#flight-controller-title{
+		left: 5%;
+		font-size: 3.8em;
+		top: 231px;
+	}
+
+	#title{
+		left: 30%;
+		top: 231px;
+		font-size: 3.8em;
+	}
+
+	#gallery-title{
+		left: 55%;
+		top: 231px;
+		font-size: 3.8em;
+	}
+
+	#how-to-title{
+		left: 35%;
+		top: 231px;
+		font-size: 3.8em;
+	}
+
+	#assembly-title{
+		top: 231px;
+		font-size: 3.8em;
+		left: 45%;
+	}
+
+	#before-you-buy-title{
+		top: 231px;
+		font-size: 3.8em;
+		left: 20%;
+	}
+
+	#frame-title{
+		left: 50%;
+		top: 231px;
+		font-size: 3.8em;
+	}
+
+	#type-title{
+		left: 60%;
+		top: 231px;
+		font-size: 3.8em;
+	}
+
+	#recreational-title{
+		left: 30%;
+		top: 231px;
+		font-size: 3.8em;
+	}
+
+	#registration-title{
+		left: 30%;
+		top: 231px;
+		font-size: 3.8em;
+	}
+}

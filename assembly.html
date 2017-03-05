@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Assembly | DRONEZONE</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="styles/reset.css" type="text/css" rel="stylesheet">
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>		
+		<header>
+			<section class="navigation">
+			  <div class="nav-container">
+			    <div class="brand">
+			        <a href="index.html" title="Home" id="logo"><span>DRONE</span>ZONE</a>
+			    </div>
+			    <nav>
+			    	<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+			    	<ul class="nav-list">
+			        	<li><a title="How to Build">How to Build</a>
+			          		<ul class="nav-dropdown">
+			          			<li><a href="frame.html" title="Frame">Frame</a></li>
+								<li><a href="flight-controller.html" title="Flight Controller">Flight Controller</a></li>
+								<li><a href="assembly.html" title="Assembly">Assembly</a></li>
+			          		</ul>
+			        	</li>
+			            <li><a title="Resources">Beginner Resources</a>
+				        	<ul class="nav-dropdown">
+				        		<li><a href="howToFly.html" title="How to Fly">How to Fly</a></li>
+								<li><a href="beforeYouBuy.html" title="Before you Buy">Before you Buy</a></li>
+								<li><a href="types.html" title="Types">Types</a>
+				        	</ul>
+				        </li>
+				        <li><a title="Regulations">Regulations</a>
+				        	<ul class="nav-dropdown">
+				        		<li><a href="recreational.html" title="Recreational">Recreational</a></li>
+								<li><a href="registration.html" title="Registration">Registration</a></li>
+				        	</ul>
+				        </li>
+				        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+					</ul>
+			    </nav>
+			  </div>
+			</section>
+			<div class="howToBanner"><h1 id="assembly-title">Assembly</h1></div>
+		</header>
+		<div id="wrapper">	
+			<section class="assembly-step">
+				<h2>Propulsion System</h2>
+				<div class="step-directions">
+					<p>The propulsion system of your UAV will involve the following components:</p>
+					<ul class="step-bullets">
+						<li>Motors</li>
+						<li>ESCs</li>
+						<li>Power distribution (board or harness)</li>
+						<li>Battery</li>
+						<li>Flight Controller</li>
+					</ul>
+				</div>
+				<div class="step-directions">
+					<div id="batteryToPowerImg"></div>
+					<h3>Battery -> Power Distribution</h3>
+					<p>The connection between the battery and the power distribution system should be relatively easy if they both have the same connector. You can verify that the two fit together than then move on to the next step. If they have different connectors, <strong>DO NOT CUT THE WIRES TO REMOVE THE CONNECTOR FROM THE BATTERY</strong>; this can cause a short circuit and a really nasty high current shock. Instead, you can look for a small adapter or adapter cable between the connector on your battery and the connector on the power distributor. Another option is to look for the mating connector to that of your battery and order it; cut the existing connector from the power distributor and solder the replacement, ensuring there is no connection between the positive and negative terminals. It is important to note that most multirotor aircraft do not have an On/Off switch, so power is applied and removed by connecting and disconnecting the main battery to the power distributor, so the connectors need to be securely in place and the wires / solder points well insulated with either heat shrink and/or electrical tape.</p>
+					
+				</div>
+				<div class="step-directions">
+					<h3>Motor -> ESC -> Power Distribution</h3>
+					<p>The power distribution board (PDB) / cable is used primarily to split the main battery to each of the ESCs. The voltage is supplied &ldquo;as is&rdquo; to the ESCs, so there is no need to step up (increase) or step down (decrease) the voltage. If your multirotor uses four motors, you should have four ESCs and therefore your power distribution PCB / cable should at least split the main battery to four connections. If your PDB has six connections and you have a quadcopter, you don&rsquo;t need to have the last two connected. If you are building a hexacopter, your PDB should split the main battery into at least six connections. An ESC includes the following wires:</p>
+					<ul class="step-bullets">
+						<li>One 3-pin, 0.1? spaced R/C connector where the black pin is normally GND, the red pin provides 5V OUT (via BEC*) and the yellow / white connector is signal IN</li>
+						<li>3x separate wires to connect to the three wires on a brushless DC motor (normally supplied with female bullet connectors which are either soldered or included in the package)</li>
+						<li>Two battery input connectors to plug into the PDB (some include male bullet connectors soldered, others are included in the package, and others are not included at all)</li>
+					</ul>
+					<p>If the PDB uses connectors which are not the same as those used on the ESC or the battery, then you will either need to purchase adapters, or purchase new connectors and replace those on either the ESC or the PDB. You can see the advantage of choosing a PDB which has the same connectors as your battery and ESCs. Normally the connector on a high current R/C LiPo battery is a red DEANS connector, yellow XT60 or blue EC3 connector. The battery&rsquo;s white JST charging connector is not connected to the PDB. If you want to power additional low current electronics (LED lighting system, gimbal etc) but your power distribution board does not have any spare connections, you can consider using the battery&rsquo;s charging cable. The white charging connector normally has one pin for GND, and one pin for each LiPo cell used to make up the battery pack. Despite really being designed for charging only, it does provide 3.7V output from each pin and can be used to power low current electronics such as a gimbal system or LEDs.</p>
+					<p>Remove the red wire from all but one of the ESCs&rsquo; 3-pin R/C connector. We suggest removing the pin from the connector in such a way that you can reconnect it at a later time if needed. Wrap the loose pin in electric tape or heat shrink so it does not come into contact with any other electronics. The one with the red wire still connected will be powering your flight controller.</p>
+					<ul class="step-bullets">
+						<li>Connect each of your ESC&rsquo;s two input connectors to the PDB, ensuring red goes to positive (+) and black goes to negative (-).</li>
+						<li>If your PDB has R/C connectors, it is up to you if you want to connect the R/C pins from each ESC to this board, or connect them to the flight controller directly.</li>
+						<li>Connect each of the motor&rsquo;s three bullet connectors to the ESCs&rsquo; three bullet connectors. For the moment, it does not matter which of the three motor pins connect to which of the three pins on the ESC (if will affect the direction of rotation which will be corrected as needed later on).</li>
+					</ul>
+				</div>
+				<div class="step-directions assembly-flex">
+					<div id="escToFlightControllerImg"></div>
+					<div class="flight-desc">
+						<h3>ESCs -> Flight Controller</h3>
+						<p>At this time you can connect the ESCs&rsquo; R/C input to the flight controller. The flight controller you chose should have a diagram showing which motors on your multirotor connect to which pins on the flight controller. The same diagram should also show the direction of rotation of each motor, but again for now, you do not need to consider the direction.</p>
+						<ul class="step-bullets">
+							<li>Look up the connection diagram between the motors / ESC and the flight controller in the flight controller manual</li>
+							<li>Plug the R/C connectors of each ESC to the corresponding pins on the flight controller, ensuring the the ground wire (normally black) connects to the ground pin on the flight controller, and the signal pin (white or yellow) connects to the signal pin on the flight controller.</li>
+							<li>Only one of the RC connectors will still have the red (power) pin connected; it does not matter which it is.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="assembly-step">
+				<h2>Communication</h2>
+				<div class="step-directions">
+					<h3>Receiver -> Flight Controller</h3>
+					<p>If you are looking to use WiFi, Bluetooth or other input method, please read through the flight controller&rsquo;s manual and look for serial input; that section will describe how / where to connect a serial input device to the flight controller. You will likely need to locate and connect the transmitting (Tx), receiving (Rx), voltage (5V) and GND pins from the wireless device to the transmitter, ensuring Rx from one goes to Tx on the other, and vice-versa.</p>
+					<p>Your RC transmitter should have come with the appropriate RC receiver. The receiver should have been bound to the transmitter, so you can remove the binding jumper from the receiver (if one is included). The package may have also included a AA battery holder which is intended to power the receiver, but we will not make use of this since the BEC will be powering both the receiver and the flight controller. To know which channels of the RC receiver plug into which pins on the flight controller, you need to look at both the flight controller and the RC system&rsquo;s user guide. The flight controller&rsquo;s manual will specify the locations of the following pins which are to be matched and connected to the receiver:</p>
+					<ul class="step-bullets">
+						<li>Throttle</li>
+						<li>Pitch</li>
+						<li>Yaw</li>
+						<li>Roll</li>
+						<li>Auxiliary (Aux) 1, 2, 3 etc.</li>
+					</ul>
+					<p>You can now make the following connections:</p>
+					<ul class="step-bullets">
+						<li>Read the flight controller&rsquo;s manual to see which R/C input pin is associated with which of the functions above</li>
+						<li>Read the RC transmitter&lsquo;s manual to see which channel is associated with each of the functions</li>
+						<li>Some RC transmitters can be reprogrammed to change the function of each pin, so if you decide to change which input (joystick or switch) does what, then be sure to know which channel on the receiver will correspond to which function. Throttle, pitch, yaw and roll should always be associated with the two joysticks, not with switches or knobs.</li>
+						<li>Connect the throttle channel on the receiver to the throttle input on the flight controller</li>
+						<li>Connect the pitch channel on the receiver to the pitch input on the flight controller</li>
+						<li>Connect the yaw channel on the receiver to the yaw input on the flight controller</li>
+						<li>Connect GND on the flight controller (normally the third row of pins) to GND on the receiver (normally the&nbsp; third row of pins)</li>
+						<li>If an auxiliary input is used, connect Aux 1 on the receiver to Aux 1 on the flight controller and so on.</li>
+					</ul>
+					<p>You can use three-pin servo wires for each of the channels, but only one of the channels (can be any) needs to have voltage and ground; the rest only need the signal wire. All of the connections can have GND to GND though only one is needed. Once again, the receiver does not need a separate battery since it will be receiving power from the flight controller, which itself is receiving power from the BEC from one of the ESCs.</p>
+				</div>
+			</section>
+			<section class="assembly-step">
+				<h2>Frame Assembly</h2>
+				<div class="step-directions">
+					<p>If you are building your own frame, you can assemble it at this step. If you purchased a frame kit, follow the assembly guide. Note that you may need to disassemble certain areas to make wiring easier or to clean it up.The objective is to ensure nothing is loose, all wires are properly secured and nothing can fall out of the frame or get tangled.</p>
+				</div>
+			</section>
+			<section class="assembly-step">
+				<h2>Mounting</h2>
+				<div class="step-directions">
+					<h3>Battery Placement</h3>
+					<p>The battery used to power a drone is often the heaviest item on a UAV, and can often account for 1/4 to 1/2 the total weight of the vehicle. As such, its mounting location is quite important. The ideal location of the main battery would be at the center of the copter so as to ensure all motors have to support roughly the same load. If the battery is placed more towards the rear of the copter, the rear motors will need to provide more thrust than the motors at the front, and as such, the maximum total thrust will be limited (when the rear motors are at full thrust, the motors at the front will not be). Given that the normal approach to multirotor design is to have the copter symmetric about the center axis (or at least one axis), the battery should also be placed along this center line, and not offset to one side or the other. Next you will want to determine at which height to place the battery. There are several places where a battery can be mounted:</p>
+					<ul class="step-bullets">
+						<li>Below the frame (copter will be bottom heavy, more stable and less acrobatic).</li>
+						<li>Just below the motors (normally inside the frame); arguably one of the better locations</li>
+						<li>At the same height as the motors or propellers (for example mounted to the top of the frame)</li>
+						<li>Above the propellers (UAV will be top heavy and more inclined to flip)</li>
+					</ul>
+					<p>For the best performance, the flight controller would ideally be located in position 3 described above. Position 4 creates an inverted pendulum effect and if the copter tilts beyond a certain angle, it will want to flip itself. Position 1 would create a very stable platform which inherently wants to stay level and is very poor at acrobatics. Most designers therefore choose position 2 and position the battery either just below the frame or within it. This frees up the space below the frame for a payload such as a gimbal system, and the space above for the flight controller and other electronics so they are more accessible.</p>
+				</div>
+				<div class="step-directions">
+					<div id="mountedBatteryImg"></div>
+					<h3>Battery Mounting</h3>
+					<p>There are a variety of commonly accepted ways to secure a battery to a frame and include:</p>
+					<ul class="step-bullets">
+						<li>Velcro straps</li>
+						<li>Adhesive Velcro strips (one side secured to the battery and the other to the frame)</li>
+						<li>Enclosed within the frame</li>
+					</ul>
+					<p>Velcro straps are the most common for medium &ldquo;normal&rdquo; sized custom drones whereas the &ldquo;cage&rdquo; effect (enclosed within a frame) is most often found on commercial drones as the frames have often been injection molded and leave a space inside specifically for a certain battery. Velcro strips should ideally only be used if the battery is relatively lightweight; rather than one central strip, we suggest one strip along each length of the battery. If you are using Velcro straps and find that the battery can slide out because of a lack of friction between the straps and the battery, we suggest adding rubber strips to the area of the straps which are in contact with the battery. We do not suggest using glue or other adhesive to attach the battery to the frame. When you are not using hte UAV, remove the battery and store it in a LiPo safe bag or ceramic bowl.</p>
+				</div>
+				<div class="step-directions">
+					<h3>Flight Controller Placement &amp; Mounting</h3>
+					<p>The flight controller should ideally be located at the center of the drone at the same height as the motors. If this is not possible, then the controller can be put slightly above or below. You should not mount the flight controller more towards the left or right side, and avoid mounting it more forwards or backwards. If you purchased a UAV frame, they often have mounting holes for the flight controller which are at the optimal location. the flight controller can be secured using any of the following main methods:</p>
+					<ul class="step-bullets">
+						<li>Screws / nuts / standoffs (basic)</li>
+						<li>Double-sided adhesive tape (ensure it&rsquo;s strong enough)</li>
+						<li>Double-sided adhesive foam (for a damping effect)</li>
+						<li>Rubber grommets (for significant damping)</li>
+					</ul>
+					<p>Some flight controllers either include a case or have it available as an option. This case protects the PCB from dust and a few drops of rain, and may take the brunt of an impact in the event of a crash. Some cases include rubber dampeners / grommets which reduce the vibration caused by unbalanced motors / propellers. The ideal setup is to have a very rigid frame with perfectly balanced motors and propellers and a well damped flight controller.</p>
+				</div>
+				<div class="step-directions">
+					<h3>ESC Placement &amp; Mounting</h3>
+					<p>The ESCs are connected between the motors, the power distribution board / cable and the flight controller. The standard wire length included with the ESC, combined with the motor&rsquo;s cables often mean you don&rsquo;t need to add any cable extensions. The ESCs need to provide high current and as such are usually quite hot when in use. The ideal location would be directly below the propeller wash on the support arm; this forces air over the ESC which helps to cool it off. The ESC can be secured to a support am using zip ties (one on either side of the ESC), tape or almost any other method which will not impede heat dissipation. The ESCs should not be mounted in a location which will restrict heat dissipation (like an enclosed metal box) and should be located a distance away from sensitive electronics like the flight controller or receiver.</p>
+				</div>
+				<div class="step-directions assembly-flex">
+					
+					<div id="antennaDes">
+						<h3>RC Receiver &amp; Antenna</h3>
+						<p>The RC receiver itself can be located almost anywhere on the multirotor, except it is best not to place it too close to wires which are carrying high current (so away from the battery and ESCs). The receivers included with RC systems tend not to have any specific mounting method, so quality double-sided adhesive is the best option. The antenna which is attached to the receiver is usually a flexible wire. This wire should be located such that a wireless signal is not impeded, while keeping it as straight as possible. Taping the receiver&rsquo;s antenna along a support arm (on a side opposite to the ESC&lsquo;s wires) or along landing gear are the best options. In lesson 6 we will talk more about range testing, which should be done to know the maximum distance at which the receiver picks up a signal from the transmitter. Range testing may require that you experiment with different locations for the receiver and antenna.</p>
+					</div>
+					<div id="antennaImg"></div>
+				</div>
+				<div class="step-directions">
+					<h3>GPS Antenna Placement &amp; Mounting</h3>
+					<p>Unlike the receiver&rsquo;s wire antenna, the GPS receiver&rsquo;s antenna tends to be either a duck antenna (rigid plastic pole either fixed, 90 degrees or hinged) or rectangular and relatively flat. Some GPS units have an integrated antenna (i.e. the antenna is part of the printed circuit board). In either case, the GPS antenna should be mounted at the top of the UAV so satellite signals are not blocked. Mounting a rectangular antenna is normally done using double-sided tape, and mounting a duck antenna usually involves drilling a mounting hole. If the duck antenna connects directly to the flight controller, no additional mounting is needed.</p>
+				</div>
+			</section>
+		</div>
+		<footer>
+			  <p>&copy; Beth Mitchell 2016<p>
+		</footer> 
+
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

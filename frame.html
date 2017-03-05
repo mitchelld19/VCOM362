@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Frames | DRONEZONE</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="styles/reset.css" type="text/css" rel="stylesheet">
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>		
+		<header>
+			<section class="navigation">
+			  <div class="nav-container">
+			    <div class="brand">
+			        <a href="index.html" title="Home" id="logo"><span>DRONE</span>ZONE</a>
+			    </div>
+			    <nav>
+			    	<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+			    	<ul class="nav-list">
+			        	<li><a title="How to Build">How to Build</a>
+			          		<ul class="nav-dropdown">
+			          			<li><a href="frame.html" title="Frame">Frame</a></li>
+								<li><a href="flight-controller.html" title="Flight Controller">Flight Controller</a></li>
+								<li><a href="assembly.html" title="Assembly">Assembly</a></li>
+			          		</ul>
+			        	</li>
+			            <li><a title="Resources">Beginner Resources</a>
+				        	<ul class="nav-dropdown">
+				        		<li><a href="howToFly.html" title="How to Fly">How to Fly</a></li>
+								<li><a href="beforeYouBuy.html" title="Before you Buy">Before you Buy</a></li>
+								<li><a href="types.html" title="Types">Types</a>
+				        	</ul>
+				        </li>
+				        <li><a title="Regulations">Regulations</a>
+				        	<ul class="nav-dropdown">
+				        		<li><a href="recreational.html" title="Recreational">Recreational</a></li>
+								<li><a href="registration.html" title="Registration">Registration</a></li>
+				        	</ul>
+				        </li>
+				        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+					</ul>
+			    </nav>
+			  </div>
+			</section>
+			<div class="howToBanner"><h1 id="frame-title">Frames</h1></div>
+		</header>
+		<div id="wrapper">	
+			<div id="frameImg"></div>
+			<section class="frame-type">
+				<div class="frame-title"><h2>Quadcopter</h2></div>
+				<div class="frame-description">
+					<p>The most common type of frame that you see within the RC drone industry. It has four arms, each of which are connected to a single motor.&nbsp; The front of the UAV tends to be between two arms (x configuration), but can also be along an arm (+ configuration).&nbsp; It is highly recommend that you use a quadcopter frame. Not only is it the simplest type of frame design you&rsquo;ll find, but it&rsquo;s also one of the most versatile.</p>
+					<section class="pro-con-container">
+						<div class="pro-cons">
+							<h3>Pros</h3>
+							<ul>
+								<li>Most popular multi-rotor design</li>
+								<li>Simplest construction</li>
+								<li>Quite versatile</li>
+								<li>The arms / motors are symmetric about two axes</li>
+								<li>All flight controllers on the market can work with this multirotor design</li>
+							</ul>
+						</div>
+						<div class="pro-cons">
+							<h3>Cons</h3>
+							<p>No redundancy, so if there is a failure anywhere in the system, especially a motor or propeller, the craft is likely going to crash.</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="frame-type">
+				<div class="frame-title"><h2>Hexacopter</h2></div>
+				<div class="frame-description">
+					<p>A &ldquo;hexacopter&rdquo; has six arms, each connected to one motor. The front of the UAV tends to be between two arms, but can also be along one arm.&nbsp; Generally speaking, these types of setups are reserved for flyers who are interested in doing some serious aerial photography.</p>
+					<section class="pro-con-container">
+						<div class="pro-cons">
+							<h3>Pros</h3>
+							<ul>
+								<li>Increased total thrust available</li>
+								<li>If one motor fails, then there&rsquo;s still a chance that the drone can land safely rather than crashing</li>
+								<li>Nearly all flight controllers support this type of frame setup</li>
+							</ul>
+						</div>
+						<div class="pro-cons">
+							<h3>Cons</h3>
+							<ul>
+								<li>More expensive</li>
+								<li>Requires a larger battery because of weight</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="frame-type">
+				<div class="frame-title"><h2>Octocopter</h2></div>
+				<div class="frame-description">
+					<p>With this frame setup, there are eight arms, each of which are connected to a single motor. As you can imagine, there&rsquo;s a huge amount of thrust being produced with this type of setup. But as the old saying goes, &ldquo;With great power, comes great responsibility&ldquo;. If you decide to go with this type of frame setup then you have a long, challenging road of ahead of you. For the most part, these types of RC drone setups are reserved for people who know what they&rsquo;re doing. When learning how to build a drone for the first time, stick to a simpler model.</p>
+					<section class="pro-con-container">
+						<div class="pro-cons">
+							<h3>Pros</h3>
+							<ul>
+								<li>More moters means more thrust</li>
+								<li>Lifts heavier things</li>
+								<li>If one motor fails, the drone can probably still make it to the ground safetly.</li>
+							</ul>
+						</div>
+						<div class="pro-cons">
+							<h3>Cons</h3>
+							<ul>
+								<li>More expensive</li>
+								<li>Larger Battery Pack</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="frame-type">
+				<div class="frame-title"><h2>X8</h2></div>
+				<div class="frame-description">
+					<p>An X8 design is still an octocopter, but has four support arms, each with a motor connected to either side of each arm, for a total of 8 motors.</p>
+					<section class="pro-con-container">
+						<div class="pro-cons">
+							<h3>Pros</h3>
+							<ul>
+								<li>More motors = more thrust</li>
+								<li>Increased Redundancy</li>
+								<li>Provide added redundancy in the event of a motor failure</li>
+							</ul>
+						</div>
+						<div class="pro-cons">
+							<h3>Cons</h3>
+							<ul>
+								<li>Higher Price</li>
+								<li>Larger Battery Pack</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="frame-type">
+				<div class="frame-title"><h2>Y6</h2></div>
+				<div class="frame-description">
+					<p>Y6 design is a type of hexacopter but rather than six arms, it has three support arms, with a motor connected to either side of the arm (for a total of six motors). Note that the propellers mounted to the underside still project the thrust downward.</p>
+						<section class="pro-con-container">
+						<div class="pro-cons">
+							<h3>Pros</h3>
+							<ul>
+								<li>Eliminates a support arm (can lift more payload as compared to a quadcopter, with fewer components than a normal hexacopter)</li>
+								<li>Eliminates the gyro effect using counter-rotating propellers</li>
+								<li>Should a motor fail, there is still a chance the copter can land rather than crash</li>
+							</ul>
+						</div>
+						<div class="pro-cons">
+							<h3>Cons</h3>
+							<ul>
+								<li>Uses additional parts</li>
+								<li>Additional motors and parts add weigh to the copter</li>
+								<li>Larger Battery</li>
+								<li>Thrust obtained in a Y6 as opposed to normal hexacopter is slightly lower</li>
+								<li>Not all flight controllers support this configuration</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</section>
+			<h1 id="frame-materials-title">Materials</h1>
+			<section class="frame-materials-container">
+				<div class="frame-materials">
+					<h2>Wood</h2>
+					<img src="images/Desktop/Frame/wood.jpg" alt="Wood">
+					<p>If you want your frame to be as inexpensive as possible, wood is a great option, and will greatly reduce build time and additional parts required. Wood is fairly rigid and has been a proven material time and time again. Although the aesthetics may suffer, replacing a broken arm after a crash is relatively easy and &ldquo;dirt cheap&rdquo;. Painting the arm helps hide the fact that it&rsquo;s wood. Ensure you use wood which is straight (no twisting or warping).</p>
+				</div>
+				<div class="frame-materials">
+					<h2>Carbon fiber</h2>
+					<img src="images/Desktop/Frame/carbon-fiber.jpg" alt="carbon fiber">
+					<p>Carbon fiber is still the #1 sought-after building material due to its light weight and high strength. The process to manufacturer carbon fiber is still quite manual, meaning normally only straightforward shapes such as flat sheets and tubes are mass produced, while more complex 3D shapes are normally &ldquo;one off&rdquo;. Carbon fiber impedes RF signals, so be sure to take this into consideration when mounting electronics (especially antennas).</p>
+				</div>
+				<div class="frame-materials">
+					<h2>PCB</h2>
+					<img src="images/Desktop/Frame/PCB.jpg" alt="pcb">
+					<p>Also known as &ldquo;Printed Circuit Board&rdquo;, this is a type of material that shares the same basic structure and properties as fiberglass. Unlike fiberglass, PCD is always flat. Frames that are less than 600mm in size typically use PCB for the bottom and top plates. In fact, small quadcopter frames can be built entirely from a single printed circuit board. Click here to learn more about printed circuit boards and how they work.</p>
+				</div>
+				<div class="frame-materials">
+					<h2>Plastic</h2>
+					<img src="images/Desktop/Frame/plastic.jpg" alt="plastic">
+					<p>Most users can only access and work with plastic sheets (rather than 3D plastic shapes or objects). Plastic tends to flex and as such is not ideal. Used strategically (such as a cover or landing gear), plastic can be a great option. If you are considering 3D printing the frame, consider the time needed to print the part (versus buying a plastic frame kit), and how rigid the part will be in the air. 3D printing parts (or the entire frame) has so far been more successful on smaller quadcopters. Using plastic extrusions may also be an option for small and medium sized drones.</p>
+				</div>
+				<div class="frame-materials">
+					<h2>G10</h2>
+					<img src="images/Desktop/Frame/g10.jpg" alt="g10">
+					<p>G10 (variation of fiberglass) is used as a less expensive option than carbon fiber, though the look and basic properties are almost identical. G10 is mostly available in sheet format and is used largely for top and bottom plates, while tubing in carbon fiber (as compared to G10) is usually not much more expensive and is often used for the arms. Unlike Carbon Fiber, G10 does not block RF signals.</p>
+				</div>
+				<div class="frame-materials">
+					<h2>Aluminum</h2>
+					<img src="images/Desktop/Frame/aluminum.jpg" alt="aluminum">
+					<p>Aluminum comes in a variety of shapes and sizes; you can use sheet aluminum for body plates, or extruded aluminum for the support arms. Aluminum may not be as lightweight as carbon fiber or G10, but the price and durability can be quite attractive. Rather than cracking, aluminum tends to flex. Working with aluminum really only requires a saw and a drill; take the time to find the right cross section (lightweight and strong), and try to cut out any non-essential material.</p>
+				</div>
+			</section>
+		</div>
+		<footer>
+			  <p>&copy; Beth Mitchell 2016<p>
+		</footer>
+		
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
