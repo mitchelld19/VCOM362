@@ -1,0 +1,388 @@
+#wrapper {
+  width: 96%; 
+  max-width: 920px;
+  margin: auto;
+  padding: 0 2%;
+  background-color: #fff;
+} 
+
+p {
+    margin: 1% 0;
+    font-family: 'Lato', sans-serif;
+    font-size: .925em;
+    line-height: 1.15em;
+}
+
+h1, h2{
+  font-family: 'Oswald', sans-serif;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+strong{
+  font-weight: bold;
+}
+
+/*-----------Top Level Navigation-------*/
+/*nav{
+  height: 400px;
+  border: 1px #000 solid;
+  display: block;
+}*/
+
+#nav-container{
+  margin-top: 5%;
+}
+
+.nav {
+  list-style: none;
+  /*text-align: center;*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/*.nav li {
+  position: relative;
+  display: inline-block;
+}*/
+
+.nav li a {
+  background-size: cover;
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25em;
+  /*margin: 15% 15% 0px 15%;*/
+  width: 144px;
+  height: 144px;
+  position: relative;
+  text-align: center;
+  line-height: 144px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa;
+  text-decoration: none;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*---Circle Overlay---*/
+/*.nav a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}*/
+
+/*.nav a:hover:after {
+    background-color: rgba(0, 0, 0, 0);
+
+}*/
+
+/*---Circle Images & Text---*/
+.nav a#livingRoom{
+   background-image: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)), url('http://st.hzcdn.com/simgs/ddb1b6b0017c0cbb_4-9888/traditional-living-room.jpg');
+}
+
+/*.nav a#livingRoom:after {
+    content: "Living Room";
+}*/
+
+.nav a#kitchen{
+   background-image: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('https://www.shopone.pk/image/Categories/KITCHEN_APPLIANCE_PHOTO_2.jpg');
+}
+
+/*.nav a#kitchen:after {
+    content: "Kitchen";
+}*/
+.nav a#office{
+   background-image: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('http://www.dmtemdebate.com.br/wp-content/uploads/2016/06/escritorio-linkedin.jpg');
+}
+
+/*.nav a#office:after {
+    content: "Office";
+}*/
+
+/*.nav a#office:hover:after {
+  color: rgba(0, 0, 0, 0);
+}*/
+
+.nav a:hover{
+  
+  cursor: default;
+}
+
+/*---Lines Behind Circles--*/
+.nav li:before {
+  content: "";
+  display: block;
+  border: 1px solid #ddd;
+  /*width: 101%;*/
+  width: 213%;
+  position: absolute;
+  top: 50%;
+  left: -56%;
+}
+
+/*----Dropdown---*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav li li:before{
+  content: none;
+}
+
+.nav li li {
+    position: relative;
+    display: block;
+    margin-right: 0px;
+    /*top: 50px;*/
+    top: 27%;
+    left: -27%;
+}
+
+.nav li li a {
+    display: block;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    position: static;
+    text-align: center;
+    border-radius: 0;
+    text-decoration: none;
+    box-shadow: none;
+    line-height: 1em;
+    height: 100%;
+    margin: 2% -1%;
+    padding: 8% 0;  
+}
+
+
+.dropdown {
+    position: relative;
+    /*display: inline-block;*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-left: 2px solid #ddd;
+    height: 110%;
+    left: 5%;
+    top: 72%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: inline-block;
+    /*border: 1px #000 solid;*/
+}
+
+.dropdown-content li a:before{
+  content: "";
+  display: block;
+  border: 1px solid #ddd;
+  width: 15%;
+  top: 12px;
+  position: relative;
+}
+
+
+.dropdown-content a:hover {
+  /*background-color: #ddd;
+  text-decoration: underline;
+  background-color: rgba(221, 221, 221, .5);*/ 
+  background: -webkit-linear-gradient(left, rgba(221, 221, 221, 0), rgba(221, 221, 221, .6)); 
+  background: linear-gradient(to right, rgba(221, 221, 221, 0), rgba(221, 221, 221, .6)); 
+  cursor: pointer;
+}
+
+
+
+/*-----Section Background------*/
+#office-typewriter-container{
+  /*background: blue; */
+  color: #000;
+  margin: 0 auto;
+  display: none;
+  padding: 1% 0;
+}
+
+.image_slider_wrapper{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 98%;
+  margin: 4% auto 2% auto;
+  background-color: #fff;
+  text-align: center;
+}
+
+#image_slider{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+#image_slider li{
+  list-style: none;
+  margin: 1% 2%;
+}
+
+#image_slider img{
+  border-radius: 50%;
+}
+
+#image_slider img:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+#office-typewriter-picture-1, #office-typewriter-picture-2, #office-typewriter-picture-3, #office-typewriter-picture-4, 
+#office-typewriter-picture-5, #office-typewriter-picture-6, #office-typewriter-picture-7, #office-typewriter-picture-8, 
+#office-typewriter-picture-9, #office-typewriter-picture-10, #office-typewriter-picture-11, #office-typewriter-default{
+  width: 65%;
+  margin: 0 auto;
+}
+
+.timelineImg{
+  opacity: 0.3;
+}
+
+.imgTint{
+  border-radius: 50%;
+  height: 150px;
+  background: linear-gradient(rgba(20,20,20, 0.7), rgba(20,20,20, .7));
+}
+
+.activeTimeline{
+  display: block;
+}
+
+.office-typewriter-TimelineSections{
+  display: none;
+}
+
+
+/*-------Timeline Numbers-----*/
+.TimelineNumbers::after {
+    border-right: solid 2px #ddd;
+    content: "";
+    position: relative;
+    top: -20px;
+    left: 80px;
+}
+
+.TimelineNumbers {
+    position: relative;
+    bottom: -5%;
+  color: #000;
+  font-family: 'Oswald';
+  font-size: .85em;
+}
+
+.TimelineNumbers::before {
+    border: solid #ddd 1px;
+    content: "";
+    position: relative;
+    top: -2px;
+    display: block;
+    width: 123%;
+  left: -13%;
+}
+
+
+
+
+
+
+
+/*----------Up Button--------------*/
+#chevron {
+  display: block;
+  position: static;
+  top: 15px;
+  height: 16px;
+  width: 50px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: 2% auto;
+}
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: #7a725e;
+  -webkit-transform: skew(0deg, 25deg);
+          transform: skew(0deg, 25deg);
+}
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 51%;
+  background: #7a725e;
+  -webkit-transform: skew(0deg, -25deg);
+          transform: skew(0deg, -25deg);
+}
+
+#chevron:hover {
+  cursor: pointer;
+}
+
+#chevron:hover:before {
+  background: #1b1a2b;
+}
+#chevron:hover:after {
+  background: #1b1a2b;
+}
+
+
+
+
+
+
+
+
+
+/*-------------Media Query -------------*/
+@media screen and (max-width: 500px){
+  .nav{
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .nav li a{
+   margin-bottom: 35%;
+  }
+
+  .nav li::before {
+    top: 37%;
+  }
+
+  .dropdown-content {
+    left: 52%;
+    top: 37%;
+    height: 65%;
+    z-index: 1;
+  }
+
+  .nav li li {
+    top: 8%;
+  }
+}

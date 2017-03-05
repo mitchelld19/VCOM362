@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js"></script> 
+    <script src="js/jquery-3.1.0.min.js"></script> 
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav id="nav-container">
+         <ul class="nav">
+           <li class="dropdown"><a href="#" id="office">Office</a>
+             <ul class="dropdown-content">
+                <li><a onclick="toggleSection('office-typewriter-container')">Typewriter</a></li>
+                <li><a href="#">2 Sub</a></li>
+                <li><a href="#">3 Sub</a></li>
+             </ul>
+           </li>
+		   <li class="dropdown"><a href="#" id="kitchen">Kitchen</a>
+              <ul class="dropdown-content">
+                <li><a>1 Sub</a></li>
+                <li><a href="#">2 Sub</a></li>
+                <li><a href="#">3 Sub</a></li>
+             </ul>
+           </li>
+           <li class="dropdown"><a href="#" id="livingRoom">Living Room</a>
+             <ul class="dropdown-content">
+                <li><a href="#">1 Sub</a></li>
+                <li><a href="#">2 Sub</a></li>
+                <li><a href="#">3 Sub</a></li>
+             </ul>
+           </li>
+        </ul>
+      </nav>
+      <div>
+        <section id="office-typewriter-container">
+          <a onclick="toggleSection('office-typewriter-container')" id="chevron"></a>
+          <div class="image_slider_wrapper">
+            <ul id="image_slider">
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1870-Hansen-writing-ball.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-1', 'office-typewriter-', 'office-typewriter-img1')" id="office-typewriter-img1" class="timelineImg"></div><span class="TimelineNumbers">1870</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1873-Sholes-and-Glidden.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-2', 'office-typewriter-', 'office-typewriter-img2')" id="office-typewriter-img2" class="timelineImg"></div><span class="TimelineNumbers">1873</span></li>
+			       <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1902-Blickensderfer.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-3', 'office-typewriter-', 'office-typewriter-img3')" id="office-typewriter-img3" class="timelineImg"></div><span class="TimelineNumbers">1902</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1910-Charles-and-Howard.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-4', 'office-typewriter-', 'office-typewriter-img4')" id="office-typewriter-img4" class="timelineImg"></div><span class="TimelineNumbers">1910</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1923-Olympia.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-5', 'office-typewriter-', 'office-typewriter-img5')" id="office-typewriter-img5" class="timelineImg"></div><span class="TimelineNumbers">1923</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1925-Remington-electromatic.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-6', 'office-typewriter-', 'office-typewriter-img6')" id="office-typewriter-img6" class="timelineImg"></div><span class="TimelineNumbers">1925</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1927-vari-typewriter.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-7', 'office-typewriter-', 'office-typewriter-img7')" id="office-typewriter-img7" class="timelineImg"></div><span class="TimelineNumbers">1927</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1935-Electromatic.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-8', 'office-typewriter-', 'office-typewriter-img8')" id="office-typewriter-img8" class="timelineImg"></div><span class="TimelineNumbers">1935</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1954-IBM.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-8', 'office-typewriter-', 'office-typewriter-img9')" id="office-typewriter-img9" class="timelineImg"></div><span class="TimelineNumbers">1954</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1970-Selectric.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-10', 'office-typewriter-', 'office-typewriter-img10')" id="office-typewriter-img10" class="timelineImg"></div><span class="TimelineNumbers">1970</span></li>
+              <li><div class="imgTint"><img src="images/Typewriter/Thumbnails/1992-brother.jpg" onclick="showTimelineSection('office-typewriter-default','office-typewriter-picture-11', 'office-typewriter-', 'office-typewriter-img11')" id="office-typewriter-img11" class="timelineImg"></div><span class="TimelineNumbers">1992</span></li>
+            </ul>
+          </div>
+          <div id="office-typewriter-default">
+			<h2>Typewriters</h2>
+            <p>A typewriter  is a mechanical or electromechanical machine for writing in characters similar to those produced by printer's movable type by means of keyboard-operated types striking a ribbon to transfer ink or carbon impressions onto paper. Typically one character is printed on each keypress. The machine prints characters by making ink impressions of type elements similar to the sorts used in movable type letterpress printing. At the end of the nineteenth century the term typewriter was also applied to a person who used such a machine.</p>
+			<p>After their invention in the 1860s, typewriters quickly became indispensable tools for practically all writing other than personal correspondence. They were widely used by professional writers, in offices, and for business correspondence in private homes. By the end of the 1980s, word processors and personal computers had largely displaced typewriters in most of these uses in the Western world, but as of the 2010s the typewriter is still prominent in many parts of the world, including India.</p>
+			<p><strong>Click on the images to view more about the typewriter from that time</strong></p>
+          </div>
+          <div id="office-typewriter-picture-1" class="office-typewriter-TimelineSections">
+            <h2>Hansen Writing Ball</h2>
+			<p>In 1865, Rev. Rasmus Malling-Hansen of Denmark invented the Hansen Writing Ball, which went into commercial production in 1870 and was the first commercially sold typewriter. It was a success in Europe and was reported as being used in offices in London as late as 1909. Malling-Hansen used a solenoid escapement to return the carriage on some of his models which makes him a candidate for the title of inventor of the first "electric" typewriter.</p>
+			<p>According to the book <em>Hvem er skrivekuglens opfinder?</em> (English: <em>Who is the inventor of the Writing Ball?</em>), written by Malling-Hansen's daughter, Johanne Agerskov, in 1865, Malling-Hansen made a porcelain model of the keyboard of his writing ball and experimented with different placements of the letters to achieve the fastest writing speed. Malling-Hansen placed the letters on short pistons that went directly through the ball and down to the paper. This, together with the placement of the letters so that the fastest writing fingers struck the most frequently used letters, made the Hansen Writing Ball the first typewriter to produce text substantially faster than a person could write by hand.</p>
+			<p>The Hansen Writing Ball was produced with only upper-case characters. The Writing Ball was used as a template for inventor Frank Haven Hall to create a derivative that would produce letter prints cheaper and faster.</p>
+			<p>Malling-Hansen developed his typewriter further through the 1870s and 1880s and made many improvements, but the writing head remained the same. On the first model of the writing ball from 1870, the paper was attached to a cylinder inside a wooden box. In 1874, the cylinder was replaced by a carriage, moving beneath the writing head. Then, in 1875, the well-known "tall model" was patented, which was the first of the writing balls that worked without electricity. Malling-Hansen attended the world exhibitions in Vienna in 1873 and Paris in 1878 and he received the first-prize for his invention at both exhibitions.</p>
+          </div>
+          <div id="office-typewriter-picture-2" class="office-typewriter-TimelineSections">
+            <h2>Sholes and Glidden Typewriter</h2>
+			<p>The first typewriter to be commercially successful was invented in 1868 by Americans Christopher Latham Sholes, Frank Haven Hall, Carlos Glidden and Samuel W. Soule in Milwaukee, Wisconsin, although Sholes soon disowned the machine and refused to use, or even to recommend it. It looked "like something like a cross between a piano and a kitchen table." The working prototype was made by the machinist Matthias Schwalbach. The patent (US 79,265) was sold for $12,000 to Densmore and Yost, who made an agreement with E. Remington and Sons (then famous as a manufacturer of sewing machines) to commercialize the machine as the Sholes and Glidden Type-Writer.</p>
+			<p>This was the origin of the term typewriter. Remington began production of its first typewriter on March 1, 1873, in Ilion, New York. It had a QWERTY keyboard layout, which because of the machine's success, was slowly adopted by other typewriter manufacturers. As with most other early typewriters, because the typebars strike upwards, the typist could not see the characters as they were typed.</p>
+          </div>
+		  <div id="office-typewriter-picture-3" class="office-typewriter-TimelineSections">
+            <p>Picture 3</p>
+          </div>
+          <div id="office-typewriter-picture-4" class="office-typewriter-TimelineSections">
+            <p>Picture 4</p>
+          </div>
+		  <div id="office-typewriter-picture-5" class="office-typewriter-TimelineSections">
+            <p>Picture 5</p>
+          </div>
+          <div id="office-typewriter-picture-6" class="office-typewriter-TimelineSections">
+            <p>Picture 6</p>
+          </div>
+		  <div id="office-typewriter-picture-7" class="office-typewriter-TimelineSections">
+            <p>Picture 7</p>
+          </div>
+          <div id="office-typewriter-picture-8" class="office-typewriter-TimelineSections">
+            <p>Picture 8</p>
+          </div>
+		  <div id="office-typewriter-picture-9" class="office-typewriter-TimelineSections">
+            <p>Picture 9</p>
+          </div>
+          <div id="office-typewriter-picture-10" class="office-typewriter-TimelineSections">
+            <p>Picture 10</p>
+          </div>
+		  <div id="office-typewriter-picture-11" class="office-typewriter-TimelineSections">
+            <p>Picture 11</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
