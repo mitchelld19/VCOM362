@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>The Engine | Sustainable Shipping</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+      <link rel="stylesheet" type="text/css" href="styles/odometer-theme-default.css" />
+      <link rel="stylesheet" type="text/css" href="styles/jquery-jvectormap-2.0.3.css" />
+      <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/main.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="js/jquery-jvectormap-2.0.3.min.js"></script>
+      <script src="js/jquery-jvectormap-world-mill.js"></script>
+      <script src="js/gdp-data.js"></script>
+  </head>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                  <li id="back"><a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a></li>
+                  <li id="active"><a href="pollution.html">Engine</a></li>
+                  <li><a href="cargo.html">Cargo</a></li>
+                  <li><a href="hull.html">Ship</a></li>
+              </ul>
+          </nav>
+      </header>
+      <div id="pollutionHeader" class="headerImage">
+          <div class="container alignItemsCenter flexDirectionColumn">
+              <h1>Cargo Ships Produce</h1>
+              <div class="odometer" id="odometer"></div>
+              <h1>Tons of Sulfur Oxide per Year</h1>
+          </div>
+      </div>
+      <section class="container flexDirectionColumn alignItemsCenter justifyContentCenter" id="pollutionProblem">
+          <article class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+              <h2>The Truth Behind Bunker Fuel</h2>
+              <p>The real issue lies with the heavy fuel oil the ships run on and the almost complete lack of regulations applied to the giant exhaust stacks of these container ships. Cargo ships burn heavy fuel, or &lsquo;bunker fuel&CloseCurlyQuote;, which
+                  leaves behind a trail of potentially lethal chemicals: sulfur and smoke that have been linked to breathing problems, inflammation, cancer and heart disease.</p>
+              <p>Bunker fuel is also thick with sulphur. IMO rules allow ships to burn fuel containing up to 4.5 per cent sulfur. That is 4,500 times more than is allowed in car fuel in the European Union. The sulfur comes out of ship funnels as tiny particles,
+                  and it is these that get deep into lungs.</p>
+          </article>
+          <blockquote id="cargo15">The world's 15 largest cargo ships produce the same amount of pollution as 750 million cars.</blockquote>
+          <article class="container justifyContentSpaceBetween alignItemsFlexEnd" id="carShip">
+              <div id="shipCompare">
+                  <img src="images/berta-cargo-web-vectorized.png" alt="Ship">
+                  <blockquote>1 Cargo Ship</blockquote>
+              </div>
+              <p id="equals">=</p>
+              <div id="carCompare">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <img src="images/car_web_vectorized.png" alt="Car">
+                  <blockquote>50 Million Cars</blockquote>
+              </div>
+          </article>
+          <article class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+              <p>The largest ships can each emit as much as 5,000 tons of sulfur in a year – the same as 50million typical cars, each emitting an average of 100 grams of sulfur a year. With an estimated 800million cars driving around the planet, that means
+                  16 super-ships can emit as much sulphur as the world fleet of cars.</p>
+
+          </article>
+      </section>
+      <section class="container alignItemsCenter justifyContentCenter flexDirectionColumn">
+          <h2 class="sectionHeadings">Health Issues on the Rise</h2>
+          <article class="container justifyContentCenter alignItemsCenter" id="graphDescCont">
+              <div class="container flexDirectionColumn justifyContentCenter" id="graphContainer">
+                  <div class="container">
+                      <div class="container flexDirectionColumn justifyContentSpaceBetween" id="graphLabelSide">
+                          <p>90,000</p>
+                          <p>60,000</p>
+                          <p>30,000</p>
+                          <p>0</p>
+                      </div>
+                      <div id="graph" class="container alignItemsFlexEnd justifyContentSpaceAround">
+                          <div id="ships1992" class="container justifyContentCenter alignItemsCenter"></div>
+                          <div id="health1992" class="container justifyContentCenter alignItemsCenter"></div>
+                      </div>
+                  </div>
+                  <div class="container justifyContentSpaceAround" id="graphLabelBottom">
+                      <p>Ships Worldwide</p>
+                      <p>Deaths Caused by Ship Pollution</p>
+                  </div>
+              </div>
+              <div class="container justifyContentCenter alignItemsCenter flexDirectionColumn" id="graphDescription">
+                  <p>The growing fleet of shipping vessels visiting East Asia is pumping greenhouse gases and other pollutants into the air, causing more than 10,000 premature deaths annually, according to a study published Monday in Nature Climate Change.</p>
+                  <p>&quot;Air pollution kills as many people as tobacco,&quot; says Dr. Carlos Dora, coordinator of the World Health Organization&apos;s interventions for healthy environment unit, who was not involved in the study. &quot;It&apos;s not only
+                      a health issue, it&apos;s a major health issue.&quot; Dora praised the paper for showing the cost of pollution in lives.</p>
+                  <p>Two of the polluting particles are carbon dioxide and sulfur. The greenhouse gas carbon dioxide is produced by burning fossil fuels and warms the atmosphere, contributing to climate change.</p>
+                  <p>Sulfurous particles, which come from the ship&apos;s fuel, initially cool the atmosphere, but only for about a week, so they don&apos;t compensate for the carbon dioxide&apos;s warming effect. The particles stick around long enough to
+                      harm humans, though. Their tiny size allows them to infiltrate human lungs and pass into the bloodstream, where they thicken blood vessels and increase the risk of lung cancer, respiratory disease and stroke.</p>
+              </div>
+          </article>
+      </section>
+      <section class="container alignItemsCenter justifyContentCenter flexDirectionColumn" id="proposedSolution">
+          <article class="container alignItemsCenter justifyContentCenter flexDirectionColumn">
+              <h3>Our Proposed Solution&colon;</h3>
+              <h2>Nuclear Powered Cargo Ships <i class="fa fa-check"></i></h2>
+              <p>Consider the reason that there are nuclear-powered vessels in the first place. Aircraft carriers want to be able to travel at high speeds over long distances; submarines need to stay submerged for long periods without refueling; and icebreakers
+                  need to operate in Arctic conditions without fuel supplies. Having a traveling nuclear reactor solves those problems.</p>
+              <p>The modern ships that deliver our goods are even larger than these vessels. Indeed, container ships are the biggest mobile superstructures ever made; some are larger than the Empire State Building if it were laid on the ground. Nuclear reactors
+                  make sense especially for vessels with high power requirements like container ships. Nuclear-powered container ships would benefit from being able to travel more quickly, having more space to carry goods instead of fuel, and having less
+                  need to refuel.</p>
+              <p>More importantly, consider its effects on pollution. Just 15 of the world&CloseCurlyQuote;s biggest ships may emit as much pollution as all the world&CloseCurlyQuote;s cars. Nuclear-powered ships emit no CO2 or greenhouse gas. Replacing just
+                  a few of the biggest ships with nuclear reactors would make a significant dent in air and ocean pollution. This is especially relevant with the emergence of a trade route in the Arctic. When ships go through, it&CloseCurlyQuote;s much
+                  better that they don&CloseCurlyQuote;t run on diesel. Nuclear vessels reduce the amount of Arctic melt induced by soot.</p>
+          </article>
+          <article class="container justifyContentSpaceAround iconSection">
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <i class="fa fa-bolt fa-5x" aria-hidden="true"></i>
+                  <h4 class="sectionHeadings">Green Alternative</h4>
+                  <p>Nuclear cargo ships provide a green method of energy production. As a result, this would drastically reduce the carbon footprint of cargo ships. This would provide a significant dent in overall worldwide pollution.</p>
+              </div>
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <i class="fa fa-tachometer fa-5x" aria-hidden="true"></i>
+                  <h4 class="sectionHeadings">Faster Shipping</h4>
+                  <p>Nuclear cargo ships have the ability to travel at much faster speeds. As a result, nuclear cargo ships have the potential to reduce transport times.</p>
+              </div>
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <i class="fa fa-compress fa-5x" aria-hidden="true"></i>
+                  <h4 class="sectionHeadings">No Fuel Tanks</h4>
+                  <p>Since nuclear cargo ships wouldn't require large fuel tanks, this would save a significant amount of space. As a result, this would reduce the need for large cargo ships.</p>
+              </div>
+          </article>
+      </section>
+      <section id="countryProposals" class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <h2 class="sectionHeadings">What Other Countries Are Doing</h2>
+          <article class="container justifyContentCenter alignItemsCenter">
+              <img src="images/American-Flag.jpg" alt="American Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: United States</p>
+                  <p>Idea: Hybrid Cargo Ships</p>
+                  <p>Description&colon;</p>
+                  <p>Hybrid cargo ships provide an opportunity to offload potential power intensive operations, like speeding up and slowing down, by assisting the engines in everyday tasks. This would work similar to hybrid cars in regards to power assistance
+                      and regeneration. Additional methods of regeneration are also being researched.</p>
+              </div>
+          </article>
+          <article class="container justifyContentCenter alignItemsCenter">
+              <img src="images/China-Flag.jpg" alt="China Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: China</p>
+                  <p>Idea: Recyclable Ships</p>
+                  <p>Description&colon;</p>
+                  <p>Recyclable cargo ships eliminate the need for ship graveyards. Previously, older cargo ships were not scrapped to their full potential, often left to locals to take what they need. Standardizing this process would provide repurposing for
+                      older model ships.</p>
+              </div>
+          </article>
+          <article class="container justifyContentCenter alignItemsCenter">
+              <img src="images/Russia-Flag.jpg" alt="Russia Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: Russia</p>
+                  <p>Idea: Scrubbers for Exhaust-Gas Cleaning on Ships</p>
+                  <p>Description&colon;</p>
+                  <p>Scrubber units blend the exhaust gas with water or caustic soda to remove up to 99% of SOx and 98% of particulate matter from high-sulfur fuel.</p>
+              </div>
+          </article>
+          <article class="container justifyContentCenter alignItemsCenter">
+              <img src="images/Canada-Flag.jpg" alt="Canada Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: Canada</p>
+                  <p>Idea: Speed Limits on Cargo Ships</p>
+                  <p>Description&colon;</p>
+                  <p>Putting a speed limit on cargo ships as they sail near ports and coastlines could cut their emission of air pollutants by up to 70 percent, reducing the impact of marine shipping on Earth’s climate and human health.</p>
+              </div>
+          </article>
+      </section>
+      <section id="worldMapForm" class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <h2 class="sectionHeadings">Join the Initiative in Finding a Solution</h2>
+          <div id="world-map"></div>
+          <script>
+              $(function() {
+                  $('#world-map').vectorMap({
+                      map: 'world_mill',
+                      backgroundColor: 'transparent',
+                      selectedColor: '#F7B337',
+                      selectedRegions: ['US', 'RU', 'CN', 'CA'],
+                      zoomOnScroll: false,
+                      zoomAnimate: false,
+                      regionStyle: {
+                          initial: {
+                              fill: '#C8EEFF'
+                          },
+                          selected: {
+                              fill: '#F7B337'
+                          }
+                      },
+                      series: {
+                          regions: [{
+                              values: gdpData,
+                              scale: ['#C8EEFF', '#0071A4'],
+                              normalizeFunction: 'polynomial'
+                          }]
+                      },
+                  });
+              });
+          </script>
+          <div id=formContainer>
+              <form>
+                  <ul id="form">
+                      <li>
+                          <label for="firstName">First Name:</label>
+                          <input type="text" name="firstName" placeholder="First Name">
+                      </li>
+                      <li>
+                          <label for="lastName">Last Name:</label>
+                          <input type="text" name="lastName" placeholder="Last Name">
+                      </li>
+                      <li>
+                          <label for="company">Company:</label>
+                          <input type="text" name="company" placeholder="Company">
+                      </li>
+                      <li>
+                          <label for="country">Country:</label>
+                          <input type="text" name="country" placeholder="Country">
+                      </li>
+                      <li>
+                          <label for="email">Email Address:</label>
+                          <input type="text" name="email" placeholder="Email">
+                      </li>
+                      <li class="container justifyContentCenter">
+                          <h2 class="sectionHeadings">Submit Your Idea</h2>
+                      </li>
+                      <li>
+                          <textarea name="description" id="ideaDesc" placeholder="Your idea goes here..." cols="30" rows="10"></textarea>
+                      </li>
+                      <li>
+                          <label id="inputButton" for="upload">Select File to Upload:</label>
+                          <input type="file" name="upload" accept="audio/*,video/*,image/*" />
+                      </li>
+                      <li>
+                          <button type="submit">Submit</button>
+                      </li </ul>
+              </form>
+          </div>
+      </section>
+      <footer class="container justifyContentCenter">
+          <p>AB Designs&copy;</p>
+      </footer>
+      <script src="js/odometer.min.js"></script>
+      <script>
+          setTimeout(function() {
+              odometer.innerHTML = 507063203;
+          }, 500);
+      </script>
+  </body>
+</html>

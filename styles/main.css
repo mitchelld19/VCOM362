@@ -1,0 +1,697 @@
+/*Fonts*/
+font-family: 'Carrois Gothic SC', sans-serif;
+font-family: 'Open Sans', sans-serif;
+html{
+  font-size: 12pt;
+}
+h1,h2,h3,h4{
+  font-family: 'Carrois Gothic SC', sans-serif;
+  text-align: center;
+}
+h1{
+	font-size: 2.8em;
+}
+h2{
+	font-size: 2.5em;
+}
+h3{
+	font-size: 2.3em;
+}
+h4{
+	font-size: 2.1em;
+}
+p,blockquote,form,nav,span{
+  font-family: 'Open Sans', sans-serif;
+}
+blockquote{
+  font-size: 2em;
+  text-align: center;
+}
+p{
+  font-size: 1em;
+  margin: 10px 0;
+  line-height: 1.15em;
+}
+/*End Fonts*/
+/*Colors*/
+#homepage{
+  background-color: #1B4578;
+  background: url('../images/blueprint.jpg');
+  color: #FFF;
+  padding: 2% 0;
+}
+#homepageBody header{
+  display: none;
+}
+section > article{
+  width: 90%;
+}
+section:nth-child(even){
+  background-color: #92BDF9;
+  color: #10394D;
+}
+section:nth-child(odd){
+  background-color: #1B4578;
+  color: #fff;
+}
+section:nth-child(odd)#countryProposals>article{
+  border-color: #92BDF9;
+}
+/*End Colors*/
+/*Images*/
+.headerImage{
+  height: 100vh;
+  color: #FFF;
+}
+.headerImage>div div, .headerImage>div h1,.headerImage>div>div p,.headerImage>div>div div{
+  font-size: 5vw;
+}
+#homepageHeader{
+  background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/ship-homepage-web.jpg') center center no-repeat;
+  font-size: 2vw;
+}
+#homepageHeader h1{
+  margin-top: 7%;
+}
+#pollutionHeader{
+  background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/Ship-Smoke.jpg') center center no-repeat;
+}
+#cargoHeader{
+  background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/containers_web.jpg') center center no-repeat;
+}
+#hullHeader{
+  background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/hull_web.jpg') center center no-repeat;
+}
+#pollutionHeader, #cargoHeader, #hullHeader{
+  background-size: cover;
+}
+/*End Images*/
+/*Nav*/
+header{
+  background-color: #333;
+}
+nav{
+  clear: both;
+  overflow: auto;
+}
+nav ul li{
+  float: right;
+  margin: .5% 1% .5% 0;
+}
+nav ul li a{
+  border: 1px solid #F7B337;
+  margin-left: auto;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  color: #F7B337;
+  text-decoration: none;
+  display: block;
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  border-color: #92BDF9;
+  color: #92BDF9;
+}
+#back{
+  float: left;
+  margin-left: 1%;
+}
+#active a{
+  border-color: #92BDF9;
+  color: #92BDF9;
+}
+#logo{
+  color: #f2f2f2;
+  margin: 0 auto;
+  font-size: 1.75em;
+  padding: 8px 0;
+}
+/*End Nav*/
+/*Element IDs and Classes*/
+section > article > p{
+  width: 70%;
+  margin: 8px 0;
+  line-height: 1.5em;
+}
+.jvectormap-zoomin, .jvectormap-zoomout{
+  display: none;
+}
+#odometer{
+  font-size: 5vw;
+}
+#headerPercentage{
+  vertical-align: text-bottom;
+}
+#cargo15{
+  margin: 2% 0;
+  width: 70%;
+  line-height: 1.5em;
+  font-size: 2em;
+  text-align: center;
+}
+#imageMap {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+}
+#carShip {
+    width: 65%;
+    margin-bottom: 2%;
+}
+#shipCompare img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 3%;
+}
+#carCompare img{
+  width: 12%;
+  height: auto;
+}
+#equals{
+  font-size: 5em;
+  line-height: 0;
+  margin: 0 1%;
+  align-self: center;
+  width: 9%;
+}
+#shipCompare{
+  width: 65%;
+  text-align: center;
+}
+#carCompare{
+  width: 60%;
+  text-align: center;
+}
+#graphDescription{
+  width: 50%;
+}
+#graphDescription p{
+  line-height: 1.5em;
+}
+#graphContainer{
+  width: 60%;
+  margin-right: 3%;
+}
+#graph{
+  background-color: transparent;
+  height: 500px;
+  width: 100%;
+  border-left: solid 3px #FFF;
+  border-bottom: solid 3px #FFF;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+#graphLabelSide{
+  padding-right: 1%;
+}
+#graphLabelSide p {
+    text-align: right;
+    width: 100%;
+}
+#graphLabelBottom, #graphLabelBottomHull{
+  width: 90%;
+}
+#graphLabelBottom{
+  margin-left: 12%;
+}
+#graphLabelBottomHull{
+  margin-left: 11%;
+}
+#graphLabelBottom>p:nth-child(2){
+  width: 125px;
+  text-align: center;
+}
+#graphLabelBottom p {
+  width: 30%;
+}
+#graphLabelBottomHull p{
+  width: 21%;
+}
+#graphLabelBottomHull p:nth-child(2) {
+  width: 26%;
+}
+@keyframes changeDate {
+  0% {
+    content: "1992";
+  }
+  50% {
+    color: #F7B337;
+  }
+  100% {
+    content: "2016";
+  }
+}
+#graph>div{
+  font-size: 1.25em;
+}
+#ships1992, #health1992, #chemical, #bulk, #crude{
+  width: 100px;
+  background-color: #F7B337;
+  transition-property: height;
+  transition-duration: 1s;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.50);
+  border-bottom: none;
+}
+#ships1992{
+  height: 25%;
+}
+#health1992{
+  height: 16%;
+}
+#chemical{
+ height: 82%;
+}
+#bulk{
+  height: 53%;
+}
+#crude{
+  height: 39%;
+}
+#ships1992:hover{
+  height: 100%;
+}
+#ships1992:before, #health1992:before{
+  content: "1992";
+}
+#chemical:before{
+  content: "82";
+}
+#bulk:before{
+  content: "53";
+}
+#crude:before{
+  content: "39";
+}
+#ships1992:hover:before, #health1992:hover:before{
+  content: "2016";
+  animation: changeDate 1s linear;
+}
+#health1992:hover{
+  height: 63%;
+}
+#world-map{
+  height: 400px;
+  width: 90%;
+  max-width: 800px;
+  margin: 10px 0;
+}
+#formContainer{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#form{
+  max-width: 70%;
+  margin: 0 auto;
+}
+#form li{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#form li label{
+  flex: 1 0 120px;
+  max-width: 220px;
+  padding: 8px 0;
+  letter-spacing: .09em;
+}
+#form li button{
+  margin-left: auto;
+}
+#form li button, #homepageBody article a{
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  transition: 0.5s;
+  color: #F7B337;
+}
+#homepageBody article a{
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  margin: 2% 0;
+}
+#form li button:hover, #homepageBody article a:hover{
+  color: #C8EEFF;
+}
+input[type='text'], textarea{
+  line-height: 2.5em;
+  margin: 2% 0;
+  padding-left: 1%;
+  background-color: #FFF;
+  border: none;
+  border-radius: 5px;
+  flex: 1 0 220px;
+}
+textarea{
+  width: 100%;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+/*Dear Professor Derksen:
+If you are to read this, we tried to style the file upload button; however, it really isn't a thing
+without some crazy roundabout way.
+Sincerely,
+Andrew and Beth
+*/
+textarea{
+  resize: none;
+}
+.sectionHeadings{
+  margin: 10px 0;
+}
+#proposedSolution h2{
+  margin-bottom: 3%;
+}
+section{
+  padding: 5% 0;
+}
+#homepageBody h1{
+  width: 60%;
+}
+#countryProposals article{
+  width: 60%;
+  border-bottom: solid 1px #10394D;
+}
+#countryProposals>article>div>p{
+  line-height: 1.5em;
+}
+#countryProposals>article>div{
+  margin: 2% 0;
+}
+#countryProposals article:last-child{
+  border-bottom: none;
+}
+#countryProposals img{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-right: 2%;
+}
+#countryProposals p{
+  width: 100%;
+  margin: 6px;
+}
+.fa-5x{
+  font-size: 8em;
+}
+.iconSection p{
+  width: 95%;
+  line-height: 1.5em;
+}
+.iconSection div{
+  width: 33%;
+  margin: 3% 0 1% 0;;
+}
+#peopleIcon{
+  width: 60%;
+  text-align: center;
+}
+/*End Element IDs and Classes*/
+/*Flexbox Layout*/
+.container{
+  display: flex;
+}
+.justifyContentSpaceBetween{
+  justify-content: space-between;
+}
+.alignItemsCenter{
+  align-items: center;
+}
+.alignItemsFlexEnd{
+  align-items: flex-end;
+}
+.alignItemsFlexStart{
+  align-items: flex-start;
+}
+.justifyContentCenter{
+  justify-content: center;
+}
+.justifyContentSpaceAround{
+  justify-content: space-around;
+}
+.flexDirectionColumn{
+  flex-direction: column;
+}
+.flexWrapWrap{
+  flex-wrap: wrap;
+}
+/*End Flexbox Layout*/
+footer{
+  background-color: #333;
+  padding: 0.75% 0;
+  color: #FFF;
+}
+footer p{
+  margin: 0;
+}
+@media screen and (max-width: 1000px){
+  #countryProposals article{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px){
+  .headerImage>div div, .headerImage>div h1,.headerImage>div>div p,.headerImage>div>div div{
+    font-size: 6vw;
+  }
+  .headerImage{
+    height: 45vh;
+  }
+  #homepageHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/ship-homepage-web-tablet.jpg') center center no-repeat;
+    font-size: 2.5vw;
+  }
+  #pollutionHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/Ship-Smoke-tablet.jpg') center center no-repeat;
+  }
+  #cargoHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/containers_web-tablet.jpg') center center no-repeat;
+  }
+  #hullHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/hull_web-tablet.jpg') center center no-repeat;
+  }
+  #homepageIcons{
+    width: 100%;
+  }
+  #countryProposals article{
+    width: 90%;
+  }
+  #graph{
+    height: 400px;
+  }
+  #equals {
+    width: 6%;
+  }
+  #graphContainer{
+    width: 90%;
+  }
+  #graphDescCont{
+    flex-direction: column;
+  }
+  #graphDescription {
+    width: 90%;
+  }
+  section > article > p{
+    width: 90%;
+  }
+  .headerImage>div{
+    margin-top: 3%;
+  }
+  #homepageBody h1{
+    width: 80%;
+  }
+  #graphContainer{
+    margin: 2% 0;
+  }
+  .iconSection{
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width:700px){
+  .iconSection{
+    flex-direction: column;
+  }
+  .iconSection div {
+    width: 100%;
+    margin: 7% 0;
+  }
+  #homepageIcons>.iconSection>div{
+    margin: 10% 0;
+  }
+  .iconSection div p{
+    width: 90%;
+  }
+  #cargo15 {
+    width: 80%;
+    font-size: 2em;
+  }
+  .fa-5x {
+    font-size: 7em;
+  }
+  .iconSection p{
+    width: 75%;
+  }
+  section > article > p{
+    width: 80%;
+    line-height: 1.6em;
+  }
+  #carShip{
+    flex-direction: column;
+    margin: 1% 0;
+  }
+  #carCompare {
+    width: 100%;
+  }
+  #equals{
+    width: 100%;
+    text-align: center;
+    margin: 10% 0;
+  }
+  #shipCompare {
+    width: 100%;
+  }
+  #world-map {
+    height: 300px;
+  }
+  #homepageBody header{
+    display: block;
+  }
+  #countryProposals article{
+    flex-direction: column;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 450px){
+  #pollutionHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/Ship-Smoke-mobile.jpg') center center no-repeat;
+  }
+  #cargoHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/containers_web-mobile.jpg') center center no-repeat;
+  }
+  #hullHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/hull_web-mobile.jpg') center center no-repeat;
+  }
+  .headerImage{
+    height: 30vh;
+  }
+  .sectionHeadings{
+    margin: 20px 10px 30px 10px;
+  }
+  section{
+    padding: 5% 0;
+  }
+  .fa-5x{
+    font-size: 6em;
+  }
+  #peopleIcon{
+    width: 80%;
+    margin-bottom: 3%;
+  }
+  #peopleIcon+div{
+    margin-bottom: 5%;
+  }
+  #homepageHeader{
+    background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/ship-homepage-web-mobile.jpg') center center no-repeat;
+    height: 20vh;
+  }
+  #world-map {
+    height: 200px;
+}
+  #graphContainer{
+    width: 90%;
+  }
+  #cargo15{
+    width: 100%;
+  }
+  #graphLabelBottom, #graphLabelBottomHull{
+    margin-left: 22%;
+    width: 80%;
+  }
+  #graphLabelBottom p{
+    font-size: 0.75em;
+    width: 25%;
+    text-align: center;
+  }
+  #graphLabelBottom>p:nth-child(2) {
+    width: 100px;
+}
+  #ships1992, #health1992, #chemical, #bulk, #crude{
+    width: 75px;
+  }
+  #form{
+    max-width: 80%;
+  }
+  h1{
+    font-size: 2.0em;
+  }
+  h2{
+  	font-size: 1.8em;
+  }
+  h3{
+    font-size: 1.6em;
+  }
+  h4{
+    font-size: 1.4em;
+  }
+  section > article > p{
+    width: 90%;
+  }
+  #proposedSolution h3{
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+  #proposedSolution h2{
+    margin-bottom: 5%;
+  }
+  #countryProposals h2{
+    margin: 7% 0;
+  }
+  .iconSection h4{
+    margin-bottom: 3%;
+  }
+  .headerImage+section>article>h2{
+    margin: 5% 0;
+  }
+  #worldMapForm h2{
+    margin-bottom: 5%;
+  }
+  .headerImage>div{
+    margin-top: 5%;
+  }
+  #cargo15{
+    font-size: 1.7em;
+  }
+  blockquote{
+    font-size: 1.5em;
+  }
+  #back {
+     float: none;
+     margin-left: 0;
+  }
+  nav ul li {
+     float: none;
+    margin: 0;
+    text-align: center;
+  }
+  nav ul li a {
+    border: none;
+    border-bottom: 1px solid #F7B337;
+  }
+  #carShip{
+    margin: 5% 0;
+  }
+  #form li button, #homepageBody article a {
+    padding: 15px 25px;
+  }
+  #homepageBody h1{
+    width: 90%;
+  }
+}

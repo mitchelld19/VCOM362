@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>The Ship | Sustainable Shipping</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+      <link rel="stylesheet" type="text/css" href="styles/odometer-theme-default.css" />
+      <link rel="stylesheet" type="text/css" href="styles/jquery-jvectormap-2.0.3.css" />
+      <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/main.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="js/jquery-jvectormap-2.0.3.min.js"></script>
+      <script src="js/jquery-jvectormap-world-mill.js"></script>
+      <script src="js/gdp-data.js"></script>
+  </head>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                  <li id="back"><a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a></li>
+                  <li><a href="pollution.html">Engine</a></li>
+                  <li><a href="cargo.html">Cargo</a></li>
+                  <li id="active"><a href="hull.html">Ship</a></li>
+              </ul>
+          </nav>
+      </header>
+      <div id="hullHeader" class="headerImage">
+          <div class="container alignItemsCenter flexDirectionColumn">
+              <h1>Cargo Ship Capacity has Grown</h1>
+              <div>
+                  <div class="odometer" id="odometer"></div>
+                  <span id="headerPercentage">%</span>
+              </div>
+              <h1>Since 1969</h1>
+          </div>
+      </div>
+      <section class="container justifyContentCenter alignItemsCenter flexDirectionColumn" id="hullProblem">
+          <article class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+              <h1 class="sectionHeadings">Accidents and Deaths&colon; A Dangerous Business</h1>
+              <p>Cargo ship accidents are a terrifying thing to consider simply because of the enormous scale and size of such incidents. In early 2014, more than 500 containers were lost during heavy seas in a single accident. While this proves that even
+                  the most professional cargo companies can suffer accidents and loses, it also proves that working in such industries is not without risk either.</p>
+              <p>The modern cargo ship is one of the largest vessels traveling the seas and making its way in and out of ports. These vessels can contain harmless goods, but they may also be stocked with very dangerous freight too. They rely on cranes for
+                  the loading and unloading process. They require crews to traverse decks and rely on ladders, and they present a host of risks for injury when being loaded, when traveling, and during the unloading process.</p>
+          </article>
+          <article class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+              <h2 class="sectionHeadings">2,000 Seaman Die at Sea Every Year</h2>
+              <div class="flexWrapWrap" id="peopleIcon">
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+                  <i class="fa fa-male" aria-hidden="true"></i>
+              </div>
+              <div><i class="fa fa-male" aria-hidden="true"></i><span> = 10 Seaman</span></div>
+              <p>In other words, it is possible for anyone working on cargo ships to be at risk for accidents and injuries. Over 2,000 seaman die at sea per year in the cargo ship industry. This is why there are so many federal laws in place for the operating
+                  and owning of cargo ships. Even with these safety standards and rules designed to avoid the worst problems, accidents occur. These can lead to mild or severe injuries, and even to death.</p>
+          </article>
+      </section>
+      <section class="container flexDirectionColumn justifyContentCenter alignItemsCenter">
+          <h2 class="sectionHeadings">Piracy vs Various Ship Types</h2>
+          <article class="container justifyContentCenter alignItemsCenter" id="graphDescCont">
+              <div id="graphContainer" class="container flexDirectionColumn justifyContentCenter">
+                  <div class="container">
+                      <div class="container flexDirectionColumn justifyContentSpaceBetween" id="graphLabelSide">
+                          <p>100</p>
+                          <p>75</p>
+                          <p>50</p>
+                          <p>25</p>
+                          <p>0</p>
+                      </div>
+                      <div id="graph" class="container alignItemsFlexEnd justifyContentSpaceAround">
+                          <div id="chemical" class="container justifyContentCenter alignItemsCenter"></div>
+                          <div id="bulk" class="container justifyContentCenter alignItemsCenter"></div>
+                          <div id="crude" class="container justifyContentCenter alignItemsCenter"></div>
+                      </div>
+                  </div>
+                  <div class="container justifyContentSpaceAround" id="graphLabelBottomHull">
+                      <p>Chemical Tanker</p>
+                      <p>Bulk Carrier</p>
+                      <p>Crude Oil Tanker</p>
+                  </div>
+              </div>
+              <div class="container justifyContentCenter alignItemsCenter flexDirectionColumn" id="graphDescription">
+                  <p>Although liner vessels -- container ships and roll-on/roll-off vessels -- are generally considered to be at lower risk for hijackings because of their higher operating speeds and freeboard (height above the water), liner vessels have been
+                      consistently targeted by Somali pirates.</p>
+                  <p>Somali pirates are now using hijacked merchant ships as mother ships to carry out attacks in the north Arabian Sea and near the coastline of India, more than 1500 nautical miles from Somalia. Pirates operate multiple, high-speed skiffs
+                      to approach and fire on the bridges of vessels with automatic weapons and rocket propelled grenades (RPGs) in an attempt to slow or stop the vessels so the pirates can get on board. Once a vessel has been hijacked, the pirates typically
+                      request a large ransom payment for the safe return of the crew, vessel and cargo.</p>
+                  <p>Successfully addressing this threat is a complex challenge for both governments and businesses. The World Shipping Council (WSC) and its member companies are working closely with the International Chamber of Shipping (ICS), other international
+                      maritime trade associations, the International Maritime Organization (IMO), and various governments to closely monitor the ongoing piracy crisis in the Indian Ocean and to reduce the risk that commercial vessels transiting the affected
+                      region will be attacked and successfully hijacked.</p>
+              </div>
+          </article>
+      </section>
+      <section class="container flexDirectionColumn justifyContentCenter alignItemsCenter" id="proposedSolution">
+          <article class="container flexDirectionColumn justifyContentCenter alignItemsCenter">
+              <h3>Our Proposed Solution&colon;</h3>
+              <h2>Drone Operated Cargo Ships <i class="fa fa-check"></i></h2>
+              <p>Drone ships would be safer, cheaper and less polluting for the $375 billion shipping industry that carries 90% of world trade. Computers can be utilized to constantly analyze operations data to improve efficiency and save money, he said. Cameras
+                  and sensors can already detect obstacles in the water better than the human eye. Human error causes most maritime accidents, often relating to fatigue.</p>
+              <p>Crew costs of $3,299 a day account for about 44 percent of total operating expenses for a large container ship, as a result, drone cargo ships would reduce these costs. The ships would be 5% lighter before loading cargo and would burn 12%
+                  to 15% less fuel.</p>
+              <p>Unmanned ships would also reduce risks such as piracy, since there would be no hostages to capture. It would also eliminate liability for repatriating sailors when owners run out of money or abandon crews, which has stranded at least 2,379
+                  people in the past decade. These workers would have better quality of life compared with working at sea since they would be operated remotely.</p>
+          </article>
+          <article class="container justifyContentSpaceAround iconSection">
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <i class="fa fa-ship fa-5x" aria-hidden="true"></i>
+                  <h4 class="sectionHeadings">Smaller Ships</h4>
+                  <p>Drone cargo ships require less space since areas associated with crew would not be required. Crew areas account for approximately 5% of a cargo ship's overall size.</p>
+              </div>
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <i class="fa fa-money fa-5x" aria-hidden="true"></i>
+                  <h4 class="sectionHeadings">Fuel Economy</h4>
+                  <p>Drone ships can potentially save money in staffing costs. In addition, drone cargo ships can potentially increase fuel economy since computer algorithims are more efficent than humans at managing speed.</p>
+              </div>
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <i class="fa fa-cog fa-5x" aria-hidden="true"></i>
+                  <h4 class="sectionHeadings">Larger Range</h4>
+                  <p>Since drone cargo ships would be more efficient, they would be able to travel further with the same amount of fuel. This would increase the fuel efficiency of the engines and decrease pollution.</p>
+              </div>
+          </article>
+      </section>
+      <section id="countryProposals" class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <h2 class="sectionHeadings">What Other Countries Are Doing</h2>
+          <article class=" container justifyContentCenter alignItemsCenter">
+              <img src="images/American-Flag.jpg" alt="American Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: United States</p>
+                  <p>Idea: Giant Kite</p>
+                  <p>Description&colon;</p>
+                  <p>The ship can launch a giant kite from its bow, sending it hundreds of feet into the air to capture the stronger and more consistent winds found above. This would provide an additional source of power, similar to hybrid engines, to assist
+                      with propulsion.</p>
+              </div>
+          </article>
+          <article class=" container justifyContentCenter alignItemsCenter">
+              <img src="images/China-Flag.jpg" alt="China Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: China</p>
+                  <p>Idea: Air Bubbles</p>
+                  <p>Description&colon;</p>
+                  <p>Using air bubbles blown along hulls or air cavities (recesses in the hull that emit air). Since air creates less drag on a hull than water, the design can save energy. This would reduce overall drag and therefore increase overall fuel
+                      economy of cargo ships.</p>
+              </div>
+          </article>
+          <article class=" container justifyContentCenter alignItemsCenter">
+              <img src="images/Russia-Flag.jpg" alt="Russia Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: Russia</p>
+                  <p>Idea: Passive Defense Measures</p>
+                  <p>Description&colon;</p>
+                  <p>International maritime law prohibits the use of weapons on ships other than military, although a potential solution to the issue of piracy is to create a standardized passive defense mechanism for high value ships, like cargo ships. It
+                      would ensure that many of the primary means that pirates use to board large ships would be eliminated.</p>
+              </div>
+          </article>
+          <article class="container justifyContentCenter alignItemsCenter">
+              <img src="images/Canada-Flag.jpg" alt="Canada Flag">
+              <div class="container justifyContentCenter alignItemsFlexStart flexDirectionColumn">
+                  <p>Country: Canada</p>
+                  <p>Idea: Enhanced Hull Materials</p>
+                  <p>Description&colon;</p>
+                  <p>Previously, ship hulls were made with high grade steel; however, improved hull materials can potential reduce drag and increase fuel efficiency. In addition, this also has the potential to reduce the overall weight of the ship as well
+                      as cross industry applications.</p>
+              </div>
+          </article>
+      </section>
+      <section id="worldMapForm" class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <h2 class="sectionHeadings">Join the Initiative in Finding a Solution</h2>
+          <div id="world-map"></div>
+          <script>
+              $(function() {
+                  $('#world-map').vectorMap({
+                      map: 'world_mill',
+                      backgroundColor: 'transparent',
+                      selectedColor: '#F7B337',
+                      selectedRegions: ['US', 'RU', 'CN', 'CA'],
+                      zoomOnScroll: false,
+                      zoomAnimate: false,
+                      regionStyle: {
+                          initial: {
+                              fill: '#C8EEFF'
+                          },
+                          selected: {
+                              fill: '#F7B337'
+                          }
+                      },
+                      series: {
+                          regions: [{
+                              values: gdpData,
+                              scale: ['#C8EEFF', '#0071A4'],
+                              normalizeFunction: 'polynomial'
+                          }]
+                      },
+                  });
+              });
+          </script>
+          <div id=formContainer>
+              <form>
+                  <ul id="form">
+                      <li>
+                          <label for="firstName">First Name:</label>
+                          <input type="text" name="firstName" placeholder="First Name">
+                      </li>
+                      <li>
+                          <label for="lastName">Last Name:</label>
+                          <input type="text" name="lastName" placeholder="Last Name">
+                      </li>
+                      <li>
+                          <label for="company">Company:</label>
+                          <input type="text" name="company" placeholder="Company">
+                      </li>
+                      <li>
+                          <label for="country">Country:</label>
+                          <input type="text" name="country" placeholder="Country">
+                      </li>
+                      <li>
+                          <label for="email">Email Address:</label>
+                          <input type="text" name="email" placeholder="Email">
+                      </li>
+                      <li class="container justifyContentCenter">
+                          <h2 class="sectionHeadings">Submit Your Idea</h2>
+                      </li>
+                      <li>
+                          <textarea name="description" id="ideaDesc" placeholder="Your idea goes here..." cols="30" rows="10"></textarea>
+                      </li>
+                      <li>
+                          <label id="inputButton" for="upload">Select File to Upload:</label>
+                          <input type="file" name="upload" accept="audio/*,video/*,image/*" />
+                      </li>
+                      <li>
+                          <button type="submit">Submit</button>
+                      </li </ul>
+              </form>
+          </div>
+      </section>
+      <footer class="container justifyContentCenter">
+          <p>AB Designs &copy;</p>
+      </footer>
+      <script src="js/odometer.min.js"></script>
+      <script>
+          setTimeout(function() {
+              odometer.innerHTML = 1200;
+          }, 500);
+      </script>
+  </body>
+</html>

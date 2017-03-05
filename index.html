@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Cargo Ships</title>
+      <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+      <link rel="stylesheet" type="text/css" href="styles/odometer-theme-default.css" />
+      <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/main.css" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body id="homepageBody">
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="pollution.html">Engine</a></li>
+                  <li><a href="cargo.html">Cargo</a></li>
+                  <li><a href="hull.html">Ship</a></li>
+              </ul>
+          </nav>
+      </header>
+      <div id="homepageHeader" class="headerImage container alignItemsCenter flexDirectionColumn">
+          <h1>Sustainable Shipping</h1>
+          <p>Creating a More Sustainable Industry for an Interconnected World</p>
+      </div>
+      <div id="homepage" class="container flexDirectionColumn justifyContentCenter alignItemsCenter">
+          <h1 class="sectionHeadings">Explore The Ship</h1>
+          <img id="imageMap" src="images/bw-ship_web.png" width="1500" height="574" alt="Ship" usemap="#Map" border="0" />
+          <map name="Map" id="Map">
+        <area shape="poly" href="pollution.html" alt="stacks" coords="398,175,378,176,377,173,360,173,339,174,339,170,321,170,312,170,316,115,322,112,335,112,344,106,345,92,346,91,354,91,354,106,363,112,371,113,371,91,384,91,385,107,393,110,398,115" onMouseOver="if(document.images) document.getElementById('imageMap').src= 'images/stack-ship_web.png';" onMouseOut="if(document.images) document.getElementById('imageMap').src= 'images/bw-ship_web.png';">
+        <area shape="poly" href="pollution.html" ship="stack" alt="stack2" coords="528,158,528,158,528,155,524,150,526,148,526,140,528,135,528,119,539,110,540,95,553,95,553,113,557,114,558,117,567,116,571,111,572,95,578,95,581,94,584,96,584,109,593,117,610,118,610,158,550,159,549,164,535,165,533,165,531,165,529,164,527,164" onMouseOver="if(document.images) document.getElementById('imageMap').src= 'images/stack-ship_web.png';" onMouseOut="if(document.images) document.getElementById('imageMap').src= 'images/bw-ship_web.png';">
+        <area shape="poly" href="hull.html" ship="hull" alt="hull"  coords="35,404,35,428,37,433,47,443,68,459,81,467,90,475,101,481,109,487,118,492,129,498,145,507,157,512,165,513,173,512,260,513,406,513,545,513,576,514,619,515,665,516,762,518,804,519,869,520,972,523,1111,524,1249,527,1252,522,1283,492,1306,472,1326,455,1346,440,1367,425,1391,408,1413,391,1435,372,1446,360,1455,349,1459,341,1463,327,1464,308,1445,308,1413,309,1346,307,1246,305,1167,304,1015,303,954,302,942,314,908,345,867,386,860,387,856,391,807,391,627,391,624,391,620,393,598,392,529,392,438,393,375,394,262,397,149,400,74,402" onMouseOver="if(document.images) document.getElementById('imageMap').src= 'images/hull-ship_web.png';" onMouseOut="if(document.images) document.getElementById('imageMap').src= 'images/bw-ship_web.png';">
+        <area shape="poly" href="cargo.html" ship="cargo" alt="cargo" coords="71,206,70,226,64,228,60,231,43,232,43,248,42,255,40,257,40,274,41,294,41,297,41,318,40,322,40,331,36,333,36,371,35,404,83,402,118,401,166,400,206,398,263,397,305,396,360,394,439,393,492,392,594,392,620,393,624,391,728,391,856,391,860,387,867,386,907,346,954,302,1060,303,1168,304,1297,306,1385,308,1414,309,1428,308,1427,235,1428,206,1410,206,1407,205,1407,194,1387,195,1385,193,1385,188,1345,188,1342,185,1338,185,1337,164,1299,163,1253,162,1241,163,1215,165,1207,166,1197,166,1190,170,1186,170,1184,169,1184,155,1177,154,1164,154,1159,155,1121,157,1117,154,1101,154,1099,150,1057,149,1020,149,1015,147,986,146,965,145,954,144,942,145,935,145,932,145,920,146,900,147,871,146,864,147,854,148,852,144,833,144,813,145,811,143,792,143,761,145,760,149,756,149,755,166,750,166,750,155,733,156,732,155,695,155,695,153,680,153,680,155,661,156,658,153,632,154,629,159,580,159,551,159,549,165,530,165,527,164,524,164,495,163,457,167,455,164,437,164,409,167,408,175,399,176,378,176,376,173,355,173,339,174,338,170,312,170,294,171,293,174,275,175,273,190,238,190,210,189,210,183,192,182,169,184,165,188,138,188,135,186,117,186,110,186,97,187,93,189,92,201,90,204" onMouseOver="if(document.images) document.getElementById('imageMap').src= 'images/cargo-ship_web.png';" onMouseOut="if(document.images) document.getElementById('imageMap').src= 'images/bw-ship_web.png';">
+        </map>
+      </div>
+      <section class="container flexDirectionColumn justifyContentCenter alignItemsCenter" id="homepageIcons">
+          <h1 class="sectionHeadings">Proposed Solutions to the Problems of Cargo Ships</h1>
+          <article class="container justifyContentSpaceAround iconSection">
+              <div class="container alignItemsCenter justifyContentSpaceBetween flexDirectionColumn">
+                  <i class="fa fa-ship fa-5x" aria-hidden="true"></i>
+                  <h2 class="sectionHeadings">Nuclear Powered Cargo Ships</h2>
+                  <p>Consider the reason that there are nuclear-powered vessels in the first place. Aircraft carriers want to be able to travel at high speeds over long distances; submarines need to stay submerged for long periods without refueling; and icebreakers
+                      need to operate in Arctic conditions without fuel supplies. Having a traveling nuclear reactor solves those problems.</p>
+                  <a href="pollution.html#proposedSolution">Find out more</a>
+              </div>
+              <div class="container alignItemsCenter justifyContentSpaceBetween flexDirectionColumn">
+                  <i class="fa fa-pagelines fa-5x" aria-hidden="true"></i>
+                  <h2 class="sectionHeadings">Hydroponic Cargo Containers</h2>
+                  <p>About 90 percent of the world&apos;s goods are carried by sea, with more than 70 percent in shipping containers carrying everything from TVs to sportswear from Asia to the rest of the world. But the global imbalance in trade means most
+                      of these containers are empty on the return journey. Hydroponic cargo containers would solve this problem.</p>
+                  <a href="cargo.html#proposedSolution">Find out more</a>
+              </div>
+              <div class="container alignItemsCenter justifyContentSpaceBetween flexDirectionColumn">
+                  <i class="fa fa-bolt fa-5x" aria-hidden="true"></i>
+                  <h2 class="sectionHeadings">Drone Operated Cargo Ships</h2>
+                  <p>Unmanned ships would also reduce risks such as piracy, since there would be no hostages to capture. It would also eliminate liability for repatriating sailors when owners run out of money or abandon crews, which has stranded at least 2,379
+                      people in the past decade. As a result, these workers would have better quality of life.</p>
+                  <a href="hull.html#proposedSolution">Find out more</a>
+              </div>
+          </article>
+      </section>
+      <footer class="container justifyContentCenter">
+          <p>AB Designs &copy;</p>
+      </footer>
+      <script src="js/imageMapResizer.min.js"></script>
+      <script>
+          $(document).ready(function() {
+              $('#Map').imageMapResize();
+          });
+      </script>
+  </body>
+</html>

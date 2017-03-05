@@ -1,1 +1,1 @@
-# VCOM362
+Repository for Interactive Media (VCOM 362).
